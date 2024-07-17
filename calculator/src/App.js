@@ -3,7 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import BMI from './pages/BMI';
 import BMR from './pages/BMR';
-//import Pregnancy from './pages/Pregnancy';
+import Pregnancy from './pages/Pregnancy';
+import Foodcalorie from './pages/Foodcalorie';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -15,7 +16,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/bmi" element={<BMI />} />
         <Route path="/bmr" element={<BMR />} />
-        {/* <Route path="/pregnancy" element={<Pregnancy />} /> */}
+        <Route path="/pregnancy" element={<Pregnancy />} />
+        <Route path="/food-calorie" element={<Foodcalorie />} />
       </Routes>
       <Footer />
     </div>
