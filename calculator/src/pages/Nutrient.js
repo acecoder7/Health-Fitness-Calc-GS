@@ -35,7 +35,7 @@ const NutrientCalculator = () => {
     try {
       const response = await fetch(url, config);
       const data = await response.json();
-      console.log("Suggestions fetched:", data.common);
+      //console.log("Suggestions fetched:", data.common);
       setSuggestions(data.common || []);
     } catch (error) {
       console.error("Error fetching suggestions:", error);
@@ -67,7 +67,7 @@ const NutrientCalculator = () => {
       }
 
       const data = await response.json();
-      console.log("Nutrition data fetched:", data.foods[0]);
+      //console.log("Nutrition data fetched:", data.foods[0]);
 
       if (data.foods.length > 0) {
         const foodData = data.foods[0];
@@ -105,7 +105,7 @@ const NutrientCalculator = () => {
   };
 
   return (
-    <Box p={8} bg="gray.100" minHeight="100vh">
+    <Box p={8} bg="background.100" minHeight="100vh">
       <Heading mb={4}>Nutrient Calculator</Heading>
       <Text mb={6}>
         Search for a food item to view detailed nutritional information.
@@ -154,7 +154,7 @@ const NutrientCalculator = () => {
                   p={2}
                   borderBottom="1px solid #ddd"
                   cursor="pointer"
-                  _hover={{ bg: "gray.100" }}
+                  _hover={{ bg: "background.100" }}
                   onClick={() => handleSuggestionClick(suggestion)}
                 >
                   {suggestion.food_name}
@@ -164,7 +164,7 @@ const NutrientCalculator = () => {
           )}
           {error && <Text color="red.500">{error}</Text>}
           {foodItem && (
-            <Box w="100%" p={4} bg="gray.50" borderRadius="md" boxShadow="sm">
+            <Box w="100%" p={4} bg="background.50" borderRadius="md" boxShadow="sm">
               <Heading size="md" mb={2}>{foodItem.food_name}</Heading>
               <Text>Serving: {foodItem.serving_qty} {foodItem.serving_unit}</Text>
               <Text>Calories: {foodItem.nf_calories.toFixed(2)} kcal</Text>
