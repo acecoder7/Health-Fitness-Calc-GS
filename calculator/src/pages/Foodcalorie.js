@@ -44,10 +44,7 @@ const FoodCalorie = () => {
           name: data.foods[0].food_name,
           serving_qty: data.foods[0].serving_qty,
           serving_unit: data.foods[0].serving_unit,
-          calories: data.foods[0].nf_calories.toFixed(2),
-          protein: data.foods[0].nf_protein.toFixed(2),
-          carbs: data.foods[0].nf_total_carbohydrate.toFixed(2),
-          fat: data.foods[0].nf_total_fat.toFixed(2),
+          calories: data.foods[0].nf_calories.toFixed(2)
         };
         setFoodItems([...foodItems, foodData]);
         setFood("");
@@ -137,9 +134,6 @@ const FoodCalorie = () => {
                   Serving: {item.serving_qty} {item.serving_unit}
                 </Text>
                 <Text>Calories: {item.calories} kcal</Text>
-                <Text>Protein: {item.protein} g</Text>
-                <Text>Carbs: {item.carbs} g</Text>
-                <Text>Fat: {item.fat} g</Text>
               </Box>
             ))}
           </Box>
