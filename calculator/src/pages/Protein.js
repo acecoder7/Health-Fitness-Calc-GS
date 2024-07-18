@@ -76,7 +76,7 @@ const ProteinCalc = () => {
 
   return (
     <Box bg="background.100" p={8} minHeight="100vh">
-      <Heading mb={4}>Protein Intake Calculator</Heading>
+      <Heading mb={4}>Protein Calculator</Heading>
       <Text mb={6}>Calculate your Protein Intake based on your goals.</Text>
       <Box
         bg="white"
