@@ -21,7 +21,7 @@ const calculators = [
     icon: healthicon,
     link: "/calorie-intake",
   },
-  { name: "Protien Calculator", icon: healthicon, link: "/protien" },
+  { name: "Nutrient Calculator", icon: healthicon, link: "/nutrient" },
   { name: "Period Calculator", icon: healthicon, link: "/period" },
   {
     name: "Ideal Weight Calculator",
