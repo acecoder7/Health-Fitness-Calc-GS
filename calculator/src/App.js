@@ -9,6 +9,7 @@ import Foodcalorie from './pages/Foodcalorie';
 import Nutrient from './pages/Nutrient';
 import TDEE from './pages/TDEE';
 import Period from './pages/Period';
+import Protein from './pages/Protein';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './App.css';
@@ -27,6 +28,7 @@ function App() {
           <Route path="/nutrient" element={<Nutrient />} />
           <Route path="/tdee" element={<TDEE />} />
           <Route path="/period" element={<Period />} />
+          <Route path="/protein" element={<Protein />} />
         </Routes>
       </Box>
       <Footer />

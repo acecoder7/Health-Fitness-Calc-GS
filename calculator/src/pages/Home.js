@@ -6,11 +6,7 @@ import healthicon from "../images/cardicon.png";
 const calculators = [
   { name: "BMI and Ideal Weight Calculator", icon: healthicon, link: "/bmindiw" },
   { name: "Daily Calorie Calculator", icon: healthicon, link: "/dailycalorie" },
-  {
-    name: "Pregnancy Calculator",
-    icon: healthicon,
-    link: "/pregnancy",
-  },
+  { name: "Protein Calculator", icon: healthicon, link: "/protein" },
   {
     name: "Food Calorie Calculator",
     icon: healthicon,
@@ -18,6 +14,11 @@ const calculators = [
   },
   { name: "Nutrient Calculator", icon: healthicon, link: "/nutrient" },
   { name: "Period Calculator", icon: healthicon, link: "/period" },
+  {
+    name: "Pregnancy Calculator",
+    icon: healthicon,
+    link: "/pregnancy",
+  },
 ];
 
 const Home = () => (
