@@ -2,6 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import { Analytics } from "@vercel/analytics/react"
 import './index.css';
 import App from './App';
 
@@ -23,6 +24,7 @@ root.render(
   <ChakraProvider theme={theme}>
     <Router>
       <App />
+      <Analytics />
     </Router>
   </ChakraProvider>
 );
