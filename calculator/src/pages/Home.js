@@ -4,8 +4,8 @@ import MainCard from "../components/MainCard";
 import healthicon from "../images/cardicon.png";
 
 const calculators = [
-  { name: "BMI Calculator", icon: healthicon, link: "/bmi" },
-  { name: "BMR Calculator", icon: healthicon, link: "/bmr" },
+  { name: "BMI and Ideal Weight Calculator", icon: healthicon, link: "/bmindiw" },
+  { name: "Daily Calorie Calculator", icon: healthicon, link: "/dailycalorie" },
   {
     name: "Pregnancy Calculator",
     icon: healthicon,
@@ -16,25 +16,8 @@ const calculators = [
     icon: healthicon,
     link: "/food-calorie",
   },
-  {
-    name: "Calorie Intake Calculator",
-    icon: healthicon,
-    link: "/calorie-intake",
-  },
   { name: "Nutrient Calculator", icon: healthicon, link: "/nutrient" },
   { name: "Period Calculator", icon: healthicon, link: "/period" },
-  {
-    name: "Ideal Weight Calculator",
-    icon: healthicon,
-    link: "/ideal-weight",
-  },
-  {
-    name: "Body Fat Calculator",
-    icon: healthicon,
-    link: "/body-fat",
-  },
-  { name: "GFR Calculator", icon: healthicon, link: "/gfr" },
-  { name: "TDEE Calculator", icon: healthicon, link: "/tdee" },
 ];
 
 const Home = () => (

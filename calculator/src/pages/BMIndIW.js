@@ -11,7 +11,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-const BMICalculator = () => {
+const BMIandIWCalc = () => {
   const [weight, setWeight] = useState("");
   const [height, setHeight] = useState("");
   const [age, setAge] = useState("");
@@ -20,8 +20,7 @@ const BMICalculator = () => {
   const [bmi, setBmi] = useState(null);
   const [gender, setGender] = useState("male");
   const [idealWeight, setIdealWeight] = useState(null);
-  const [activityLevel, setActivityLevel] = useState("sedentary");
-  const [tdee, setTdee] = useState(null);
+
 
   const calculateBMI = () => {
     let weightInKg = parseFloat(weight);
@@ -62,54 +61,19 @@ const BMICalculator = () => {
     setIdealWeight(idealWeightValue.toFixed(2));
   };
 
-  const calculateTDEE = () => {
-    let weightInKg = parseFloat(weight);
-    let heightInCm = parseFloat(height);
-    let ageInYears = parseInt(age);
 
-    if (weightUnit === "lbs") {
-      weightInKg = weightInKg * 0.453592;
-    }
-
-    if (heightUnit === "inches") {
-      heightInCm = heightInCm * 2.54;
-    } else if (heightUnit === "feet") {
-      heightInCm = heightInCm * 30.48;
-    }
-
-    let bmr;
-    if (gender === "male") {
-      bmr =
-        88.362 + 13.397 * weightInKg + 4.799 * heightInCm - 5.677 * ageInYears;
-    } else {
-      bmr =
-        447.593 + 9.247 * weightInKg + 3.098 * heightInCm - 4.33 * ageInYears;
-    }
-
-    const activityMultipliers = {
-      sedentary: 1.2,
-      lightlyActive: 1.375,
-      moderatelyActive: 1.55,
-      veryActive: 1.725,
-      extraActive: 1.9,
-    };
-
-    const tdeeValue = bmr * activityMultipliers[activityLevel];
-    setTdee(tdeeValue.toFixed(2));
-  };
 
   const handleCalculate = () => {
     calculateBMI();
     calculateIdealWeight();
-    calculateTDEE();
   };
 
   return (
     <Box bg="background.100" p={8}>
-      <Heading mb={6}>BMI Calculator</Heading>
+      <Heading mb={6}>BMI and Ideal Weight Calculator</Heading>
       <Text mb={6}>
-        Welcome to the BMI Calculator. Please enter your details below to
-        calculate your Body Mass Index (BMI) and better understand your health
+        Welcome to the BMI and Ideal Weight Calculator. Please enter your details below to
+        calculate your Body Mass Index (BMI) and Ideal Weight to better understand your health
         status.
       </Text>
       <Box
@@ -177,30 +141,6 @@ const BMICalculator = () => {
             />
           </FormControl>
 
-          <FormControl id="activityLevel">
-            <FormLabel>Activity Level</FormLabel>
-            <Select
-              value={activityLevel}
-              onChange={(e) => setActivityLevel(e.target.value)}
-            >
-              <option value="sedentary">
-                Sedentary (little or no exercise)
-              </option>
-              <option value="lightlyActive">
-                Lightly active (light exercise/sports 1-3 days/week)
-              </option>
-              <option value="moderatelyActive">
-                Moderately active (moderate exercise/sports 3-5 days/week)
-              </option>
-              <option value="veryActive">
-                Very active (hard exercise/sports 6-7 days/week)
-              </option>
-              <option value="extraActive">
-                Extra active (very hard exercise/sports and physical job)
-              </option>
-            </Select>
-          </FormControl>
-
           <Button colorScheme="green" onClick={handleCalculate}>
             Calculate
           </Button>
@@ -216,16 +156,10 @@ const BMICalculator = () => {
               Your Ideal Weight is: {idealWeight} kg
             </Text>
           )}
-
-          {tdee && (
-            <Text mt={4} fontSize="lg" fontWeight="bold">
-              Your TDEE is: {tdee} calories/day
-            </Text>
-          )}
         </VStack>
       </Box>
     </Box>
   );
 };
 
-export default BMICalculator;
+export default BMIandIWCalc;
