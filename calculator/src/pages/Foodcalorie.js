@@ -131,7 +131,7 @@ const FoodCalorie = () => {
   };
 
   return (
-    <Box p={8} bg="gray.100" minHeight="100vh">
+    <Box p={8} bg="background.100" minHeight="100vh">
       <Heading mb={4}>Food Calorie Calculator</Heading>
       <Text mb={6}>
         Track your daily calorie intake with our Food Calorie Calculator. Enter
