@@ -45,7 +45,7 @@ const ProteinCalc = () => {
         lowerLimit = weightNum * 1.2;
         upperLimit = weightNum * 1.4;
       }
-    } else if (goal === "loss") {
+    } else if (goal === "lose") {
       if (activityLevel === "sedentary") {
         lowerLimit = weightNum * 1.2;
         upperLimit = weightNum * 1.2;
