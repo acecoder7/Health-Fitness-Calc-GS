@@ -69,10 +69,13 @@ const ProteinCalc = () => {
       }
     }
 
-    setProteinRequirement(
-      `${lowerLimit.toFixed(2)} - ${upperLimit.toFixed(2)}`
-    );
+    if (lowerLimit === upperLimit) {
+      setProteinRequirement(`${lowerLimit.toFixed(2)}`);
+    } else {
+      setProteinRequirement(`${lowerLimit.toFixed(2)} - ${upperLimit.toFixed(2)}`);
+    }
   };
+  
 
   return (
     <Box bg="background.100" p={8} minHeight="100vh">
