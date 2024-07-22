@@ -75,7 +75,6 @@ const ProteinCalc = () => {
       setProteinRequirement(`${lowerLimit.toFixed(2)} - ${upperLimit.toFixed(2)}`);
     }
   };
-  
 
   return (
     <Box bg="background.100" p={8} minHeight="100vh">
@@ -179,9 +178,20 @@ const ProteinCalc = () => {
           </Button>
 
           {proteinRequirement && (
-            <Text mt={4} fontSize="lg" fontWeight="bold">
-              Your daily protein requirement is {proteinRequirement} grams.
-            </Text>
+            <Box mt={4} p={4} borderRadius="md" boxShadow="md">
+              <Text mt={4} fontSize="lg" fontWeight="bold">
+                Your daily protein requirement is {proteinRequirement} grams.
+              </Text>
+              <Button
+                mt={4}
+                colorScheme="blue"
+                as="a"
+                href="/explore-protein"
+                target="_self"
+              >
+                Explore Protein
+              </Button>
+            </Box>
           )}
         </VStack>
       </Box>
@@ -190,3 +200,4 @@ const ProteinCalc = () => {
 };
 
 export default ProteinCalc;
+
