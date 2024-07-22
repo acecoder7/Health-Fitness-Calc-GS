@@ -22,7 +22,7 @@ import img5 from "../images/proteinbasket/salad5.jpg";
 import img6 from "../images/proteinbasket/salad6.jpg";
 import img7 from "../images/proteinbasket/salad7.jpg";
 import img8 from "../images/proteinbasket/salad8.jpg";
-import img9 from "../images/proteinbasket/salad8.jpg"; // Corrected image name
+import img9 from "../images/proteinbasket/salad9.jpg"; // Corrected image name
 
 const proteinData = [
   {
