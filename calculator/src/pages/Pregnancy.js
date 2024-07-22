@@ -10,7 +10,7 @@ import {
   VStack,
   FormLabel,
 } from "@chakra-ui/react";
-import { format, addDays, addWeeks, differenceInDays } from "date-fns";
+import { format, addDays, differenceInDays } from "date-fns";
 
 const PregnancyCalculator = () => {
   const [method, setMethod] = useState("lastPeriod");
@@ -18,29 +18,30 @@ const PregnancyCalculator = () => {
   const [cycleLength, setCycleLength] = useState(28);
   const [conceptionDate, setConceptionDate] = useState("");
   const [dueDate, setDueDate] = useState("");
-  const [result, setResult] = useState("");
+  const [calculatedDueDate, setCalculatedDueDate] = useState("");
+  const [gestationalAge, setGestationalAge] = useState("");
 
   const calculateDueDate = () => {
-    let calculatedDueDate = null;
+    let dueDate = null;
 
     switch (method) {
       case "lastPeriod":
         if (lastPeriodDate) {
           const lmpDate = new Date(lastPeriodDate);
-          calculatedDueDate = addDays(lmpDate, cycleLength + 280 - 28);
+          dueDate = addDays(lmpDate, cycleLength + 280 - 28);
         }
         break;
 
       case "conceptionDate":
         if (conceptionDate) {
           const conception = new Date(conceptionDate);
-          calculatedDueDate = addDays(conception, 266);
+          dueDate = addDays(conception, 266);
         }
         break;
 
       case "dueDate":
         if (dueDate) {
-          calculatedDueDate = new Date(dueDate);
+          dueDate = new Date(dueDate);
         }
         break;
 
@@ -48,15 +49,14 @@ const PregnancyCalculator = () => {
         break;
     }
 
-    if (calculatedDueDate) {
+    if (dueDate) {
       const today = new Date();
-      const gestationalAge = differenceInDays(today, calculatedDueDate) / 7;
+      const gestationalAgeInWeeks = Math.floor(
+        differenceInDays(today, addDays(dueDate, -266)) / 7
+      );
 
-      setResult(`Estimated Due Date: ${format(
-        calculatedDueDate,
-        "MMMM dd, yyyy"
-      )}
-                 Gestational Age: ${Math.floor(gestationalAge)} weeks`);
+      setCalculatedDueDate(format(dueDate, "MMMM dd, yyyy"));
+      setGestationalAge(`${gestationalAgeInWeeks} weeks`);
     }
   };
 
@@ -139,9 +139,14 @@ const PregnancyCalculator = () => {
           <Button colorScheme="green" onClick={calculateDueDate}>
             Calculate
           </Button>
-          {result && (
+          {calculatedDueDate && (
             <Text mt={4} fontSize="lg" fontWeight="bold">
-              {result}
+              Estimated Due Date: {calculatedDueDate}
+            </Text>
+          )}
+          {gestationalAge && (
+            <Text mt={2} fontSize="lg" fontWeight="bold">
+              Gestational Age: {gestationalAge}
             </Text>
           )}
         </VStack>
