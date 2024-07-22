@@ -11,21 +11,25 @@ import {
   Select,
 } from "@chakra-ui/react";
 
-
 const PeriodCalculator = () => {
   const [lastPeriodLength, setLastPeriodLength] = useState("");
   const [firstDayAfterFirstPeriod, setFirstDayAfterFirstPeriod] = useState("");
   const [averageCycleLength, setAverageCycleLength] = useState("");
   const [nextPeriodDate, setNextPeriodDate] = useState(null);
+  const [ovulationDate, setOvulationDate] = useState(null);
 
   const calculateNextPeriod = () => {
     const firstDayDate = new Date(firstDayAfterFirstPeriod);
     const cycleDuration = parseInt(averageCycleLength, 10);
 
     if (!isNaN(firstDayDate) && !isNaN(cycleDuration)) {
-      const nextPeriodDate = new Date(firstDayDate);
-      nextPeriodDate.setDate(nextPeriodDate.getDate() + cycleDuration);
-      setNextPeriodDate(nextPeriodDate.toDateString());
+      const nextPeriod = new Date(firstDayDate);
+      nextPeriod.setDate(nextPeriod.getDate() + cycleDuration);
+      setNextPeriodDate(nextPeriod.toDateString());
+
+      const ovulation = new Date(nextPeriod);
+      ovulation.setDate(ovulation.getDate() - 14);
+      setOvulationDate(ovulation.toDateString());
     }
   };
 
@@ -33,7 +37,7 @@ const PeriodCalculator = () => {
     <Box bg="background.100" p={8}>
       <Heading mb={6}>Period Calculator</Heading>
       <Text mb={6}>
-        Calculate your next period
+        Calculate your next period and ovulation date
       </Text>
       <Box
         bg="white"
@@ -41,8 +45,8 @@ const PeriodCalculator = () => {
         borderRadius="md"
         boxShadow="lg"
         maxWidth="700px"
-              mx="auto"
-              mb={14}
+        mx="auto"
+        mb={14}
       >
         <VStack spacing={4}>
           <FormControl id="lastPeriodLength">
@@ -61,7 +65,7 @@ const PeriodCalculator = () => {
           </FormControl>
 
           <FormControl id="firstDayAfterFirstPeriod">
-            <FormLabel>First day after the first period</FormLabel>
+            <FormLabel>First day after your last period</FormLabel>
             <Input
               type="date"
               value={firstDayAfterFirstPeriod}
@@ -71,7 +75,7 @@ const PeriodCalculator = () => {
           </FormControl>
 
           <FormControl id="averageCycleLength">
-            <FormLabel>Average length of the cycles (in days)</FormLabel>
+            <FormLabel>Average length of your cycle (in days)</FormLabel>
             <Input
               type="number"
               value={averageCycleLength}
@@ -80,16 +84,19 @@ const PeriodCalculator = () => {
             />
           </FormControl>
 
-          <Button onClick={calculateNextPeriod} colorScheme="green" size="lg">
+          <Button onClick={calculateNextPeriod} colorScheme="green">
             Calculate
           </Button>
 
           {nextPeriodDate && (
-            <Box mt={4} p={4} bg="teal.50" borderRadius="md" boxShadow="md">
-              <Text mt={4} fontSize="lg" fontWeight="bold">
-                Your next period is expected to start on: {nextPeriodDate}
+            <Text mt={4} fontSize="lg" fontWeight="bold">
+            Your next period is expected to start on: {nextPeriodDate}
+          </Text>
+          )}
+          {ovulationDate && (
+              <Text mt={2} fontSize="lg" fontWeight="bold">
+                Your ovulation date is expected to be: {ovulationDate}
               </Text>
-            </Box>
           )}
         </VStack>
       </Box>
