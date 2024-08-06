@@ -39,16 +39,24 @@ const proteinData = [
     imageUrl: img1,
     name: "Garden Fresh Delight Salad",
     items: [
-      { name: "Spinach", quantity: "120g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
-      { name: "Cherry tomatoes", quantity: "100g", imageUrl: "tomatoes.jpg", link: "http://example.com/tomatoes" },
-      { name: "Cucumber", quantity: "100g", imageUrl: "cucumber.jpg", link: "http://example.com/cucumber" },
-      { name: "Red onion", quantity: "30g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
-      { name: "Corn", quantity: "150g", imageUrl: "corn.jpg", link: "http://example.com/corn" },
+      { name: "Asparagus", quantity: "600g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
+      { name: "Baby Corn", quantity: "600g", imageUrl: "tomatoes.jpg", link: "http://example.com/tomatoes" },
+      { name: "Cherry tomatoes", quantity: "600g", imageUrl: "cucumber.jpg", link: "http://example.com/cucumber" },
+      { name: "English Cucumber", quantity: "600g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
+      { name: "Beetroot", quantity: "600g", imageUrl: "corn.jpg", link: "http://example.com/corn" },
     ],
-    totalProtein: "56.69 g",
-    totalCalories: "1211 kcal",
-    totalPrice: "$12.50",
+    totalProtein: "53 g",
+    totalCalories: "1074 kcal",
+    totalPrice: "Rs 12.50",
     totalWeight: "3000 g",
+    totalFiber: "79 g",
+    totalVitaminC: "176 mg",
+    totalVitaminA: "1660 μg",
+    totalCalcium: " 891 mg",
+    totalPotassium: "3654 mg",
+    totalMagnesium: "303 mg",
+    totalIron: "18 mg",
+    richIn: [ "Vitamin C", "Vitamin A"]
   },
   {
     id: 2,
@@ -62,10 +70,18 @@ const proteinData = [
       { name: "Red onion", quantity: "40g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
       { name: "Fresh parsley", quantity: "20g", imageUrl: "parsley.jpg", link: "http://example.com/parsley" },
     ],
-    totalProtein: "60.38 g",
-    totalCalories: "1828 kcal",
-    totalPrice: "$11.00",
+    totalProtein: "53 g",
+    totalCalories: "1074 kcal",
+    totalPrice: "Rs 12.50",
     totalWeight: "3000 g",
+    totalFiber: "79 g",
+    totalVitaminC: "176 mg",
+    totalVitaminA: "1660 μg",
+    totalCalcium: " 891 mg",
+    totalPotassium: "3654 mg",
+    totalMagnesium: "303 mg",
+    totalIron: "18 mg",
+    richIn: [ "Vitamin C", "Calcium"]
   },
   {
     id: 3,
@@ -78,10 +94,18 @@ const proteinData = [
       { name: "Red cabbage", quantity: "120g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
       { name: "Green onion", quantity: "50g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
     ],
-    totalProtein: "49.32 g",
-    totalCalories: "1623 kcal",
-    totalPrice: "$12.50",
+    totalProtein: "53 g",
+    totalCalories: "1074 kcal",
+    totalPrice: "Rs 12.50",
     totalWeight: "3000 g",
+    totalFiber: "79 g",
+    totalVitaminC: "176 mg",
+    totalVitaminA: "1660 μg",
+    totalCalcium: " 891 mg",
+    totalPotassium: "3654 mg",
+    totalMagnesium: "303 mg",
+    totalIron: "18 mg",
+    richIn: [ "Vitamin C", "Calcium"]
   },
   {
     id: 4,
@@ -94,10 +118,18 @@ const proteinData = [
       { name: "Red bell pepper", quantity: "50g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
       { name: "Avocado", quantity: "100g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
     ],
-    totalProtein: "49.62 g",
-    totalCalories: "1546 kcal",
-    totalPrice: "$11.00",
+    totalProtein: "53 g",
+    totalCalories: "1074 kcal",
+    totalPrice: "Rs 12.50",
     totalWeight: "3000 g",
+    totalFiber: "79 g",
+    totalVitaminC: "176 mg",
+    totalVitaminA: "1660 μg",
+    totalCalcium: " 891 mg",
+    totalPotassium: "3654 mg",
+    totalMagnesium: "303 mg",
+    totalIron: "18 mg",
+    richIn: [ "Vitamin C", "Calcium"]
   },
   {
     id: 5,
@@ -111,10 +143,18 @@ const proteinData = [
       { name: "Grapes", quantity: "100g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
       { name: "Blueberries", quantity: "100g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
     ],
-    totalProtein: "36.25 g",
-    totalCalories: "2173 kcal",
-    totalPrice: "$12.50",
-    totalWeight: "4000 g",
+    totalProtein: "53 g",
+    totalCalories: "1074 kcal",
+    totalPrice: "Rs 12.50",
+    totalWeight: "3000 g",
+    totalFiber: "79 g",
+    totalVitaminC: "176 mg",
+    totalVitaminA: "1660 μg",
+    totalCalcium: " 891 mg",
+    totalPotassium: "3654 mg",
+    totalMagnesium: "303 mg",
+    totalIron: "18 mg",
+    richIn: [ "Vitamin C", "Calcium"]
   },
   {
     id: 6,
@@ -128,10 +168,18 @@ const proteinData = [
       { name: "Cucumber", quantity: "75g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
       { name: "Lettuce", quantity: "150g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
     ],
-    totalProtein: "40.6 g",
-    totalCalories: "1675 kcal",
-    totalPrice: "$11.00",
+    totalProtein: "53 g",
+    totalCalories: "1074 kcal",
+    totalPrice: "Rs 12.50",
     totalWeight: "3000 g",
+    totalFiber: "79 g",
+    totalVitaminC: "176 mg",
+    totalVitaminA: "1660 μg",
+    totalCalcium: " 891 mg",
+    totalPotassium: "3654 mg",
+    totalMagnesium: "303 mg",
+    totalIron: "18 mg",
+    richIn: [ "Vitamin C", "Calcium"]
   },
   {
     id: 7,
@@ -144,10 +192,18 @@ const proteinData = [
       { name: "Yellow bell pepper", quantity: "75g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
       { name: "Red bell pepper", quantity: "75g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
     ],
-    totalProtein: "42.84 g",
-    totalCalories: "1677 kcal",
-    totalPrice: "$11.00",
+    totalProtein: "53 g",
+    totalCalories: "1074 kcal",
+    totalPrice: "Rs 12.50",
     totalWeight: "3000 g",
+    totalFiber: "79 g",
+    totalVitaminC: "176 mg",
+    totalVitaminA: "1660 μg",
+    totalCalcium: " 891 mg",
+    totalPotassium: "3654 mg",
+    totalMagnesium: "303 mg",
+    totalIron: "18 mg",
+    richIn: [ "Vitamin C", "Calcium"]
   },
   {
     id: 8,
@@ -160,10 +216,18 @@ const proteinData = [
       { name: "Corn", quantity: "100g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
       { name: "Lettuce", quantity: "150g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
     ],
-    totalProtein: "47.8 g",
-    totalCalories: "1068 kcal",
-    totalPrice: "$11.00",
+    totalProtein: "53 g",
+    totalCalories: "1074 kcal",
+    totalPrice: "Rs 12.50",
     totalWeight: "3000 g",
+    totalFiber: "79 g",
+    totalVitaminC: "176 mg",
+    totalVitaminA: "1660 μg",
+    totalCalcium: " 891 mg",
+    totalPotassium: "3654 mg",
+    totalMagnesium: "303 mg",
+    totalIron: "18 mg",
+    richIn: [ "Vitamin C", "Calcium"]
   },
   {
     id: 9,
@@ -176,10 +240,18 @@ const proteinData = [
       { name: "Onions", quantity: "100g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
       { name: "Cucumber", quantity: "100g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
     ],
-    totalProtein: "58.58 g",
-    totalCalories: "1226 kcal",
-    totalPrice: "$11.00",
+    totalProtein: "53 g",
+    totalCalories: "1074 kcal",
+    totalPrice: "Rs 12.50",
     totalWeight: "3000 g",
+    totalFiber: "79 g",
+    totalVitaminC: "176 mg",
+    totalVitaminA: "1660 μg",
+    totalCalcium: " 891 mg",
+    totalPotassium: "3654 mg",
+    totalMagnesium: "303 mg",
+    totalIron: "18 mg",
+    richIn: [ "Vitamin C", "Calcium"]
   },
 ];
 
@@ -199,7 +271,7 @@ const ExploreProtein = () => {
 
   return (
     <Box bg="background.100" p={8} minHeight="100vh">
-      <Heading mb={6}>Explore Protein-Rich Bowls</Heading>
+      <Heading mb={6}>Explore Protein-Rich Baskets</Heading>
       <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8}>
         {proteinData.map((bowl) => (
           <Box
@@ -216,18 +288,19 @@ const ExploreProtein = () => {
                 <Text fontSize="xl" fontWeight="bold">
                   {bowl.name}
                 </Text>
-                <Text color="gray.600">Ingredients:</Text>
+                <Text color="gray.600" fontWeight="bold" mb={2}>Ingredients:</Text>
                 <Wrap spacing={2} shouldWrap>
                   {bowl.items.map((item, index) => (
                     <WrapItem key={index}>
                       <Tag
                         borderRadius="full"
                         variant="solid"
-                        colorScheme="teal"
-                        p={1} 
-                        fontSize="sm" 
-                        minWidth="120px"
-                        textAlign="center"
+                        bg="blue.100"
+                        color="blue.700"
+                        p={2}
+                        fontSize="sm"
+                        fontWeight="bold"
+                        boxShadow="sm"
                       >
                         {item.name}
                       </Tag>
@@ -236,21 +309,51 @@ const ExploreProtein = () => {
                 </Wrap>
 
                 <Divider />
-                <Stack spacing={1}>
-                  <Text color="green.600">
-                    Total Protein: {bowl.totalProtein}
-                  </Text>
-                  <Text color="orange.600">
-                    Total Calories: {bowl.totalCalories}
-                  </Text>
-                  <Text color="blue.600">Total Price: {bowl.totalPrice}</Text>
-                  <Text color="purple.600">
-                    Total Weight: {bowl.totalWeight}
-                  </Text>
-                </Stack>
+                <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+                  {/* Left Section */}
+                  <Stack spacing={1}>
+                    <Text color="green.600">
+                      Total Protein: {bowl.totalProtein}
+                    </Text>
+                    <Text color="orange.600">
+                      Total Calories: {bowl.totalCalories}
+                    </Text>
+                    <Text color="purple.600">
+                      Total Weight: {bowl.totalWeight}
+                    </Text>
+                    <Text color="blue.600">
+                      Total Price: {bowl.totalPrice}
+                    </Text>
+                  </Stack>
+
+                  {/* Right Section */}
+                  <Box>
+                    <Text color="gray.600" fontWeight="bold" mb={2}>
+                      Rich in :
+                    </Text>
+                    <Wrap spacing={2} shouldWrap>
+                      {bowl.richIn.map((item, index) => (
+                        <WrapItem key={index}>
+                          <Tag
+                            borderRadius="full"
+                            variant="solid"
+                            bg="pink.100"
+                            color="pink.700"
+                            p={2}
+                            fontSize="sm"
+                            fontWeight="bold"
+                            boxShadow="sm"
+                          >
+                            {item}
+                          </Tag>
+                        </WrapItem>
+                      ))}
+                    </Wrap>
+                  </Box>
+                </Grid>
 
                 <Button
-                  colorScheme="teal"
+                  colorScheme="green"
                   variant="solid"
                   size="lg"
                   width="full"
