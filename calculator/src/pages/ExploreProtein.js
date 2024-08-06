@@ -23,15 +23,18 @@ import {
 } from "@chakra-ui/react";
 
 
-import img1 from "../images/proteinbasket/salad1.jpg";
-import img2 from "../images/proteinbasket/salad2.jpg";
-import img3 from "../images/proteinbasket/salad3.jpg";
-import img4 from "../images/proteinbasket/salad4.jpg";
-import img5 from "../images/proteinbasket/salad5.jpg";
-import img6 from "../images/proteinbasket/salad6.jpg";
-import img7 from "../images/proteinbasket/salad7.jpg";
-import img8 from "../images/proteinbasket/salad8.jpg";
-import img9 from "../images/proteinbasket/salad9.jpg"; 
+import img1 from "../images/proteinbasket/Garden Fresh Delight.jpeg.jpg";
+import img2 from "../images/proteinbasket/Fresh Harvest Crunch.jpeg.jpg";
+import img3 from "../images/proteinbasket/Rainbow Beet salad.jpeg.jpg";
+import img4 from "../images/proteinbasket/Golden corn fiesta.jpeg.jpg";
+import img5 from "../images/proteinbasket/Sweet and sunny salad.jpeg.jpg";
+import img6 from "../images/proteinbasket/Crunchy veggie delight.jpeg.jpg";
+import img7 from "../images/proteinbasket/Garden fresh mushroom salad.jpeg.jpg";
+import img8 from "../images/proteinbasket/Green and gold salad bliss.jpeg.jpg";
+import img9 from "../images/proteinbasket/Harvest glow salad.jpg"; 
+import img10 from "../images/proteinbasket/Potato delight salad.jpeg.jpg";
+import img11 from "../images/proteinbasket/Berry banana bliss.jpeg.jpg";
+import img12 from "../images/proteinbasket/Rainbow crunch salad.jpeg.jpg";
 
 const proteinData = [
   {
@@ -270,7 +273,7 @@ const proteinData = [
   },
   {
     id: 10,
-    imageUrl: img8,
+    imageUrl: img10,
     name: "Potato Delight Salad",
     items: [
       { name: "Potato", quantity: "1440g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
@@ -296,7 +299,7 @@ const proteinData = [
   },
   {
     id: 11,
-    imageUrl: img8,
+    imageUrl: img11,
     name: "Berry Banana Bliss",
     items: [
       { name: "Banana", quantity: "1200g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
@@ -322,7 +325,7 @@ const proteinData = [
   },
   {
     id: 12,
-    imageUrl: img8,
+    imageUrl: img12,
     name: "Rainbow Crunch Salad",
     items: [
       { name: "Sugar Snap Peas", quantity: "1200g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
