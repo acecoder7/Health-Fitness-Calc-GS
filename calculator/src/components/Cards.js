@@ -56,45 +56,52 @@ const Card = ({ data }) => {
 
       <Box p={4}>
         <Stack spacing={2}>
-          <Text fontWeight="bold" fontSize="xl">
-            {data.name}
-          </Text>
+        {data.name && (
+            <Text fontWeight="bold" fontSize="xl">
+              {data.name}
+            </Text>
+          )}
 
           <Divider />
 
-          <Text color="gray.600" fontWeight="bold" mb={2}>
-            Ingredients:
-          </Text>
-          <Wrap spacing={2} shouldWrap>
-            {data.items.map((item, index) => (
-              <WrapItem key={index}>
-                <Tag colorScheme="blue">{item.name}</Tag>
-              </WrapItem>
-            ))}
-          </Wrap>
-
-          <Divider />
-
-          <Grid templateColumns={gridTemplateColumns} gap={6}>
-            <Stack spacing={1}>
-              <Text>Total Protein: {data.totalProtein}</Text>
-              <Text>Total Calories: {data.totalCalories}</Text>
-              <Text>Total Weight: {data.totalWeight}</Text>
-              <Text>Total Price: {data.totalPrice}</Text>
-            </Stack>
-
-            <Box>
+          {data.items && data.items.length > 0 && (
+            <>
               <Text color="gray.600" fontWeight="bold" mb={2}>
-                Also rich in :
+                Ingredients:
               </Text>
               <Wrap spacing={2} shouldWrap>
-                {data.richIn.map((item, index) => (
+                {data.items.map((item, index) => (
                   <WrapItem key={index}>
-                    <Tag colorScheme="purple">{item}</Tag>
+                    <Tag colorScheme="blue">{item.name}</Tag>
                   </WrapItem>
                 ))}
               </Wrap>
-            </Box>
+              <Divider />
+            </>
+          )}
+
+          <Grid templateColumns={gridTemplateColumns} gap={6}>
+            <Stack spacing={1}>
+            {data.totalProtein && <Text>Total Protein: {data.totalProtein}</Text>}
+              {data.totalCalories && <Text>Total Calories: {data.totalCalories}</Text>}
+              {data.totalWeight && <Text>Total Weight: {data.totalWeight}</Text>}
+              {data.totalPrice && <Text>Total Price: {data.totalPrice}</Text>}
+            </Stack>
+
+            {data.richIn && data.richIn.length > 0 && (
+              <Box>
+                <Text color="gray.600" fontWeight="bold" mb={2}>
+                  Also rich in :
+                </Text>
+                <Wrap spacing={2} shouldWrap>
+                  {data.richIn.map((item, index) => (
+                    <WrapItem key={index}>
+                      <Tag colorScheme="purple">{item}</Tag>
+                    </WrapItem>
+                  ))}
+                </Wrap>
+              </Box>
+            )}
           </Grid>
 
           <Divider />

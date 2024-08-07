@@ -6,26 +6,51 @@ import img5 from "../images/basket/Sweet and sunny salad.jpeg.jpg";
 import img6 from "../images/basket/Crunchy veggie delight.jpeg.jpg";
 import img7 from "../images/basket/Garden fresh mushroom salad.jpeg.jpg";
 import img8 from "../images/basket/Green and gold salad bliss.jpeg.jpg";
-import img9 from "../images/basket/Harvest glow salad.jpg"; 
+import img9 from "../images/basket/Harvest glow salad.jpg";
 import img10 from "../images/basket/Potato delight salad.jpeg.jpg";
 import img11 from "../images/basket/Berry banana bliss.jpeg.jpg";
 import img12 from "../images/basket/Rainbow crunch salad.jpeg.jpg";
 import img13 from "../images/basket/Exotic mango bliss.jpeg.jpg";
 import img14 from "../images/basket/Mango papaya paradise.jpeg.jpg";
 
-
 const proteinData = [
   {
     id: 1,
     imageUrl: img1,
-        name: "Garden Fresh Delight Salad",
-    description: "Enjoy our Garden Fresh Delight Salad, a vibrant mix of veggies rich in vitamins C and A. Perfectly portioned for six, each 500g serving is a nutritious treat.",
+    name: "Garden Fresh Delight Salad",
+    description:
+      "Enjoy our Garden Fresh Delight Salad, a vibrant mix of veggies rich in vitamins C and A. Perfectly portioned for six, each 500g serving is a nutritious treat.",
     items: [
-      { name: "Asparagus", quantity: "600g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
-      { name: "Baby Corn", quantity: "600g", imageUrl: "tomatoes.jpg", link: "http://example.com/tomatoes" },
-      { name: "Cherry tomatoes", quantity: "600g", imageUrl: "cucumber.jpg", link: "http://example.com/cucumber" },
-      { name: "English Cucumber", quantity: "600g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
-      { name: "Beetroot", quantity: "600g", imageUrl: "corn.jpg", link: "http://example.com/corn" },
+      {
+        name: "Asparagus",
+        quantity: "600g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Baby Corn",
+        quantity: "600g",
+        imageUrl: "tomatoes.jpg",
+        link: "http://example.com/tomatoes",
+      },
+      {
+        name: "Cherry tomatoes",
+        quantity: "600g",
+        imageUrl: "cucumber.jpg",
+        link: "http://example.com/cucumber",
+      },
+      {
+        name: "English Cucumber",
+        quantity: "600g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
+      {
+        name: "Beetroot",
+        quantity: "600g",
+        imageUrl: "corn.jpg",
+        link: "http://example.com/corn",
+      },
     ],
     totalProtein: "53 g",
     totalCalories: "1074 kcal",
@@ -40,19 +65,45 @@ const proteinData = [
     totalIron: "18 mg",
     richIn: ["Vitamin C", "Vitamin A"],
     noOfServing: 6,
-    servingSize: "500 g"
+    servingSize: "500 g",
   },
   {
     id: 2,
     imageUrl: img2,
-      name: "Fresh Harvest Crunch",
-      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    name: "Fresh Harvest Crunch",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
-      { name: "Avocado", quantity: "840g", imageUrl: "avocado.jpg", link: "http://example.com/avocado" },
-      { name: "Green Zucchini", quantity: "750g", imageUrl: "zucchini.jpg", link: "http://example.com/zucchini" },
-      { name: "Leeks", quantity: "600g", imageUrl: "tomatoes.jpg", link: "http://example.com/tomatoes" },
-      { name: "Cherry tomatoes", quantity: "450g", imageUrl: "bellpepper.jpg", link: "http://example.com/bellpepper" },
-      { name: "Yellow bell pepper", quantity: "360g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
+      {
+        name: "Avocado",
+        quantity: "840g",
+        imageUrl: "avocado.jpg",
+        link: "http://example.com/avocado",
+      },
+      {
+        name: "Green Zucchini",
+        quantity: "750g",
+        imageUrl: "zucchini.jpg",
+        link: "http://example.com/zucchini",
+      },
+      {
+        name: "Leeks",
+        quantity: "600g",
+        imageUrl: "tomatoes.jpg",
+        link: "http://example.com/tomatoes",
+      },
+      {
+        name: "Cherry tomatoes",
+        quantity: "450g",
+        imageUrl: "bellpepper.jpg",
+        link: "http://example.com/bellpepper",
+      },
+      {
+        name: "Yellow bell pepper",
+        quantity: "360g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
     ],
     totalProtein: "44 g",
     totalCalories: "2082 kcal",
@@ -67,19 +118,45 @@ const proteinData = [
     totalIron: "27 mg",
     richIn: ["Vitamin C", "Potassium"],
     noOfServing: 6,
-    servingSize: "500 g"
+    servingSize: "500 g",
   },
   {
     id: 3,
     imageUrl: img3,
-      name: "Rainbow Beet Salad",
-      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    name: "Rainbow Beet Salad",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
-      { name: "Beetroot", quantity: "660g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
-      { name: "Kale", quantity: "720g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
-      { name: "Orange Carrot", quantity: "600g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
-      { name: "Red cabbage", quantity: "720g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
-      { name: "Green onion", quantity: "300g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
+      {
+        name: "Beetroot",
+        quantity: "660g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Kale",
+        quantity: "720g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Orange Carrot",
+        quantity: "600g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Red cabbage",
+        quantity: "720g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "Green onion",
+        quantity: "300g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
     ],
     totalProtein: "53 g",
     totalCalories: "1101 kcal",
@@ -94,19 +171,45 @@ const proteinData = [
     totalIron: "29 mg",
     richIn: ["Calcium", "Magnesium"],
     noOfServing: 6,
-    servingSize: "500 g"
+    servingSize: "500 g",
   },
   {
     id: 4,
     imageUrl: img4,
-      name: "Golden Corn Fiesta",
-      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    name: "Golden Corn Fiesta",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
-      { name: "Baby Corn", quantity: "600g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
-      { name: "Romaine lettuce", quantity: "900g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
-      { name: "Cherry tomatoes", quantity: "600g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
-      { name: "Red bell pepper", quantity: "300g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
-      { name: "Avocado", quantity: "600g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
+      {
+        name: "Baby Corn",
+        quantity: "600g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Romaine lettuce",
+        quantity: "900g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Cherry tomatoes",
+        quantity: "600g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Red bell pepper",
+        quantity: "300g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "Avocado",
+        quantity: "600g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
     ],
     totalProtein: "53 g",
     totalCalories: "1770 kcal",
@@ -121,19 +224,45 @@ const proteinData = [
     totalIron: "28 mg",
     richIn: ["Vitamin C", "Potassium"],
     noOfServing: 6,
-    servingSize: "500 g"
+    servingSize: "500 g",
   },
   {
     id: 5,
     imageUrl: img5,
-      name: "Sweet and Sunny Salad",
-      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    name: "Sweet and Sunny Salad",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
-      { name: "Sweet potato", quantity: "900g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
-      { name: "Orange Carrot", quantity: "600g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
-      { name: "Celery", quantity: "600g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
-      { name: "Yellow bell pepper", quantity: "450g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
-      { name: "Red bell pepper", quantity: "450g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
+      {
+        name: "Sweet potato",
+        quantity: "900g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Orange Carrot",
+        quantity: "600g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Celery",
+        quantity: "600g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Yellow bell pepper",
+        quantity: "450g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "Red bell pepper",
+        quantity: "450g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
     ],
     totalProtein: "42 g",
     totalCalories: "1608 kcal",
@@ -148,19 +277,45 @@ const proteinData = [
     totalIron: "14 mg",
     richIn: ["Vitamin A", "Potassium"],
     noOfServing: 6,
-    servingSize: "500 g"
+    servingSize: "500 g",
   },
   {
     id: 6,
     imageUrl: img6,
-      name: "Crunchy Veggie Delight",
-      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    name: "Crunchy Veggie Delight",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
-      { name: "Broccoli", quantity: "750g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
-      { name: "Orange Carrot", quantity: "500g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
-      { name: "Red Cabbage", quantity: "500g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
-      { name: "Baby Corn", quantity: "500g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
-      { name: "Lettuce", quantity: "750g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
+      {
+        name: "Broccoli",
+        quantity: "750g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Orange Carrot",
+        quantity: "500g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Red Cabbage",
+        quantity: "500g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Baby Corn",
+        quantity: "500g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "Lettuce",
+        quantity: "750g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
     ],
     totalProtein: "57 g",
     totalCalories: "1093 kcal",
@@ -175,19 +330,45 @@ const proteinData = [
     totalIron: "25 mg",
     richIn: ["Vitamin C", "Calcium"],
     noOfServing: 5,
-    servingSize: "600 g"
+    servingSize: "600 g",
   },
   {
     id: 7,
     imageUrl: img7,
-      name: "Garden Fresh Mushroom Salad",
-      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    name: "Garden Fresh Mushroom Salad",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
-      { name: "Mushroom, button", quantity: "500g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
-      { name: "Bok Choy", quantity: "750g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
-      { name: "Potato", quantity: "750g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
-      { name: "Beetroot", quantity: "500g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
-      { name: "English Cucumber", quantity: "500g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
+      {
+        name: "Mushroom, button",
+        quantity: "500g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Bok Choy",
+        quantity: "750g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Potato",
+        quantity: "750g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Beetroot",
+        quantity: "500g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "English Cucumber",
+        quantity: "500g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
     ],
     totalProtein: "57 g",
     totalCalories: "1125 kcal",
@@ -202,19 +383,45 @@ const proteinData = [
     totalIron: "20 mg",
     richIn: ["Calcium", "Potassium"],
     noOfServing: 5,
-    servingSize: "600 g"
+    servingSize: "600 g",
   },
   {
     id: 8,
     imageUrl: img8,
-      name: "Green and Gold Salad Bliss",
-      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    name: "Green and Gold Salad Bliss",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
-      { name: "English Cucumber", quantity: "900g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
-      { name: "Baby corn", quantity: "600g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
-      { name: "Yellow bell pepper", quantity: "450g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
-      { name: "Avocado", quantity: "600g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
-      { name: "Beetroot", quantity: "450g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
+      {
+        name: "English Cucumber",
+        quantity: "900g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Baby corn",
+        quantity: "600g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Yellow bell pepper",
+        quantity: "450g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Avocado",
+        quantity: "600g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "Beetroot",
+        quantity: "450g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
     ],
     totalProtein: "47 g",
     totalCalories: "1913 kcal",
@@ -229,19 +436,45 @@ const proteinData = [
     totalIron: "21 mg",
     richIn: ["Vitamin C", "Potassium"],
     noOfServing: 6,
-    servingSize: "500 g"
+    servingSize: "500 g",
   },
   {
     id: 9,
     imageUrl: img9,
-      name: "Harvest Glow Salad",
-      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    name: "Harvest Glow Salad",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
-      { name: "Lettuce", quantity: "900g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
-      { name: "Orange Carrot", quantity: "600g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
-      { name: "Yellow Zucchini", quantity: "600g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
-      { name: "Broccoli", quantity: "600g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
-      { name: "Beetroot", quantity: "300g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
+      {
+        name: "Lettuce",
+        quantity: "900g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Orange Carrot",
+        quantity: "600g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Yellow Zucchini",
+        quantity: "600g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Broccoli",
+        quantity: "600g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "Beetroot",
+        quantity: "300g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
     ],
     totalProtein: "47 g",
     totalCalories: "924 kcal",
@@ -256,19 +489,45 @@ const proteinData = [
     totalIron: "19 mg",
     richIn: ["Potassium", "Vitamin A"],
     noOfServing: 6,
-    servingSize: "500 g"
+    servingSize: "500 g",
   },
   {
     id: 10,
     imageUrl: img10,
-      name: "Potato Delight Salad",
-      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    name: "Potato Delight Salad",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
-      { name: "Potato", quantity: "1440g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
-      { name: "Cherry tomatoes", quantity: "480g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
-      { name: "Olives, green", quantity: "480g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
-      { name: "Red cabbage", quantity: "800g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
-      { name: "Bok Choy", quantity: "800g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
+      {
+        name: "Potato",
+        quantity: "1440g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Cherry tomatoes",
+        quantity: "480g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Olives, green",
+        quantity: "480g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Red cabbage",
+        quantity: "800g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "Bok Choy",
+        quantity: "800g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
     ],
     totalProtein: "66 g",
     totalCalories: "2282 kcal",
@@ -283,19 +542,45 @@ const proteinData = [
     totalIron: "32 mg",
     richIn: ["Calcium", "Potassium"],
     noOfServing: 8,
-    servingSize: "500 g"
+    servingSize: "500 g",
   },
   {
     id: 11,
     imageUrl: img11,
-      name: "Berry Banana Bliss",
-      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    name: "Berry Banana Bliss",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
-      { name: "Banana", quantity: "1200g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
-      { name: "Pomegranate", quantity: "800g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
-      { name: "Strawberries", quantity: "800g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
-      { name: "Blueberries", quantity: "600g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
-      { name: "Blackberries", quantity: "600g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
+      {
+        name: "Banana",
+        quantity: "1200g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Pomegranate",
+        quantity: "800g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Strawberries",
+        quantity: "800g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Blueberries",
+        quantity: "600g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "Blackberries",
+        quantity: "600g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
     ],
     totalProtein: "55 g",
     totalCalories: "2588 kcal",
@@ -310,19 +595,45 @@ const proteinData = [
     totalIron: "14 mg",
     richIn: ["Vitamin C", "Magnesium"],
     noOfServing: 8,
-    servingSize: "500 g"
+    servingSize: "500 g",
   },
   {
     id: 12,
     imageUrl: img12,
-      name: "Rainbow Crunch Salad",
-      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    name: "Rainbow Crunch Salad",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
-      { name: "Sugar Snap Peas", quantity: "1200g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
-      { name: "English Cucumber", quantity: "720g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
-      { name: "Red cabbage", quantity: "180g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
-      { name: "Red Bell pepper", quantity: "450g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
-      { name: "Yellow Bell pepper", quantity: "4500g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
+      {
+        name: "Sugar Snap Peas",
+        quantity: "1200g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "English Cucumber",
+        quantity: "720g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Red cabbage",
+        quantity: "180g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Red Bell pepper",
+        quantity: "450g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "Yellow Bell pepper",
+        quantity: "4500g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
     ],
     totalProtein: "49 g",
     totalCalories: "1029 kcal",
@@ -337,9 +648,8 @@ const proteinData = [
     totalIron: "38 mg",
     richIn: ["Vitamin C", "Potassium"],
     noOfServing: 6,
-    servingSize: "500 g"
+    servingSize: "500 g",
   },
 ];
-
 
 export default proteinData;
