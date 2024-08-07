@@ -96,7 +96,7 @@ const proteinData = [
     items: [
       { name: "Beetroot", quantity: "660g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
       { name: "Kale", quantity: "720g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
-      { name: "Carrot", quantity: "600g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
+      { name: "Orange Carrot", quantity: "600g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
       { name: "Red cabbage", quantity: "720g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
       { name: "Green onion", quantity: "300g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
     ],
@@ -224,7 +224,7 @@ const proteinData = [
     imageUrl: img8,
     name: "Green and Gold Salad Bliss",
     items: [
-      { name: "Cucumber", quantity: "900g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
+      { name: "English Cucumber", quantity: "900g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
       { name: "Baby corn", quantity: "600g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
       { name: "Yellow bell pepper", quantity: "450g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
       { name: "Avocado", quantity: "600g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
@@ -254,7 +254,7 @@ const proteinData = [
       { name: "Orange Carrot", quantity: "600g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
       { name: "Yellow Zucchini", quantity: "600g", imageUrl: "carrot.jpg", link: "http://example.com/carrot" },
       { name: "Broccoli", quantity: "600g", imageUrl: "cabbage.jpg", link: "http://example.com/cabbage" },
-      { name: "Broccoli", quantity: "300g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
+      { name: "Beetroot", quantity: "300g", imageUrl: "onion.jpg", link: "http://example.com/onion" },
     ],
     totalProtein: "47 g",
     totalCalories: "924 kcal",
