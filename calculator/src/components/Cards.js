@@ -143,7 +143,7 @@ const Card = ({ data }) => {
                       size="lg"
                       width="full"
                     >
-                      Price: ₹{selectedBowl?.totalPrice}
+                      Price: {selectedBowl?.totalPrice}
                     </Button>
                   </Stack>
                 </Box>
