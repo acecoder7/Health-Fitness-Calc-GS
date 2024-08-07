@@ -17,7 +17,7 @@ const proteinData = [
     id: 1,
     imageUrl: img1,
         name: "Garden Fresh Delight Salad",
-    description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    description: " Indulge in our Garden Fresh Delight Salad, a vibrant medley of asparagus, baby corn, cherry tomatoes, cucumber, and beetroot, packed with vitamins C and A to boost your health. Perfectly portioned for six, each 500g serving offers a refreshing and nutritious meal.",
     items: [
       { name: "Asparagus", quantity: "600g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
       { name: "Baby Corn", quantity: "600g", imageUrl: "tomatoes.jpg", link: "http://example.com/tomatoes" },

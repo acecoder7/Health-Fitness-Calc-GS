@@ -10,7 +10,7 @@ const Navbar = () => (
         <span style={{ fontWeight: 'bold' }}>Health & Fitness Calculators</span>
       </Box>
       <Flex alignItems="center">
-        <Link px={2} href="/">Home</Link>
+        <Link px={2} href="https://www.greensizz.com/">Home</Link>
       </Flex>
     </Flex>
   </Box>
