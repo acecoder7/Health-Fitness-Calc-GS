@@ -19,6 +19,13 @@ import {
   ModalFooter,
   Grid,
   GridItem,
+  Table,
+  Thead,
+  Tbody,
+  Tr,
+  Th,
+  Td,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 
 const Card = ({ data }) => {
@@ -34,6 +41,8 @@ const Card = ({ data }) => {
     setSelectedBowl(bowl);
     setIsOpen(true);
   };
+
+  const gridTemplateColumns = useBreakpointValue({ base: "1fr", md: "repeat(2, 1fr)" });
 
   return (
     <Box
@@ -66,7 +75,7 @@ const Card = ({ data }) => {
 
           <Divider />
 
-          <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+          <Grid templateColumns={gridTemplateColumns} gap={6}>
             <Stack spacing={1}>
               <Text>Total Protein: {data.totalProtein}</Text>
               <Text>Total Calories: {data.totalCalories}</Text>
@@ -102,23 +111,89 @@ const Card = ({ data }) => {
         </Stack>
       </Box>
 
-      <Modal isOpen={isOpen} onClose={handleCloseModal} size="3xl">
-        <ModalOverlay />
-        <ModalContent bg="orange.100">
-          <ModalHeader color="orange.500" fontWeight="bold">{selectedBowl?.name}</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            <Text>Total Fiber: {data.totalFiber}</Text>
-            <Text>Total Vitamin C: {data.totalVitaminC}</Text>
-            <Text>Total Vitamin A: {data.totalVitaminA}</Text>
-            <Text>Total Calcium: {data.totalCalcium}</Text>
-            <Text>Total Potassium: {data.totalPotassium}</Text>
-            <Text>Total Magnesium: {data.totalMagnesium}</Text>
-            <Text>Total Iron: {data.totalIron}</Text>
-            <Text>No. of Servings: {data.noOfServing}</Text>
-            <Text>Serving Size: {data.servingSize}</Text>
+      {selectedBowl && (
+        <Modal isOpen={isOpen} onClose={handleCloseModal} size="3xl">
+          <ModalOverlay />
+          <ModalContent bg="orange.100">
+            <ModalHeader color="orange.500" fontWeight="bold">{selectedBowl?.name}</ModalHeader>
+            <ModalCloseButton />
+            <ModalBody>
+              <Grid templateColumns={gridTemplateColumns} gap={4}>
+                <Box>
+                  <Image
+                    src={selectedBowl?.imageUrl}
+                    alt={selectedBowl?.name}
+                    borderRadius="md"
+                    objectFit="cover"
+                    width="100%"
+                  />
+                </Box>
+                <Box>
+                  <Stack spacing={2}>
+                    <Text fontSize="sm">
+                      {selectedBowl?.description}
+                    </Text>
+                    <Divider />
+                    <Text>No. of Servings: {selectedBowl?.noOfServing}</Text>
+                    <Text>Serving Size: {selectedBowl?.servingSize}</Text>
+                    <Text>Total Weight: {selectedBowl?.totalWeight}</Text>
+                    <Button
+                      variant="outline"
+                      colorScheme="green"
+                      size="lg"
+                      width="full"
+                    >
+                      Price: ₹{selectedBowl?.totalPrice}
+                    </Button>
+                  </Stack>
+                </Box>
+              </Grid>
+              <Divider mt={4} mb={4} />
+              <Text fontWeight="bold" mb={2}>
+                Nutrient Values:
+              </Text>
+              <Table variant="simple" size="sm">
+                <Thead>
+                  <Tr>
+                    <Th>Nutrient</Th>
+                    <Th>Value</Th>
+                  </Tr>
+                </Thead>
+                <Tbody>
+                  <Tr>
+                    <Td>Total Fiber</Td>
+                    <Td>{selectedBowl?.totalFiber}</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>Total Vitamin C</Td>
+                    <Td>{selectedBowl?.totalVitaminC}</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>Total Vitamin A</Td>
+                    <Td>{selectedBowl?.totalVitaminA}</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>Total Calcium</Td>
+                    <Td>{selectedBowl?.totalCalcium}</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>Total Potassium</Td>
+                    <Td>{selectedBowl?.totalPotassium}</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>Total Magnesium</Td>
+                    <Td>{selectedBowl?.totalMagnesium}</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>Total Iron</Td>
+                    <Td>{selectedBowl?.totalIron}</Td>
+                  </Tr>
+                </Tbody>
+              </Table>
 
-            {selectedBowl && (
+              <Divider />
+
+              {/* Ingredients List */}
               <Stack spacing={3}>
                 <Text fontSize="lg" fontWeight="bold">
                   Ingredients:
@@ -164,16 +239,16 @@ const Card = ({ data }) => {
                   ))}
                 </SimpleGrid>
               </Stack>
-            )}
-          </ModalBody>
+            </ModalBody>
 
-          <ModalFooter>
-            <Button colorScheme="orange" onClick={handleCloseModal}>
-              Close
-            </Button>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
+            <ModalFooter>
+              <Button colorScheme="orange" onClick={handleCloseModal}>
+                Close
+              </Button>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
+      )}
     </Box>
   );
 };

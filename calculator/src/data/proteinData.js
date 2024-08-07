@@ -16,7 +16,8 @@ const proteinData = [
   {
     id: 1,
     imageUrl: img1,
-    name: "Garden Fresh Delight Salad",
+        name: "Garden Fresh Delight Salad",
+    description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       { name: "Asparagus", quantity: "600g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
       { name: "Baby Corn", quantity: "600g", imageUrl: "tomatoes.jpg", link: "http://example.com/tomatoes" },
@@ -42,7 +43,8 @@ const proteinData = [
   {
     id: 2,
     imageUrl: img2,
-    name: "Fresh Harvest Crunch",
+      name: "Fresh Harvest Crunch",
+      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       { name: "Avocado", quantity: "840g", imageUrl: "avocado.jpg", link: "http://example.com/avocado" },
       { name: "Green Zucchini", quantity: "750g", imageUrl: "zucchini.jpg", link: "http://example.com/zucchini" },
@@ -68,7 +70,8 @@ const proteinData = [
   {
     id: 3,
     imageUrl: img3,
-    name: "Rainbow Beet Salad",
+      name: "Rainbow Beet Salad",
+      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       { name: "Beetroot", quantity: "660g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
       { name: "Kale", quantity: "720g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
@@ -94,7 +97,8 @@ const proteinData = [
   {
     id: 4,
     imageUrl: img4,
-    name: "Golden Corn Fiesta",
+      name: "Golden Corn Fiesta",
+      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       { name: "Baby Corn", quantity: "600g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
       { name: "Romaine lettuce", quantity: "900g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
@@ -120,7 +124,8 @@ const proteinData = [
   {
     id: 5,
     imageUrl: img5,
-    name: "Sweet and Sunny Salad",
+      name: "Sweet and Sunny Salad",
+      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       { name: "Sweet potato", quantity: "900g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
       { name: "Orange Carrot", quantity: "600g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
@@ -146,7 +151,8 @@ const proteinData = [
   {
     id: 6,
     imageUrl: img6,
-    name: "Crunchy Veggie Delight",
+      name: "Crunchy Veggie Delight",
+      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       { name: "Broccoli", quantity: "750g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
       { name: "Orange Carrot", quantity: "500g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
@@ -172,7 +178,8 @@ const proteinData = [
   {
     id: 7,
     imageUrl: img7,
-    name: "Garden Fresh Mushroom Salad",
+      name: "Garden Fresh Mushroom Salad",
+      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       { name: "Mushroom, button", quantity: "500g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
       { name: "Bok Choy", quantity: "750g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
@@ -198,7 +205,8 @@ const proteinData = [
   {
     id: 8,
     imageUrl: img8,
-    name: "Green and Gold Salad Bliss",
+      name: "Green and Gold Salad Bliss",
+      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       { name: "English Cucumber", quantity: "900g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
       { name: "Baby corn", quantity: "600g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
@@ -224,7 +232,8 @@ const proteinData = [
   {
     id: 9,
     imageUrl: img9,
-    name: "Harvest Glow Salad",
+      name: "Harvest Glow Salad",
+      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       { name: "Lettuce", quantity: "900g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
       { name: "Orange Carrot", quantity: "600g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
@@ -250,7 +259,8 @@ const proteinData = [
   {
     id: 10,
     imageUrl: img10,
-    name: "Potato Delight Salad",
+      name: "Potato Delight Salad",
+      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       { name: "Potato", quantity: "1440g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
       { name: "Cherry tomatoes", quantity: "480g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
@@ -276,7 +286,8 @@ const proteinData = [
   {
     id: 11,
     imageUrl: img11,
-    name: "Berry Banana Bliss",
+      name: "Berry Banana Bliss",
+      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       { name: "Banana", quantity: "1200g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
       { name: "Pomegranate", quantity: "800g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
@@ -302,7 +313,8 @@ const proteinData = [
   {
     id: 12,
     imageUrl: img12,
-    name: "Rainbow Crunch Salad",
+      name: "Rainbow Crunch Salad",
+      description: " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       { name: "Sugar Snap Peas", quantity: "1200g", imageUrl: "beetroot.jpg", link: "http://example.com/beetroot" },
       { name: "English Cucumber", quantity: "720g", imageUrl: "spinach.jpg", link: "http://example.com/spinach" },
