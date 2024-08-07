@@ -19,7 +19,7 @@ const vitaminAData = [
     imageUrl: img1,
     name: "Garden Fresh Delight Salad",
     description:
-      "Enjoy our Garden Fresh Delight Salad, a vibrant mix of veggies rich in vitamins C and A. Perfectly portioned for six, each 500g serving is a nutritious treat.",
+      "Enjoy our Garden Fresh Delight Salad, a vibrant mix of veggies rich in vitamins C and A. Perfectly portioned for six, each 500g serving is a nutritious treat.",
     items: [
       {
         name: "Asparagus",
@@ -71,7 +71,7 @@ const vitaminAData = [
     imageUrl: img13,
     name: "Exotic Mango Bliss",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
       {
         name: "Mango, Kesar",
@@ -123,7 +123,7 @@ const vitaminAData = [
     imageUrl: img5,
     name: "Sweet and Sunny Salad",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Enjoy our Sweet and Sunny Salad, a vibrant mix rich in vitamin A and potassium. Perfectly portioned for six, each 500g serving offers a colorful and nutritious delight.",
     items: [
       {
         name: "Sweet potato",
@@ -175,7 +175,7 @@ const vitaminAData = [
     imageUrl: img9,
     name: "Harvest Glow Salad",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Enjoy our Harvest Glow Salad, a nutritious blend rich in vitamin A and potassium. Perfectly portioned for six, each 500g serving offers a vibrant and healthy meal.",
     items: [
       {
         name: "Lettuce",
@@ -227,7 +227,7 @@ const vitaminAData = [
     imageUrl: img14,
     name: "Mango Papaya Paradise",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Enjoy our Mango Papaya Paradise, a tropical blend rich in vitamin A and potassium. Perfectly portioned for five, each 600g serving is a refreshing and vibrant treat.",
     items: [
       {
         name: "Alphonso Mango",

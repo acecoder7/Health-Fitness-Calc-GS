@@ -12,16 +12,14 @@ import img11 from "../images/basket/Berry banana bliss.jpeg.jpg";
 import img12 from "../images/basket/Rainbow crunch salad.jpeg.jpg";
 import img13 from "../images/basket/Exotic mango bliss.jpeg.jpg";
 import img14 from "../images/basket/Mango papaya paradise.jpeg.jpg";
-import img15 from "../images/basket/Tropical fruity harmony.jpeg.jpg";
-import img16 from "../images/basket/Tropical berry fussion.jpeg.jpg";
 
-const vitaminCData = [
+const proteinData = [
   {
     id: 1,
     imageUrl: img1,
     name: "Garden Fresh Delight Salad",
     description:
-      "Enjoy our Garden Fresh Delight Salad, a vibrant mix of veggies rich in vitamins C and A. Perfectly portioned for six, each 500g serving is a nutritious treat.",
+      "Enjoy our Garden Fresh Delight Salad, a vibrant mix of veggies rich in vitamins C and A. Perfectly portioned for six, each 500g serving is a nutritious treat.",
     items: [
       {
         name: "Asparagus",
@@ -65,6 +63,7 @@ const vitaminCData = [
     totalPotassium: "3654 mg",
     totalMagnesium: "303 mg",
     totalIron: "18 mg",
+    richIn: ["Vitamin C", "Vitamin A"],
     noOfServing: 6,
     servingSize: "500 g",
   },
@@ -73,7 +72,7 @@ const vitaminCData = [
     imageUrl: img2,
     name: "Fresh Harvest Crunch",
     description:
-      "Enjoy our Fresh Harvest Crunch, a vibrant salad rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving offers a nutritious and flavorful bite.",
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       {
         name: "Avocado",
@@ -117,15 +116,69 @@ const vitaminCData = [
     totalPotassium: "7528 mg",
     totalMagnesium: "570 mg",
     totalIron: "27 mg",
+    richIn: ["Vitamin C", "Potassium"],
     noOfServing: 6,
     servingSize: "500 g",
   },
   {
     id: 3,
+    imageUrl: img3,
+    name: "Rainbow Beet Salad",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    items: [
+      {
+        name: "Beetroot",
+        quantity: "660g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Kale",
+        quantity: "720g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Orange Carrot",
+        quantity: "600g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Red cabbage",
+        quantity: "720g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "Green onion",
+        quantity: "300g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
+    ],
+    totalProtein: "53 g",
+    totalCalories: "1101 kcal",
+    totalPrice: "Rs 12.50",
+    totalWeight: "3000 g",
+    totalFiber: "71 g",
+    totalVitaminC: "564 mg",
+    totalVitaminA: "7312 μg",
+    totalCalcium: " 2672 mg",
+    totalPotassium: "10188 mg",
+    totalMagnesium: "634 mg",
+    totalIron: "29 mg",
+    richIn: ["Calcium", "Magnesium"],
+    noOfServing: 6,
+    servingSize: "500 g",
+  },
+  {
+    id: 4,
     imageUrl: img4,
     name: "Golden Corn Fiesta",
     description:
-      "Enjoy our Golden Corn Fiesta, a delightful salad rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving offers a fresh and nutritious experience.",
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       {
         name: "Baby Corn",
@@ -169,67 +222,69 @@ const vitaminCData = [
     totalPotassium: "8019 mg",
     totalMagnesium: "555 mg",
     totalIron: "28 mg",
-    noOfServing: 6,
-    servingSize: "500 g",
-  },
-  {
-    id: 4,
-    imageUrl: img15,
-    name: "Tropical Fruit Harmony",
-    description:
-      "avor the zest of Vitamin C and potassium in every bite! This refreshing mix of pomegranate, king kiwi, orange, apple, and blueberries is a vibrant, nutrient-packed indulgence.",
-    items: [
-      {
-        name: "Pomegranate",
-        quantity: "720g",
-        imageUrl: "beetroot.jpg",
-        link: "http://example.com/beetroot",
-      },
-      {
-        name: "King Kiwi",
-        quantity: "720g",
-        imageUrl: "spinach.jpg",
-        link: "http://example.com/spinach",
-      },
-      {
-        name: "Orange",
-        quantity: "600g",
-        imageUrl: "carrot.jpg",
-        link: "http://example.com/carrot",
-      },
-      {
-        name: "Apple",
-        quantity: "480g",
-        imageUrl: "cabbage.jpg",
-        link: "http://example.com/cabbage",
-      },
-      {
-        name: "Blueberries",
-        quantity: "480g",
-        imageUrl: "onion.jpg",
-        link: "http://example.com/onion",
-      },
-    ],
-    totalProtein: "31 g",
-    totalCalories: "1842 kcal",
-    totalPrice: "Rs 12.50",
-    totalWeight: "3000 g",
-    totalFiber: "88 g",
-    totalVitaminC: "1129 mg",
-    totalVitaminA: "162 μg",
-    totalCalcium: " 744 mg",
-    totalPotassium: "7081 mg",
-    totalMagnesium: "350 mg",
-    totalIron: "12 mg",
+    richIn: ["Vitamin C", "Potassium"],
     noOfServing: 6,
     servingSize: "500 g",
   },
   {
     id: 5,
+    imageUrl: img5,
+    name: "Sweet and Sunny Salad",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    items: [
+      {
+        name: "Sweet potato",
+        quantity: "900g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Orange Carrot",
+        quantity: "600g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Celery",
+        quantity: "600g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Yellow bell pepper",
+        quantity: "450g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "Red bell pepper",
+        quantity: "450g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
+    ],
+    totalProtein: "42 g",
+    totalCalories: "1608 kcal",
+    totalPrice: "Rs 12.50",
+    totalWeight: "3000 g",
+    totalFiber: "76 g",
+    totalVitaminC: "1434 mg",
+    totalVitaminA: "12550 μg",
+    totalCalcium: " 839 mg",
+    totalPotassium: "10659 mg",
+    totalMagnesium: "173 mg",
+    totalIron: "14 mg",
+    richIn: ["Vitamin A", "Potassium"],
+    noOfServing: 6,
+    servingSize: "500 g",
+  },
+  {
+    id: 6,
     imageUrl: img6,
     name: "Crunchy Veggie Delight",
     description:
-      "Savor our Crunchy Veggie Delight, a nutritious salad rich in vitamin C and calcium. Perfectly portioned for five, each 600g serving is a fresh and wholesome treat.",
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       {
         name: "Broccoli",
@@ -273,15 +328,69 @@ const vitaminCData = [
     totalPotassium: "7843 mg",
     totalMagnesium: "522 mg",
     totalIron: "25 mg",
+    richIn: ["Vitamin C", "Calcium"],
     noOfServing: 5,
     servingSize: "600 g",
   },
   {
-    id: 6,
+    id: 7,
+    imageUrl: img7,
+    name: "Garden Fresh Mushroom Salad",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    items: [
+      {
+        name: "Mushroom, button",
+        quantity: "500g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Bok Choy",
+        quantity: "750g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Potato",
+        quantity: "750g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Beetroot",
+        quantity: "500g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "English Cucumber",
+        quantity: "500g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
+    ],
+    totalProtein: "57 g",
+    totalCalories: "1125 kcal",
+    totalPrice: "Rs 12.50",
+    totalWeight: "3000 g",
+    totalFiber: "64 g",
+    totalVitaminC: "534 mg",
+    totalVitaminA: "1698 μg",
+    totalCalcium: " 1053 mg",
+    totalPotassium: "9028 mg",
+    totalMagnesium: "540 mg",
+    totalIron: "20 mg",
+    richIn: ["Calcium", "Potassium"],
+    noOfServing: 5,
+    servingSize: "600 g",
+  },
+  {
+    id: 8,
     imageUrl: img8,
     name: "Green and Gold Salad Bliss",
     description:
-      "Enjoy our Garden Fresh Mushroom Salad, a delicious mix rich in calcium and potassium. Perfectly portioned for five, each 600g serving offers a healthy and refreshing meal.",
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       {
         name: "English Cucumber",
@@ -325,15 +434,122 @@ const vitaminCData = [
     totalPotassium: "8630 mg",
     totalMagnesium: "628 mg",
     totalIron: "21 mg",
+    richIn: ["Vitamin C", "Potassium"],
     noOfServing: 6,
     servingSize: "500 g",
   },
   {
-    id: 7,
+    id: 9,
+    imageUrl: img9,
+    name: "Harvest Glow Salad",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    items: [
+      {
+        name: "Lettuce",
+        quantity: "900g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Orange Carrot",
+        quantity: "600g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Yellow Zucchini",
+        quantity: "600g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Broccoli",
+        quantity: "600g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "Beetroot",
+        quantity: "300g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
+    ],
+    totalProtein: "47 g",
+    totalCalories: "924 kcal",
+    totalPrice: "Rs 12.50",
+    totalWeight: "3000 g",
+    totalFiber: "64 g",
+    totalVitaminC: "731 mg",
+    totalVitaminA: "7514 μg",
+    totalCalcium: " 918 mg",
+    totalPotassium: "8262 mg",
+    totalMagnesium: "479 mg",
+    totalIron: "19 mg",
+    richIn: ["Potassium", "Vitamin A"],
+    noOfServing: 6,
+    servingSize: "500 g",
+  },
+  {
+    id: 10,
+    imageUrl: img10,
+    name: "Potato Delight Salad",
+    description:
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    items: [
+      {
+        name: "Potato",
+        quantity: "1440g",
+        imageUrl: "beetroot.jpg",
+        link: "http://example.com/beetroot",
+      },
+      {
+        name: "Cherry tomatoes",
+        quantity: "480g",
+        imageUrl: "spinach.jpg",
+        link: "http://example.com/spinach",
+      },
+      {
+        name: "Olives, green",
+        quantity: "480g",
+        imageUrl: "carrot.jpg",
+        link: "http://example.com/carrot",
+      },
+      {
+        name: "Red cabbage",
+        quantity: "800g",
+        imageUrl: "cabbage.jpg",
+        link: "http://example.com/cabbage",
+      },
+      {
+        name: "Bok Choy",
+        quantity: "800g",
+        imageUrl: "onion.jpg",
+        link: "http://example.com/onion",
+      },
+    ],
+    totalProtein: "66 g",
+    totalCalories: "2282 kcal",
+    totalPrice: "Rs 12.50",
+    totalWeight: "4000 g",
+    totalFiber: "72 g",
+    totalVitaminC: "1144 mg",
+    totalVitaminA: "3391 μg",
+    totalCalcium: "1781 mg",
+    totalPotassium: "10282 mg",
+    totalMagnesium: "664 mg",
+    totalIron: "32 mg",
+    richIn: ["Calcium", "Potassium"],
+    noOfServing: 8,
+    servingSize: "500 g",
+  },
+  {
+    id: 11,
     imageUrl: img11,
     name: "Berry Banana Bliss",
     description:
-      "Delight in our Berry Banana Bliss, a fruity blend rich in vitamin C and magnesium. Perfectly portioned for eight, each 500g serving is a refreshing and nutritious treat.",
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       {
         name: "Banana",
@@ -377,119 +593,16 @@ const vitaminCData = [
     totalPotassium: "10300 mg",
     totalMagnesium: "716 mg",
     totalIron: "14 mg",
+    richIn: ["Vitamin C", "Magnesium"],
     noOfServing: 8,
     servingSize: "500 g",
   },
   {
-    id: 8,
-    imageUrl: img16,
-    name: "Tropical Berry Fusion",
-    description:
-      "Refresh with our Tropical Berry Fusion, a delightful mix rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving is a tropical treat bursting with flavor.",
-    items: [
-      {
-        name: "Strawberries",
-        quantity: "600g",
-        imageUrl: "beetroot.jpg",
-        link: "http://example.com/beetroot",
-      },
-      {
-        name: "Blueberries",
-        quantity: "450g",
-        imageUrl: "spinach.jpg",
-        link: "http://example.com/spinach",
-      },
-      {
-        name: "Blackberries",
-        quantity: "450g",
-        imageUrl: "carrot.jpg",
-        link: "http://example.com/carrot",
-      },
-      {
-        name: "King Kiwi",
-        quantity: "600g",
-        imageUrl: "cabbage.jpg",
-        link: "http://example.com/cabbage",
-      },
-      {
-        name: "Queen Pineapple",
-        quantity: "900g",
-        imageUrl: "onion.jpg",
-        link: "http://example.com/onion",
-      },
-    ],
-    totalProtein: "33 g",
-    totalCalories: "1458 kcal",
-    totalPrice: "Rs 12.50",
-    totalWeight: "3000 g",
-    totalFiber: "101 g",
-    totalVitaminC: "1447 mg",
-    totalVitaminA: "148 μg",
-    totalCalcium: "594 mg",
-    totalPotassium: "5004 mg",
-    totalMagnesium: "381 mg",
-    totalIron: "10 mg",
-    noOfServing: 6,
-    servingSize: "500 g",
-  },
-  {
     id: 12,
-    imageUrl: img16,
-    name: "Exotic Fruit Fiesta",
-    description:
-      "Savor our Exotic Fruit Fiesta, a vibrant mix rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving is a refreshing burst of tropical flavor.",
-    items: [
-      {
-        name: "Dragon fruit",
-        quantity: "900g",
-        imageUrl: "beetroot.jpg",
-        link: "http://example.com/beetroot",
-      },
-      {
-        name: "Musk melon",
-        quantity: "900g",
-        imageUrl: "spinach.jpg",
-        link: "http://example.com/spinach",
-      },
-      {
-        name: "Kiwi",
-        quantity: "600g",
-        imageUrl: "carrot.jpg",
-        link: "http://example.com/carrot",
-      },
-      {
-        name: "Blueberries",
-        quantity: "300g",
-        imageUrl: "cabbage.jpg",
-        link: "http://example.com/cabbage",
-      },
-      {
-        name: "Pomegranate",
-        quantity: "300g",
-        imageUrl: "onion.jpg",
-        link: "http://example.com/onion",
-      },
-    ],
-    totalProtein: "30g",
-    totalCalories: "1605 kcal",
-    totalPrice: "Rs 12.50",
-    totalWeight: "3000 g",
-    totalFiber: "86 g",
-    totalVitaminC: "965 mg",
-    totalVitaminA: "1591 μg",
-    totalCalcium: "393 mg",
-    totalPotassium: "6051 mg",
-    totalMagnesium: "294 mg",
-    totalIron: "6 mg",
-    noOfServing: 6,
-    servingSize: "500 g",
-  },
-  {
-    id: 9,
     imageUrl: img12,
     name: "Rainbow Crunch Salad",
     description:
-      "Enjoy our Rainbow Crunch Salad, a vibrant mix rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving offers a fresh and nutritious crunch.",
+      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     items: [
       {
         name: "Sugar Snap Peas",
@@ -533,9 +646,10 @@ const vitaminCData = [
     totalPotassium: "6761 mg",
     totalMagnesium: "285 mg",
     totalIron: "38 mg",
+    richIn: ["Vitamin C", "Potassium"],
     noOfServing: 6,
     servingSize: "500 g",
   },
 ];
 
-export default vitaminCData;
+export default proteinData;

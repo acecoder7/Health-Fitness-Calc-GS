@@ -19,7 +19,7 @@ const proteinData = [
     imageUrl: img1,
     name: "Garden Fresh Delight Salad",
     description:
-      "Enjoy our Garden Fresh Delight Salad, a vibrant mix of veggies rich in vitamins C and A. Perfectly portioned for six, each 500g serving is a nutritious treat.",
+      "Enjoy our Garden Fresh Delight Salad, a vibrant mix of veggies rich in vitamins C and A. Perfectly portioned for six, each 500g serving is a nutritious treat.",
     items: [
       {
         name: "Asparagus",
@@ -72,7 +72,7 @@ const proteinData = [
     imageUrl: img2,
     name: "Fresh Harvest Crunch",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      " Enjoy our Fresh Harvest Crunch, a vibrant salad rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving offers a nutritious and flavorful bite.",
     items: [
       {
         name: "Avocado",
@@ -125,7 +125,7 @@ const proteinData = [
     imageUrl: img3,
     name: "Rainbow Beet Salad",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      " Savor our Rainbow Beet Salad, a colorful blend rich in calcium and magnesium. Perfectly portioned for six, each 500g serving is a nutritious and vibrant choice.",
     items: [
       {
         name: "Beetroot",
@@ -178,7 +178,7 @@ const proteinData = [
     imageUrl: img4,
     name: "Golden Corn Fiesta",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      " Enjoy our Golden Corn Fiesta, a delightful salad rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving offers a fresh and nutritious experience.",
     items: [
       {
         name: "Baby Corn",
@@ -231,7 +231,7 @@ const proteinData = [
     imageUrl: img5,
     name: "Sweet and Sunny Salad",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Enjoy our Sweet and Sunny Salad, a vibrant mix rich in vitamin A and potassium. Perfectly portioned for six, each 500g serving offers a colorful and nutritious delight.",
     items: [
       {
         name: "Sweet potato",
@@ -284,7 +284,7 @@ const proteinData = [
     imageUrl: img6,
     name: "Crunchy Veggie Delight",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Savor our Crunchy Veggie Delight, a nutritious salad rich in vitamin C and calcium. Perfectly portioned for five, each 600g serving is a fresh and wholesome treat.",
     items: [
       {
         name: "Broccoli",
@@ -337,7 +337,7 @@ const proteinData = [
     imageUrl: img7,
     name: "Garden Fresh Mushroom Salad",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Enjoy our Garden Fresh Mushroom Salad, a delicious mix rich in calcium and potassium. Perfectly portioned for five, each 600g serving offers a healthy and refreshing meal.",
     items: [
       {
         name: "Mushroom, button",
@@ -390,7 +390,7 @@ const proteinData = [
     imageUrl: img8,
     name: "Green and Gold Salad Bliss",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Enjoy our Green and Gold Salad Bliss, a vibrant mix rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving is a nutritious and colorful delight.",
     items: [
       {
         name: "English Cucumber",
@@ -443,7 +443,7 @@ const proteinData = [
     imageUrl: img9,
     name: "Harvest Glow Salad",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Enjoy our Harvest Glow Salad, a nutritious blend rich in vitamin A and potassium. Perfectly portioned for six, each 500g serving offers a vibrant and healthy meal.",
     items: [
       {
         name: "Lettuce",
@@ -496,7 +496,7 @@ const proteinData = [
     imageUrl: img10,
     name: "Potato Delight Salad",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Savor our Potato Delight Salad, a hearty mix rich in calcium and potassium. Perfectly portioned for eight, each 500g serving delivers a satisfying and nutritious experience.",
     items: [
       {
         name: "Potato",
@@ -549,7 +549,7 @@ const proteinData = [
     imageUrl: img11,
     name: "Berry Banana Bliss",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Delight in our Berry Banana Bliss, a fruity blend rich in vitamin C and magnesium. Perfectly portioned for eight, each 500g serving is a refreshing and nutritious treat.",
     items: [
       {
         name: "Banana",
@@ -602,7 +602,7 @@ const proteinData = [
     imageUrl: img12,
     name: "Rainbow Crunch Salad",
     description:
-      " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Enjoy our Rainbow Crunch Salad, a vibrant mix rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving offers a fresh and nutritious crunch.",
     items: [
       {
         name: "Sugar Snap Peas",
