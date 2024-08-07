@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   Box,
-  Heading,
   SimpleGrid,
   Image,
   Text,
@@ -96,17 +95,17 @@ const Card = ({ data }) => {
             size="lg"
             width="full"
             colorScheme="green"
-            onClick={handleBuyNowClick}
+            onClick={() => handleBuyNowClick(data)}
           >
             Buy Ingredients
           </Button>
         </Stack>
       </Box>
 
-      <Modal isOpen={isOpen} onClose={handleCloseModal}>
+      <Modal isOpen={isOpen} onClose={handleCloseModal} size="3xl">
         <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>{data.name}</ModalHeader>
+        <ModalContent bg="orange.100">
+          <ModalHeader color="orange.500" fontWeight="bold">{selectedBowl?.name}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Text>Total Fiber: {data.totalFiber}</Text>
@@ -118,10 +117,58 @@ const Card = ({ data }) => {
             <Text>Total Iron: {data.totalIron}</Text>
             <Text>No. of Servings: {data.noOfServing}</Text>
             <Text>Serving Size: {data.servingSize}</Text>
+
+            {selectedBowl && (
+              <Stack spacing={3}>
+                <Text fontSize="lg" fontWeight="bold">
+                  Ingredients:
+                </Text>
+                <SimpleGrid columns={1} spacing={4}>
+                  {selectedBowl.items.map((item, index) => (
+                    <Grid
+                      key={index}
+                      templateColumns="repeat(4, 1fr)"
+                      gap={4}
+                      alignItems="center"
+                      p={2}
+                      borderRadius="md"
+                      bg="white"
+                    >
+                      <GridItem>
+                        <Image
+                          src={item.imageUrl}
+                          alt={item.name}
+                          boxSize="100px"
+                          objectFit="cover"
+                        />
+                      </GridItem>
+                      <GridItem>
+                        <Text color="orange.500" fontWeight="bold">
+                          {item.name}
+                        </Text>
+                      </GridItem>
+                      <GridItem>
+                        <Text> Quantity: {item.quantity}</Text>
+                      </GridItem>
+                      <GridItem justifySelf="end">
+                        <Button
+                          colorScheme="green"
+                          as="a"
+                          href={item.link}
+                          target="_blank"
+                        >
+                          Buy
+                        </Button>
+                      </GridItem>
+                    </Grid>
+                  ))}
+                </SimpleGrid>
+              </Stack>
+            )}
           </ModalBody>
 
           <ModalFooter>
-            <Button colorScheme="blue" onClick={handleCloseModal}>
+            <Button colorScheme="orange" onClick={handleCloseModal}>
               Close
             </Button>
           </ModalFooter>
