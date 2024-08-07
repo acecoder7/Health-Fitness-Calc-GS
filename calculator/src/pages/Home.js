@@ -19,6 +19,11 @@ const calculators = [
     icon: healthicon,
     link: "/pregnancy",
   },
+  {
+    name: "Explore Nutrients Bowls",
+    icon: healthicon,
+    link: "/explore-all",
+  },
 ];
 
 const Home = () => (
