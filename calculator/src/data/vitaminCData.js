@@ -177,7 +177,7 @@ const vitaminCData = [
     imageUrl: img15,
     name: "Tropical Fruit Harmony",
     description:
-      "avor the zest of Vitamin C and potassium in every bite! This refreshing mix of pomegranate, king kiwi, orange, apple, and blueberries is a vibrant, nutrient-packed indulgence.",
+      "Savor the zest of Vitamin C and potassium in every bite! This refreshing mix of pomegranate, king kiwi, orange, apple, and blueberries is a vibrant, nutrient-packed indulgence.",
     items: [
       {
         name: "Pomegranate",

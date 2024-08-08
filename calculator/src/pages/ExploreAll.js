@@ -11,6 +11,7 @@ import {
 import proteinData from "../data/proteinData";
 import vitaminAData from "../data/vitaminAData";
 import vitaminCData from "../data/vitaminCData";
+import potassiumData from "../data/potassiumData";
 import Card from "../components/Cards";
 
 const ExploreAll = () => {
@@ -28,6 +29,8 @@ const ExploreAll = () => {
         return vitaminAData.map((bowl) => <Card key={bowl.id} data={bowl} />);
       case "Vitamin C":
         return vitaminCData.map((bowl) => <Card key={bowl.id} data={bowl} />);
+        case "Potassium":
+          return potassiumData.map((bowl) => <Card key={bowl.id} data={bowl} />);
       default:
         return <Text>Select a nutrient to see the bowls</Text>;
     }
@@ -48,7 +51,7 @@ const ExploreAll = () => {
             onClick={() => handleNutrientSelect("Protein")}
             p={4}
             fontSize="lg"
-            cursur="pointer"
+            cursor="pointer"
           >
             Protein
           </Tag>
@@ -61,7 +64,7 @@ const ExploreAll = () => {
             onClick={() => handleNutrientSelect("Vitamin A")}
             p={4}
             fontSize="lg"
-            cursur="pointer"
+            cursor="pointer"
           >
             Vitamin A
           </Tag>
@@ -75,9 +78,21 @@ const ExploreAll = () => {
             onClick={() => handleNutrientSelect("Vitamin C")}
             p={4}
             fontSize="lg"
-            cursur="pointer"
           >
             Vitamin C
+          </Tag>
+        </WrapItem>
+        <WrapItem>
+          <Tag
+            size="lg"
+            variant={selectedNutrient === "Potassium" ? "solid" : "outline"}
+            colorScheme="pink"
+            onClick={() => handleNutrientSelect("Potassium")}
+            p={4}
+            fontSize="lg"
+            cursor="pointer"
+          >
+            Potassium
           </Tag>
         </WrapItem>
       </Wrap>
