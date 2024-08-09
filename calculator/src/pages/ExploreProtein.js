@@ -9,7 +9,7 @@ const ExploreProtein = () => {
       <Heading as="h2" size="xl" mb="6">Explore Protein-Rich Baskets</Heading>
       <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing="6">
         {proteinData.map((data) => (
-          <Card key={data.id} data={data} />
+          <Card key={data.id} data={data} nutrient="Protein" />
         ))}
       </SimpleGrid>
     </Box>

@@ -17,6 +17,26 @@ import magnesiumData from "../data/magnesiumData";
 import ironData from "../data/ironData";
 import Card from "../components/Cards";
 
+const nutrientDataMap = {
+  "Protein": proteinData,
+  "Vitamin A": vitaminAData,
+  "Vitamin C": vitaminCData,
+  "Potassium": potassiumData,
+  "Calcium": calciumData,
+  "Magnesium": magnesiumData,
+  "Iron": ironData,
+};
+
+const nutrientTags = [
+  { label: "Protein", color: "blue" },
+  { label: "Vitamin A", color: "orange" },
+  { label: "Vitamin C", color: "green" },
+  { label: "Potassium", color: "pink" },
+  { label: "Calcium", color: "yellow" },
+  { label: "Magnesium", color: "gray" },
+  { label: "Iron", color: "teal" },
+];
+
 const ExploreAll = () => {
   const [selectedNutrient, setSelectedNutrient] = useState(null);
 
@@ -25,24 +45,11 @@ const ExploreAll = () => {
   };
 
   const renderBowls = () => {
-    switch (selectedNutrient) {
-      case "Protein":
-        return proteinData.map((bowl) => <Card key={bowl.id} data={bowl} />);
-      case "Vitamin A":
-        return vitaminAData.map((bowl) => <Card key={bowl.id} data={bowl} />);
-      case "Vitamin C":
-        return vitaminCData.map((bowl) => <Card key={bowl.id} data={bowl} />);
-      case "Potassium":
-        return potassiumData.map((bowl) => <Card key={bowl.id} data={bowl} />);
-      case "Calcium":
-        return calciumData.map((bowl) => <Card key={bowl.id} data={bowl} />);
-        case "Magnesium":
-          return magnesiumData.map((bowl) => <Card key={bowl.id} data={bowl} />);
-        case "Iron":
-          return ironData.map((bowl) => <Card key={bowl.id} data={bowl} />);
-      default:
-        return <Text>Select a nutrient to see the bowls</Text>;
+    const data = nutrientDataMap[selectedNutrient];
+    if (data) {
+      return data.map((bowl) => <Card key={bowl.id} data={bowl} nutrient={selectedNutrient}/>);
     }
+    return <Text>Select a nutrient to see the bowls</Text>;
   };
 
   return (
@@ -52,100 +59,21 @@ const ExploreAll = () => {
       </Heading>
 
       <Wrap spacing={6} mb={8}>
-        <WrapItem>
-          <Tag
-            size="lg"
-            variant={selectedNutrient === "Protein" ? "solid" : "outline"}
-            colorScheme="blue"
-            onClick={() => handleNutrientSelect("Protein")}
-            p={4}
-            fontSize="lg"
-            cursor="pointer"
-          >
-            Protein
-          </Tag>
-        </WrapItem>
-        <WrapItem>
-          <Tag
-            size="lg"
-            variant={selectedNutrient === "Vitamin A" ? "solid" : "outline"}
-            colorScheme="orange"
-            onClick={() => handleNutrientSelect("Vitamin A")}
-            p={4}
-            fontSize="lg"
-            cursor="pointer"
-          >
-            Vitamin A
-          </Tag>
-        </WrapItem>
-        <WrapItem>
-          <Tag
-            size="lg"
-            variant={selectedNutrient === "Vitamin C" ? "solid" : "outline"}
-            colorScheme="green"
-            cursor="pointer"
-            onClick={() => handleNutrientSelect("Vitamin C")}
-            p={4}
-            fontSize="lg"
-          >
-            Vitamin C
-          </Tag>
-        </WrapItem>
-        <WrapItem>
-          <Tag
-            size="lg"
-            variant={selectedNutrient === "Potassium" ? "solid" : "outline"}
-            colorScheme="pink"
-            onClick={() => handleNutrientSelect("Potassium")}
-            p={4}
-            fontSize="lg"
-            cursor="pointer"
-          >
-            Potassium
-          </Tag>
-        </WrapItem>
-
-        <WrapItem>
-          <Tag
-            size="lg"
-            variant={selectedNutrient === "Calcium" ? "solid" : "outline"}
-            colorScheme="yellow"
-            onClick={() => handleNutrientSelect("Calcium")}
-            p={4}
-            fontSize="lg"
-            cursor="pointer"
-          >
-            Calcium
-          </Tag>
-        </WrapItem>
-
-        <WrapItem>
-          <Tag
-            size="lg"
-            variant={selectedNutrient === "Magnesium" ? "solid" : "outline"}
-            colorScheme="gray"
-            onClick={() => handleNutrientSelect("Magnesium")}
-            p={4}
-            fontSize="lg"
-            cursor="pointer"
-          >
-            Magnesium
-          </Tag>
-        </WrapItem>
-
-        <WrapItem>
-          <Tag
-            size="lg"
-            variant={selectedNutrient === "Iron" ? "solid" : "outline"}
-            colorScheme="teal"
-            onClick={() => handleNutrientSelect("Iron")}
-            p={4}
-            fontSize="lg"
-            cursor="pointer"
-          >
-            Iron
-          </Tag>
-        </WrapItem>
+        {nutrientTags.map(({ label, color }) => (
+          <WrapItem key={label}>
+            <Tag
+              size="lg"
+              variant={selectedNutrient === label ? "solid" : "outline"}
+              colorScheme={color}
+              onClick={() => handleNutrientSelect(label)}
+              p={4}
+              fontSize="lg"
+              cursor="pointer"
+            >
+              {label}
+            </Tag>
+          </WrapItem>
+        ))}
       </Wrap>
 
       <SimpleGrid columns={[1, 2, 3]} spacing={8}>
