@@ -9,7 +9,7 @@ import {
   Text,
   Input,
   InputGroup,
-  InputRightElement,
+  InputLeftElement
 } from "@chakra-ui/react";
 
 import { SearchIcon } from "@chakra-ui/icons";
@@ -72,16 +72,18 @@ const ExploreAll = () => {
         Explore Nutrient-Rich Baskets
       </Heading>
 
-      {/* Search Bar */}
-      <InputGroup mb={8} maxW="400px" mx="auto">
+      <InputGroup mb={8} maxW="500px" mx="auto">
+        <InputLeftElement pointerEvents="none">
+          <SearchIcon color="gray.500" />
+        </InputLeftElement>
         <Input
-          placeholder="Search for a nutrient..."
+          type="text"
+          placeholder="Search by nutrient..."
           value={searchTerm}
           onChange={handleSearchChange}
+          borderColor="black" 
+          focusBorderColor="darkgray"
         />
-        <InputRightElement pointerEvents="none">
-          <SearchIcon color="gray.300" />
-        </InputRightElement>
       </InputGroup>
 
       {/* Nutrient Tags */}

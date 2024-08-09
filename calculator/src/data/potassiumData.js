@@ -483,7 +483,6 @@ const proteinData = [
     totalPotassium: "6761 mg",
     totalMagnesium: "285 mg",
     totalIron: "38 mg",
-    richIn: ["Vitamin C", "Potassium"],
     noOfServing: 6,
     servingSize: "500 g",
   },
