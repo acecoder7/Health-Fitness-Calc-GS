@@ -36,13 +36,20 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
         <ModalCloseButton />
         <ModalBody>
           <Grid templateColumns={gridTemplateColumns} gap={4}>
-            <Box>
+          <Box
+              position="relative"
+              borderRadius="md"
+              overflow="hidden"
+              _hover={{ boxShadow: "lg", cursor: "pointer" }}
+            >
               <Image
                 src={bowl?.imageUrl}
                 alt={bowl?.name}
                 borderRadius="md"
                 objectFit="cover"
                 width="100%"
+                transition="transform 0.3s"
+                _hover={{ transform: "scale(1.5)" }}
               />
             </Box>
             <Box>
@@ -68,13 +75,39 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
               </Tr>
             </Thead>
             <Tbody>
-              {(bowl?.nutrients || []).map((nutrient, index) => (
-                <Tr key={index}>
-                  <Td>{nutrient.name}</Td>
-                  <Td>{nutrient.value}</Td>
-                </Tr>
-              ))}
-            </Tbody>
+                  <Tr>
+                    <Td>Total Fiber</Td>
+                    <Td>{bowl?.totalFiber}</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>Total Protein</Td>
+                    <Td>{bowl?.totalProtein}</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>Total Vitamin C</Td>
+                    <Td>{bowl?.totalVitaminC}</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>Total Vitamin A</Td>
+                    <Td>{bowl?.totalVitaminA}</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>Total Calcium</Td>
+                    <Td>{bowl?.totalCalcium}</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>Total Potassium</Td>
+                    <Td>{bowl?.totalPotassium}</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>Total Magnesium</Td>
+                    <Td>{bowl?.totalMagnesium}</Td>
+                  </Tr>
+                  <Tr>
+                    <Td>Total Iron</Td>
+                    <Td>{bowl?.totalIron}</Td>
+                  </Tr>
+                </Tbody>
           </Table>
           <Divider />
           <Stack spacing={3}>
