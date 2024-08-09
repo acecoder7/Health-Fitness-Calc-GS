@@ -14,6 +14,7 @@ import img13 from "../images/basket/Exotic mango bliss.jpeg.jpg";
 import img14 from "../images/basket/Mango papaya paradise.jpeg.jpg";
 import img15 from "../images/basket/Tropical fruity harmony.jpeg.jpg";
 import img16 from "../images/basket/Tropical berry fussion.jpeg.jpg";
+import img17 from "../images/basket/Exotic fruit fiesta.jpeg.jpg";
 
 
 const proteinData = [
@@ -488,7 +489,7 @@ const proteinData = [
   },
   {
     id: 10,
-    imageUrl: img16,
+    imageUrl: img17,
     name: "Exotic Fruit Fiesta",
     description:
       "Savor our Exotic Fruit Fiesta, a vibrant mix rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving is a refreshing burst of tropical flavor.",
