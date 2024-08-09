@@ -7,7 +7,12 @@ import {
   Wrap,
   WrapItem,
   Text,
+  Input,
+  InputGroup,
+  InputRightElement,
 } from "@chakra-ui/react";
+
+import { SearchIcon } from "@chakra-ui/icons";
 import proteinData from "../data/proteinData";
 import vitaminAData from "../data/vitaminAData";
 import vitaminCData from "../data/vitaminCData";
@@ -39,15 +44,24 @@ const nutrientTags = [
 
 const ExploreAll = () => {
   const [selectedNutrient, setSelectedNutrient] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleNutrientSelect = (nutrient) => {
     setSelectedNutrient(nutrient);
   };
 
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value.toLowerCase());
+  };
+
+  const filteredNutrientTags = nutrientTags.filter((tag) =>
+    tag.label.toLowerCase().includes(searchTerm)
+  );
+
   const renderBowls = () => {
     const data = nutrientDataMap[selectedNutrient];
     if (data) {
-      return data.map((bowl) => <Card key={bowl.id} data={bowl} nutrient={selectedNutrient}/>);
+      return data.map((bowl) => <Card key={bowl.id} data={bowl} nutrient={selectedNutrient} />);
     }
     return <Text>Select a nutrient to see the bowls</Text>;
   };
@@ -58,8 +72,21 @@ const ExploreAll = () => {
         Explore Nutrient-Rich Baskets
       </Heading>
 
-      <Wrap spacing={6} mb={8}>
-        {nutrientTags.map(({ label, color }) => (
+      {/* Search Bar */}
+      <InputGroup mb={8} maxW="400px" mx="auto">
+        <Input
+          placeholder="Search for a nutrient..."
+          value={searchTerm}
+          onChange={handleSearchChange}
+        />
+        <InputRightElement pointerEvents="none">
+          <SearchIcon color="gray.300" />
+        </InputRightElement>
+      </InputGroup>
+
+      {/* Nutrient Tags */}
+      <Wrap spacing={6} mb={8} justify="center">
+        {filteredNutrientTags.map(({ label, color }) => (
           <WrapItem key={label}>
             <Tag
               size="lg"
@@ -76,6 +103,7 @@ const ExploreAll = () => {
         ))}
       </Wrap>
 
+      
       <SimpleGrid columns={[1, 2, 3]} spacing={8}>
         {renderBowls()}
       </SimpleGrid>
