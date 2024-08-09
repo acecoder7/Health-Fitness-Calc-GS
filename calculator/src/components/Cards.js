@@ -28,7 +28,10 @@ const Card = ({ data, nutrient }) => {
     setIsOpen(true);
   };
 
-  const gridTemplateColumns = useBreakpointValue({ base: "1fr", md: "repeat(2, 1fr)" });
+  const gridTemplateColumns = useBreakpointValue({
+    base: "1fr",
+    md: "repeat(2, 1fr)",
+  });
   const textSize = useBreakpointValue({ base: "sm", md: "sm", lg: "sm" });
 
   const nutrientValue = (() => {
@@ -63,7 +66,22 @@ const Card = ({ data, nutrient }) => {
       flexDirection="column"
       height="100%"
     >
-      <Image src={data.imageUrl} alt={data.name} borderTopRadius="md" />
+      <Box
+        position="relative"
+        borderRadius="md"
+        overflow="hidden"
+        _hover={{ boxShadow: "lg", cursor: "pointer" }}
+      >
+        <Image
+          src={data.imageUrl}
+          alt={data.name}
+          borderTopRadius="md"
+          objectFit="cover"
+          width="100%"
+          transition="transform 0.3s"
+          _hover={{ transform: "scale(1.2)" }}
+        />
+      </Box>
 
       <Box p={4} flex="1">
         <Stack spacing={2}>
@@ -93,10 +111,22 @@ const Card = ({ data, nutrient }) => {
 
           <Grid templateColumns={gridTemplateColumns} gap={6}>
             <Stack spacing={1}>
-              {nutrientValue && <Text fontSize={textSize}>{nutrientValue}</Text>}
-              {data.totalCalories && <Text fontSize={textSize}>Total Calories: {data.totalCalories}</Text>}
-              {data.totalWeight && <Text fontSize={textSize}>Total Weight: {data.totalWeight}</Text>}
-              {data.totalPrice && <Text fontSize={textSize}>Total Price: {data.totalPrice}</Text>}
+              {nutrientValue && (
+                <Text fontSize={textSize}>{nutrientValue}</Text>
+              )}
+              {data.totalCalories && (
+                <Text fontSize={textSize}>
+                  Total Calories: {data.totalCalories}
+                </Text>
+              )}
+              {data.totalWeight && (
+                <Text fontSize={textSize}>
+                  Total Weight: {data.totalWeight}
+                </Text>
+              )}
+              {data.totalPrice && (
+                <Text fontSize={textSize}>Total Price: {data.totalPrice}</Text>
+              )}
             </Stack>
 
             {data.richIn && data.richIn.length > 0 && (
