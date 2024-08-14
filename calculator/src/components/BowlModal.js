@@ -25,17 +25,24 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 
+import itemData from "../data/itemData";
+
 const BowlModal = ({ isOpen, onClose, bowl }) => {
+
   const gridTemplateColumns = useBreakpointValue({
     base: "1fr",
     md: "repeat(2, 1fr)",
   });
 
+  const getItemDetails = (ingredientId) => {
+    return itemData.find(item => item.id === ingredientId);
+  }
+
   return (
     <Modal isOpen={isOpen} onClose={onClose} size="3xl">
       <ModalOverlay />
       <ModalContent bg="orange.100">
-        <ModalHeader color="orange.500" fontWeight="bold">
+        <ModalHeader color="orange.500" fontWeight="bold" fontSize="2xl">
           {bowl?.name}
         </ModalHeader>
         <ModalCloseButton />
@@ -157,44 +164,47 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
               Ingredients:
             </Text>
             <SimpleGrid columns={1} spacing={4}>
-              {(bowl?.items || []).map((item, index) => (
-                <Grid
-                  key={index}
-                  templateColumns="repeat(4, 1fr)"
-                  gap={4}
-                  alignItems="center"
-                  p={2}
-                  borderRadius="md"
-                  bg="white"
-                >
-                  <GridItem>
-                    <Image
-                      src={item.imageUrl}
-                      alt={item.name}
-                      boxSize="100px"
-                      objectFit="cover"
-                    />
-                  </GridItem>
-                  <GridItem>
-                    <Text color="orange.500" fontWeight="bold">
-                      {item.name}
-                    </Text>
-                  </GridItem>
-                  <GridItem>
-                    <Text>Quantity: {item.quantity}</Text>
-                  </GridItem>
-                  <GridItem justifySelf="end">
-                    <Button
-                      colorScheme="green"
-                      as="a"
-                      href={item.link}
-                      target="_blank"
-                    >
-                      Buy
-                    </Button>
-                  </GridItem>
-                </Grid>
-              ))}
+              {(bowl?.items || []).map((item, index) => {
+                const itemdetails = getItemDetails(item.ingredientId);
+                return (
+                  <Grid
+                    key={index}
+                    templateColumns="repeat(4, 1fr)"
+                    gap={4}
+                    alignItems="center"
+                    p={2}
+                    borderRadius="md"
+                    bg="white"
+                  >
+                    <GridItem>
+                      <Image
+                        src={itemdetails?.imageUrl}
+                        alt={itemdetails?.name}
+                        boxSize="100px"
+                        objectFit="cover"
+                      />
+                    </GridItem>
+                    <GridItem>
+                      <Text color="orange.500" fontWeight="bold">
+                        {itemdetails?.name || item.name}
+                      </Text>
+                    </GridItem>
+                    <GridItem>
+                      <Text>Quantity: {item.quantity}</Text>
+                    </GridItem>
+                    <GridItem justifySelf="end">
+                      <Button
+                        colorScheme="green"
+                        as="a"
+                        href={itemdetails?.link || "#"}
+                        target="_blank"
+                      >
+                        Buy
+                      </Button>
+                    </GridItem>
+                  </Grid>
+                );
+              })}
             </SimpleGrid>
           </Stack>
         </ModalBody>
