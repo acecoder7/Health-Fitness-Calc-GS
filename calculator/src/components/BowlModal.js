@@ -25,6 +25,7 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 
+import IngredientSection from "./IngridentSection";
 import itemData from "../data/itemData";
 
 const BowlModal = ({ isOpen, onClose, bowl }) => {
@@ -158,7 +159,14 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
             </Table>
           </Box>
 
-          <Divider />
+          <Divider mt={4} mb={4} />
+
+          <IngredientSection
+            items={bowl?.items || []}
+            getItemDetails={getItemDetails}
+          />
+
+          <Divider mt={4} mb={4} />
           <Stack spacing={3}>
             <Text fontSize="lg" fontWeight="bold">
               Ingredients:
