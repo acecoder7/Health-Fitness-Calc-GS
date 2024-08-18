@@ -272,6 +272,20 @@ const itemData = [
     imageUrl: "spinach.jpg",
     link: "http://example.com/spinach",
   },
+  {
+    id: 40,
+    shopifyProductId: "gid://shopify/Product/8926530765073",
+    name: "Yellow Capsicum",
+    imageUrl: "spinach.jpg",
+    link: "http://example.com/spinach",
+  },
+  {
+    id: 41,
+    shopifyProductId: "gid://shopify/Product/8926530765073",
+    name: "Green Apple",
+    imageUrl: "spinach.jpg",
+    link: "http://example.com/spinach",
+  },
 ];
 
 export default itemData;
