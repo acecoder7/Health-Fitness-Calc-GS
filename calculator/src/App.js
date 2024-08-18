@@ -11,6 +11,7 @@ import TDEE from './pages/TDEE';
 import Period from './pages/Period';
 import Protein from './pages/Protein';
 import ExploreProtein from './pages/ExploreProtein';
+import ExplorePregnancy from './pages/ExplorePregnancy';
 import ExploreAll from './pages/ExploreAll';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -33,6 +34,7 @@ function App() {
           <Route path="/protein" element={<Protein />} />
           <Route path="/explore-protein" element={<ExploreProtein />} />
           <Route path="/explore-all" element={<ExploreAll />} /> 
+          <Route path="/exp-pregnancy" element={<ExplorePregnancy />} />
         </Routes>
       </Box>
       <Footer />

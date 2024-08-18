@@ -169,7 +169,7 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
           <Divider mt={4} mb={4} />
           <Stack spacing={3}>
             <Text fontSize="lg" fontWeight="bold">
-              Ingredients:
+              Buy Now 
             </Text>
             <SimpleGrid columns={1} spacing={4}>
               {(bowl?.items || []).map((item, index) => {

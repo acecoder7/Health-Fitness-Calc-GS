@@ -11,6 +11,8 @@ import {
   FormLabel,
 } from "@chakra-ui/react";
 import { format, addDays, differenceInDays } from "date-fns";
+import { useNavigate } from "react-router-dom";
+
 
 const PregnancyCalculator = () => {
   const [method, setMethod] = useState("lastPeriod");
@@ -20,6 +22,9 @@ const PregnancyCalculator = () => {
   const [dueDate, setDueDate] = useState("");
   const [calculatedDueDate, setCalculatedDueDate] = useState("");
   const [gestationalAge, setGestationalAge] = useState("");
+  const [trimester, setTrimester] = useState("");
+
+  const navigate = useNavigate();
 
   const calculateDueDate = () => {
     let dueDate = null;
@@ -57,7 +62,19 @@ const PregnancyCalculator = () => {
 
       setCalculatedDueDate(format(dueDate, "MMMM dd, yyyy"));
       setGestationalAge(`${gestationalAgeInWeeks} weeks`);
+
+      if (gestationalAgeInWeeks <= 12) {
+        setTrimester("1st");
+      } else if (gestationalAgeInWeeks <= 27) {
+        setTrimester("2nd");
+      } else {
+        setTrimester("3rd");
+      }
     }
+  };
+
+  const handleExploreClick = () => {
+    navigate(`/exp-pregnancy?trimester=${trimester}`);
   };
 
   return (
@@ -149,6 +166,21 @@ const PregnancyCalculator = () => {
               Gestational Age: {gestationalAge}
             </Text>
           )}
+          {trimester && (
+            <Text mt={4}>
+              You are in the {trimester} trimester, here are your custom bowls ready.
+            </Text>
+          )}
+          {trimester && (
+            <Button
+            mt={4}
+            colorScheme="blue"
+            onClick={handleExploreClick}
+          >
+            Explore Your Bowls
+            </Button>
+          )}
+
         </VStack>
       </Box>
     </Box>
