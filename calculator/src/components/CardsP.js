@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import BowlModal from "../components/BowlModal";
 
-const CardP = ({ data, nutrient }) => {
+const CardP = ({ data }) => {
   const [selectedBowl, setSelectedBowl] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -32,28 +32,8 @@ const CardP = ({ data, nutrient }) => {
     base: "1fr",
     md: "repeat(2, 1fr)",
   });
-  const textSize = useBreakpointValue({ base: "sm", md: "sm", lg: "sm" });
-
-  const nutrientValue = (() => {
-    switch (nutrient) {
-      case "Protein":
-        return `Total Protein: ${data.totalProtein}`;
-      case "Vitamin A":
-        return `Total Vitamin A: ${data.totalVitaminA}`;
-      case "Vitamin C":
-        return `Total Vitamin C: ${data.totalVitaminC}`;
-      case "Potassium":
-        return `Total Potassium: ${data.totalPotassium}`;
-      case "Calcium":
-        return `Total Calcium: ${data.totalCalcium}`;
-      case "Magnesium":
-        return `Total Magnesium: ${data.totalMagnesium}`;
-      case "Iron":
-        return `Total Iron: ${data.totalIron}`;
-      default:
-        return null;
-    }
-  })();
+    const textSize = useBreakpointValue({ base: "sm", md: "sm", lg: "sm" });
+    
 
   return (
     <Box
@@ -111,9 +91,6 @@ const CardP = ({ data, nutrient }) => {
 
           <Grid templateColumns={gridTemplateColumns} gap={6}>
             <Stack spacing={1}>
-              {nutrientValue && (
-                <Text fontSize={textSize}>{nutrientValue}</Text>
-              )}
               {data.totalCalories && (
                 <Text fontSize={textSize}>
                   Total Calories: {data.totalCalories}

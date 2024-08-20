@@ -134,7 +134,12 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
                   { name: "Total Potassium", value: bowl?.totalPotassium },
                   { name: "Total Magnesium", value: bowl?.totalMagnesium },
                   { name: "Total Iron", value: bowl?.totalIron },
-                ].map((item, index) => (
+                  { name: "Total Vitamin B6", value: bowl?.totalVitaminB6 },
+                  { name: "Total Folate", value: bowl?.totalFolate },
+                  { name: "Total Sodium", value: bowl?.totalSodium },
+                  { name: "Total Zinc", value: bowl?.totalZinc },
+                ].filter(item => item.value)
+                .map((item, index) => (
                   <Tr key={index}>
                     <Td
                       borderBottom="1px solid"
@@ -155,9 +160,9 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
                     </Td>
                   </Tr>
                 ))}
-              </Tbody>
-            </Table>
-          </Box>
+            </Tbody>
+          </Table>
+        </Box>
 
           <Divider mt={4} mb={4} />
 
