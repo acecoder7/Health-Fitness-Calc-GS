@@ -314,6 +314,34 @@ const itemData = [
     imageUrl: "spinach.jpg",
     link: "http://example.com/spinach",
   },
+  {
+    id: 46,
+    shopifyProductId: "gid://shopify/Product/8926530765073",
+    name: "Passion Fruit",
+    imageUrl: "spinach.jpg",
+    link: "http://example.com/spinach",
+  },
+  {
+    id: 47,
+    shopifyProductId: "gid://shopify/Product/8926530765073",
+    name: "Grapefruit",
+    imageUrl: "spinach.jpg",
+    link: "http://example.com/spinach",
+  },
+  {
+    id: 48,
+    shopifyProductId: "gid://shopify/Product/8926530765073",
+    name: "Peach",
+    imageUrl: "spinach.jpg",
+    link: "http://example.com/spinach",
+  },
+  {
+    id: 49,
+    shopifyProductId: "gid://shopify/Product/8926530765073",
+    name: "Honeydew Melon",
+    imageUrl: "spinach.jpg",
+    link: "http://example.com/spinach",
+  },
 ];
 
 export default itemData;
