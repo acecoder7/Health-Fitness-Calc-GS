@@ -1,6 +1,6 @@
 import img1 from "../images/preg/2/Strawberry Sunshine Mix.jpeg.jpg";
-import img2 from "../images/basket/Fresh Harvest Crunch.jpeg.jpg";
-import img3 from "../images/basket/Rainbow Beet salad.jpeg.jpg";
+import img2 from "../images/preg/2/berry kale crunch .jpeg.jpg";
+import img3 from "../images/preg/2/broccoli fiesta bowl .jpeg.jpg";
 import img4 from "../images/preg/2/Golden Mushroom Delight.jpeg.jpg";
 import img5 from "../images/preg/2/Papaya Pine Fusion.jpeg.jpg";
 import img6 from "../images/preg/2/Pineapple Passion Crunch.png";
