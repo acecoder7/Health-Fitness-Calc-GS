@@ -58,7 +58,7 @@ const Preg3Data = [
     totalZinc: "8 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Calcium", "Magnesium", "Vitamin B6"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -111,7 +111,7 @@ const Preg3Data = [
     totalZinc: "9 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Magnesium", "Potassium", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -164,7 +164,7 @@ const Preg3Data = [
     totalZinc: "11 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Magnesium", "Iron", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -217,7 +217,7 @@ const Preg3Data = [
     totalZinc: "10 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Potassium", "Magnesium", "Vitamin B6"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -270,7 +270,7 @@ const Preg3Data = [
     totalZinc: "3 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Vitamin A", "Magnesium", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -323,7 +323,7 @@ const Preg3Data = [
     totalZinc: "7 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Folate", "Vitamin C", "Potassium"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -376,7 +376,7 @@ const Preg3Data = [
     totalZinc: "13 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Potassium", "iron", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -429,7 +429,7 @@ const Preg3Data = [
     totalZinc: "15 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Magnesium", "Vitamin B6", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
 ];
