@@ -14,6 +14,8 @@ import {
 } from "@chakra-ui/react";
 import BowlModal from "../components/BowlModal";
 
+import { ArrowForwardIcon } from "@chakra-ui/icons";
+
 const CardP = ({ data }) => {
   const [selectedBowl, setSelectedBowl] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -144,8 +146,16 @@ const CardP = ({ data }) => {
           )}
 
           <Divider />
-          <Box display="flex" justifyContent="center" alignItems="center">
-            <Text color="gray.600" fontWeight="medium">
+
+          <Box display="flex" alignItems="center">
+            <ArrowForwardIcon
+              boxSize={6}
+              color="green.500"
+              mr={2}
+              transition="transform 0.3s ease-in-out"
+              _hover={{ transform: "translateX(5px)" }}
+            />
+            <Text color="gray.600" fontWeight="medium" textAlign="left">
               {data.nutrientText}
             </Text>
           </Box>
@@ -156,7 +166,7 @@ const CardP = ({ data }) => {
             width="full"
             colorScheme="green"
             onClick={() => handleBuyNowClick(data)}
-            mt={1}
+            mt={3}
           >
             Buy Ingredients
           </Button>
