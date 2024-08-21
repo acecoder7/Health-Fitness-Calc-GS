@@ -59,7 +59,7 @@ const Preg2Data = [
     totalZinc: "7 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Vitamin A", "Vitamin B6", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -112,7 +112,7 @@ const Preg2Data = [
     totalZinc: "8 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Calcium", "Vitamin A", "Vitamin C"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -165,7 +165,7 @@ const Preg2Data = [
     totalZinc: "5 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Potassium", "Vitamin B6", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -218,7 +218,7 @@ const Preg2Data = [
     totalZinc: "11 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Vitamin C", "Vitamin A", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -271,7 +271,7 @@ const Preg2Data = [
     totalZinc: "6 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Vitamin C", "Potassium", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -324,7 +324,7 @@ const Preg2Data = [
     totalZinc: "7 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Vitamin C", "Potassium", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -377,7 +377,7 @@ const Preg2Data = [
     totalZinc: "6 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Vitamin C", "Potassium", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -430,7 +430,7 @@ const Preg2Data = [
     totalZinc: "7 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Vitamin C", "Vitamin A", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
 ];

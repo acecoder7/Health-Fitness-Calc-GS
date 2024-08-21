@@ -58,7 +58,7 @@ const Preg1Data = [
     totalZinc: "4 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Vitamin C", "Vitamin A", "Potassium"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -111,7 +111,7 @@ const Preg1Data = [
     totalZinc: "2 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Folate", "Potassium", "Vitamin B6"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -164,7 +164,7 @@ const Preg1Data = [
     totalZinc: "6 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Vitamin A", "Vitamin B6", " Potassium"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -217,7 +217,7 @@ const Preg1Data = [
     totalZinc: "3 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Vitamin C", "Vitamin A", "Potassium"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -270,7 +270,7 @@ const Preg1Data = [
     totalZinc: "13 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Calcium", "Vitamin B6", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -323,7 +323,7 @@ const Preg1Data = [
     totalZinc: "11 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Potassium", "Vitamin B6", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -376,7 +376,7 @@ const Preg1Data = [
     totalZinc: "14 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Magnesium", "Folate", "Vitamin A"],
     nutrientText: "Vitamin C is good for your skin ",
   },
   {
@@ -429,7 +429,7 @@ const Preg1Data = [
     totalZinc: "12.912 mg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Vitamin C", "Vitamin A"],
+    richIn: ["Potassium", "Vitamin B6", "Folate"],
     nutrientText: "Vitamin C is good for your skin ",
   },
 ];
