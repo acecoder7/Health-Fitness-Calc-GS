@@ -33,7 +33,7 @@ const PregnancyCalculator = () => {
       case "lastPeriod":
         if (lastPeriodDate) {
           const lmpDate = new Date(lastPeriodDate);
-          dueDate = addDays(lmpDate, cycleLength + 280 - 28);
+          dueDate = addDays(lmpDate, cycleLength + 266 - 28);
         }
         break;
 
