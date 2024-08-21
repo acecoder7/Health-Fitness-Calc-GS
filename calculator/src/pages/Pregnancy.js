@@ -19,7 +19,6 @@ const PregnancyCalculator = () => {
   const [lastPeriodDate, setLastPeriodDate] = useState("");
   const [cycleLength, setCycleLength] = useState(28);
   const [conceptionDate, setConceptionDate] = useState("");
-  const [dueDate, setDueDate] = useState("");
   const [calculatedDueDate, setCalculatedDueDate] = useState("");
   const [gestationalAge, setGestationalAge] = useState("");
   const [trimester, setTrimester] = useState("");
@@ -41,12 +40,6 @@ const PregnancyCalculator = () => {
         if (conceptionDate) {
           const conception = new Date(conceptionDate);
           dueDate = addDays(conception, 266);
-        }
-        break;
-
-      case "dueDate":
-        if (dueDate) {
-          dueDate = new Date(dueDate);
         }
         break;
 
@@ -103,7 +96,6 @@ const PregnancyCalculator = () => {
             >
               <option value="lastPeriod">Last Period</option>
               <option value="conceptionDate">Conception Date</option>
-              <option value="dueDate">Due Date</option>
             </Select>
           </FormControl>
 
@@ -137,18 +129,6 @@ const PregnancyCalculator = () => {
                 placeholder="Conception Date"
                 value={conceptionDate}
                 onChange={(e) => setConceptionDate(e.target.value)}
-                mb={4}
-              />
-            </FormControl>
-          )}
-          {method === "dueDate" && (
-            <FormControl id="method-3">
-              <FormLabel>Due Date</FormLabel>
-              <Input
-                type="date"
-                placeholder="Due Date"
-                value={dueDate}
-                onChange={(e) => setDueDate(e.target.value)}
                 mb={4}
               />
             </FormControl>
