@@ -1,5 +1,5 @@
 import img1 from "../images/basket/Garden Fresh Delight.jpeg.jpg";
-import img2 from "../images/basket/Fresh Harvest Crunch.jpeg.jpg";
+import img2 from "../images/preg/1/Zesty Green Fusion.jpeg.jpg";
 import img3 from "../images/basket/Rainbow Beet salad.jpeg.jpg";
 import img4 from "../images/basket/Golden corn fiesta.jpeg.jpg";
 import img5 from "../images/basket/Sweet and sunny salad.jpeg.jpg";

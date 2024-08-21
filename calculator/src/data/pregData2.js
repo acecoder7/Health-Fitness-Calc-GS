@@ -1,10 +1,12 @@
-import img1 from "../images/basket/Garden Fresh Delight.jpeg.jpg";
+import img1 from "../images/preg/2/Strawberry Sunshine Mix.jpeg.jpg";
 import img2 from "../images/basket/Fresh Harvest Crunch.jpeg.jpg";
 import img3 from "../images/basket/Rainbow Beet salad.jpeg.jpg";
-import img4 from "../images/basket/Golden corn fiesta.jpeg.jpg";
-import img5 from "../images/basket/Sweet and sunny salad.jpeg.jpg";
-import img6 from "../images/basket/Crunchy veggie delight.jpeg.jpg";
-import img7 from "../images/basket/Garden fresh mushroom salad.jpeg.jpg";
+import img4 from "../images/preg/2/Golden Mushroom Delight.jpeg.jpg";
+import img5 from "../images/preg/2/Papaya Pine Fusion.jpeg.jpg";
+import img6 from "../images/preg/2/Pineapple Passion Crunch.png";
+import img7 from "../images/preg/2/Earthy Kiwi Glow.jpeg.jpg";
+import img8 from "../images/preg/2/Sweet Pom Fiesta.jpeg.jpg";
+
 
 const Preg2Data = [
   {
@@ -264,7 +266,7 @@ const Preg2Data = [
   },
   {
     id: 6,
-    imageUrl: img5,
+    imageUrl: img6,
     name: "Pineapple Passion Crunch",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
@@ -315,7 +317,7 @@ const Preg2Data = [
   },
   {
     id: 7,
-    imageUrl: img5,
+    imageUrl: img7,
     name: "Earthy Kiwi Glow",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
@@ -366,7 +368,7 @@ const Preg2Data = [
   },
   {
     id: 8,
-    imageUrl: img5,
+    imageUrl: img8,
     name: "Sweet Pom Fiesta",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",

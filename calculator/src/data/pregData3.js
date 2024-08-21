@@ -1,10 +1,11 @@
-import img1 from "../images/basket/Garden Fresh Delight.jpeg.jpg";
-import img2 from "../images/basket/Fresh Harvest Crunch.jpeg.jpg";
-import img3 from "../images/basket/Rainbow Beet salad.jpeg.jpg";
-import img4 from "../images/basket/Golden corn fiesta.jpeg.jpg";
-import img5 from "../images/basket/Sweet and sunny salad.jpeg.jpg";
-import img6 from "../images/basket/Crunchy veggie delight.jpeg.jpg";
-import img7 from "../images/basket/Garden fresh mushroom salad.jpeg.jpg";
+import img1 from "../images/preg/3/Peachy green delight.jpeg.jpg";
+import img2 from "../images/preg/3/Carrot Avocado Crunch.jpeg.jpg";
+import img3 from "../images/preg/3/Zucchini Mushroom Mix.jpeg.jpg";
+import img4 from "../images/preg/3/Strawberry Pine Fusion.jpeg.jpg";
+import img5 from "../images/preg/3/Honeydew Green Crunch.jpeg.jpg";
+import img6 from "../images/preg/3/Tomato & Veggie Fusion.jpeg.jpg";
+import img7 from "../images/preg/3/Broccoli Mushroom Crunch.jpeg.jpg";
+import img8 from "../images/preg/3/Mushroom Pom delight.jpeg.jpg";
 
 const Preg3Data = [
   {
@@ -264,7 +265,7 @@ const Preg3Data = [
   },
   {
     id: 6,
-    imageUrl: img5,
+    imageUrl: img6,
     name: "Tomato & Veggie Fusion",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
@@ -315,7 +316,7 @@ const Preg3Data = [
   },
   {
     id: 7,
-    imageUrl: img5,
+    imageUrl: img7,
     name: "Broccoli Mushroom Crunch",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
@@ -366,7 +367,7 @@ const Preg3Data = [
   },
   {
     id: 8,
-    imageUrl: img5,
+    imageUrl: img8,
     name: "Mushroom Pom Delight",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
