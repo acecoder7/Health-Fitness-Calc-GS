@@ -32,19 +32,26 @@ const CardP = ({ data }) => {
     base: "1fr",
     md: "repeat(2, 1fr)",
   });
-    const textSize = useBreakpointValue({ base: "sm", md: "sm", lg: "sm" });
-    
+
+  const textSize = useBreakpointValue({ base: "xs", md: "sm", lg: "sm" });
+  const priceButtonSize = useBreakpointValue({
+    base: "xs",
+    md: "sm",
+    lg: "md",
+  });
 
   return (
     <Box
       key={data.id}
-      maxWidth="100%"
+      maxWidth="95%"
       borderWidth="1px"
       borderRadius="md"
       overflow="hidden"
       display="flex"
       flexDirection="column"
       height="100%"
+      m={1}
+      borderColor="gray.600"
     >
       <Box
         position="relative"
@@ -58,16 +65,16 @@ const CardP = ({ data }) => {
           borderTopRadius="md"
           objectFit="cover"
           width="100%"
-          height="370px"
+          height="280px"
           transition="transform 0.3s"
-          _hover={{ transform: "scale(1.2)" }}
+          _hover={{ transform: "scale(1.1)" }}
         />
       </Box>
 
-      <Box p={4} flex="1">
+      <Box p={3} flex="1">
         <Stack spacing={2}>
           {data.name && (
-            <Text fontWeight="bold" fontSize="xl">
+            <Text fontWeight="bold" fontSize="lg">
               {data.name}
             </Text>
           )}
@@ -79,7 +86,7 @@ const CardP = ({ data }) => {
               <Text color="gray.600" fontWeight="bold" mb={2}>
                 Ingredients:
               </Text>
-              <Wrap spacing={2} shouldWrap>
+              <Wrap spacing={1} shouldWrap>
                 {data.items.map((item, index) => (
                   <WrapItem key={index}>
                     <Tag colorScheme="blue">{item.name}</Tag>
@@ -90,7 +97,7 @@ const CardP = ({ data }) => {
             </>
           )}
 
-          <Grid templateColumns={gridTemplateColumns} gap={6}>
+          <Grid templateColumns={gridTemplateColumns} gap={4}>
             <Stack spacing={1}>
               {data.totalCalories && (
                 <Text fontSize={textSize}>
@@ -102,39 +109,59 @@ const CardP = ({ data }) => {
                   Total Weight: {data.totalWeight}
                 </Text>
               )}
-              {data.totalPrice && (
-                <Text fontSize={textSize}>Total Price: {data.totalPrice}</Text>
-              )}
             </Stack>
 
-            {data.richIn && data.richIn.length > 0 && (
-              <Box>
-                <Text color="gray.600" fontWeight="bold" mb={2}>
-                  Also rich in :
-                </Text>
-                <Wrap spacing={2} shouldWrap>
-                  {data.richIn.map((item, index) => (
-                    <WrapItem key={index}>
-                      <Tag colorScheme="purple">{item}</Tag>
-                    </WrapItem>
-                  ))}
-                </Wrap>
-              </Box>
-            )}
+            <Box textAlign="right">
+              {data.totalPrice && (
+                <Button
+                  size={priceButtonSize}
+                  colorScheme="orange"
+                  variant="outline"
+                  mb={2}
+                >
+                  Price: ₹{data.totalPrice}
+                </Button>
+              )}
+            </Box>
           </Grid>
+
+          {data.richIn && data.richIn.length > 0 && (
+            <>
+              <Divider />
+              <Text color="gray.600" fontWeight="bold" mb={2} mt={2}>
+                Rich in:
+              </Text>
+              <Wrap spacing={1} shouldWrap>
+                {data.richIn.map((item, index) => (
+                  <WrapItem key={index}>
+                    <Tag size="sm" colorScheme="purple">
+                      {item}
+                    </Tag>
+                  </WrapItem>
+                ))}
+              </Wrap>
+            </>
+          )}
+
+          <Divider />
+          <Box display="flex" justifyContent="center" alignItems="center">
+            <Text color="gray.600" fontWeight="medium">
+              {data.nutrientText}
+            </Text>
+          </Box>
+
+          <Button
+            variant="solid"
+            size="lg"
+            width="full"
+            colorScheme="green"
+            onClick={() => handleBuyNowClick(data)}
+            mt={1}
+          >
+            Buy Ingredients
+          </Button>
         </Stack>
       </Box>
-
-      <Button
-        variant="solid"
-        size="lg"
-        width="full"
-        colorScheme="green"
-        onClick={() => handleBuyNowClick(data)}
-        mt="auto"
-      >
-        Buy Ingredients
-      </Button>
 
       {selectedBowl && (
         <BowlModal

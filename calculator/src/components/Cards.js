@@ -65,6 +65,8 @@ const Card = ({ data, nutrient }) => {
       display="flex"
       flexDirection="column"
       height="100%"
+      borderColor="gray.600"
+      m={1}
     >
       <Box
         position="relative"
@@ -144,19 +146,19 @@ const Card = ({ data, nutrient }) => {
               </Box>
             )}
           </Grid>
+
+          <Button
+            variant="solid"
+            size="lg"
+            width="full"
+            colorScheme="green"
+            onClick={() => handleBuyNowClick(data)}
+            mt={1}
+          >
+            Buy Ingredients
+          </Button>
         </Stack>
       </Box>
-
-      <Button
-        variant="solid"
-        size="lg"
-        width="full"
-        colorScheme="green"
-        onClick={() => handleBuyNowClick(data)}
-        mt="auto"
-      >
-        Buy Ingredients
-      </Button>
 
       {selectedBowl && (
         <BowlModal
