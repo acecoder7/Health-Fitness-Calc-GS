@@ -59,6 +59,8 @@ const Preg2Data = [
     totalZinc: "7 mg",
     noOfServing: 8,
     servingSize: "500 g",
+    richIn: ["Vitamin C", "Vitamin A"],
+    nutrientText: "Vitamin C is good for your skin ",
   },
   {
     id: 2,
@@ -110,6 +112,8 @@ const Preg2Data = [
     totalZinc: "8 mg",
     noOfServing: 8,
     servingSize: "500 g",
+    richIn: ["Vitamin C", "Vitamin A"],
+    nutrientText: "Vitamin C is good for your skin ",
   },
   {
     id: 3,
@@ -161,6 +165,8 @@ const Preg2Data = [
     totalZinc: "5 mg",
     noOfServing: 8,
     servingSize: "500 g",
+    richIn: ["Vitamin C", "Vitamin A"],
+    nutrientText: "Vitamin C is good for your skin ",
   },
   {
     id: 4,
@@ -212,6 +218,8 @@ const Preg2Data = [
     totalZinc: "11 mg",
     noOfServing: 8,
     servingSize: "500 g",
+    richIn: ["Vitamin C", "Vitamin A"],
+    nutrientText: "Vitamin C is good for your skin ",
   },
   {
     id: 5,
@@ -263,6 +271,8 @@ const Preg2Data = [
     totalZinc: "6 mg",
     noOfServing: 8,
     servingSize: "500 g",
+    richIn: ["Vitamin C", "Vitamin A"],
+    nutrientText: "Vitamin C is good for your skin ",
   },
   {
     id: 6,
@@ -314,6 +324,8 @@ const Preg2Data = [
     totalZinc: "7 mg",
     noOfServing: 8,
     servingSize: "500 g",
+    richIn: ["Vitamin C", "Vitamin A"],
+    nutrientText: "Vitamin C is good for your skin ",
   },
   {
     id: 7,
@@ -365,6 +377,8 @@ const Preg2Data = [
     totalZinc: "6 mg",
     noOfServing: 8,
     servingSize: "500 g",
+    richIn: ["Vitamin C", "Vitamin A"],
+    nutrientText: "Vitamin C is good for your skin ",
   },
   {
     id: 8,
@@ -416,6 +430,8 @@ const Preg2Data = [
     totalZinc: "7 mg",
     noOfServing: 8,
     servingSize: "500 g",
+    richIn: ["Vitamin C", "Vitamin A"],
+    nutrientText: "Vitamin C is good for your skin ",
   },
 ];
 
