@@ -58,6 +58,7 @@ const CardP = ({ data }) => {
           borderTopRadius="md"
           objectFit="cover"
           width="100%"
+          height="370px"
           transition="transform 0.3s"
           _hover={{ transform: "scale(1.2)" }}
         />

@@ -61,6 +61,7 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
                 borderRadius="md"
                 objectFit="cover"
                 width="100%"
+                height="270px"
                 transition="transform 0.3s"
                 _hover={{ transform: "scale(1.5)" }}
               />
