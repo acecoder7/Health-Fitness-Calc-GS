@@ -121,7 +121,7 @@ const CardP = ({ data }) => {
                   variant="outline"
                   mb={2}
                 >
-                  Price: ₹{data.totalPrice}
+                  Price: {data.totalPrice}
                 </Button>
               )}
             </Box>

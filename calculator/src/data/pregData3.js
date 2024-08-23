@@ -362,7 +362,7 @@ const Preg3Data = [
     totalProtein: "93 g",
     totalCalories: "1464 kcal",
     totalPrice: "Rs 12.50",
-    totalWeight: "2276 g",
+    totalWeight: "4000 g",
     totalFiber: "111 g",
     totalVitaminC: "2077 mg",
     totalVitaminA: "3119 μg",
