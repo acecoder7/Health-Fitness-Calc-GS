@@ -17,8 +17,12 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './App.css';
 
+import { SidebarProvider } from './context/SidebarContext';
+
+
 function App() {
   return (
+    <SidebarProvider>
     <Box bg="background.100" className="app-container">
       <Navbar />
       <Box bg="background.100" as="main" flex="1">
@@ -38,7 +42,8 @@ function App() {
         </Routes>
       </Box>
       <Footer />
-    </Box>
+      </Box>
+      </SidebarProvider>
   );
 }
 
