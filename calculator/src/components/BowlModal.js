@@ -127,6 +127,7 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
               </Thead>
               <Tbody>
                 {[
+                  { name: "Total Calories", value: bowl?.totalCalories },
                   { name: "Total Fiber", value: bowl?.totalFiber },
                   { name: "Total Protein", value: bowl?.totalProtein },
                   { name: "Total Vitamin C", value: bowl?.totalVitaminC },
@@ -139,6 +140,7 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
                   { name: "Total Folate", value: bowl?.totalFolate },
                   { name: "Total Sodium", value: bowl?.totalSodium },
                   { name: "Total Zinc", value: bowl?.totalZinc },
+                  { name: "Total Selenium", value: bowl?.totalSelenium },
                 ].filter(item => item.value)
                 .map((item, index) => (
                   <Tr key={index}>
