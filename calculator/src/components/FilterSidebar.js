@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Text,
@@ -8,10 +8,16 @@ import {
   Divider,
   IconButton,
   Stack,
+  RangeSlider,
+  RangeSliderTrack,
+  RangeSliderFilledTrack,
+  RangeSliderThumb,
 } from "@chakra-ui/react";
 import { CloseIcon } from "@chakra-ui/icons";
 
 const FilterSidebar = ({ isOpen, onClose }) => {
+  const [calorieRange, setCalorieRange] = useState([500, 1500]);
+  const [priceRange, setPriceRange] = useState([5, 25]);
   return (
     <Box
       position="fixed"
@@ -52,28 +58,70 @@ const FilterSidebar = ({ isOpen, onClose }) => {
 
       {/* Filters Section */}
       <VStack align="start" spacing={6} flex="1" overflowY="auto">
-        {/* Categories */}
+        {/* Nutrient Filters */}
         <Box width="full">
           <Text fontSize="lg" fontWeight="semibold" mb={2} color="gray.700">
-            Categories
+            Nutrients
           </Text>
           <Stack spacing={3}>
-            <Checkbox colorScheme="green">Category 1</Checkbox>
-            <Checkbox colorScheme="green">Category 2</Checkbox>
-            <Checkbox colorScheme="green">Category 3</Checkbox>
+            <Checkbox colorScheme="green">Vitamin C</Checkbox>
+            <Checkbox colorScheme="green">Vitamin A</Checkbox>
+            <Checkbox colorScheme="green">Protein</Checkbox>
+            <Checkbox colorScheme="green">Potassium</Checkbox>
+            <Checkbox colorScheme="green">Vitamin B6</Checkbox>
+            <Checkbox colorScheme="green">Folate</Checkbox>
+            {/* Add more nutrient options as needed */}
           </Stack>
         </Box>
 
-        {/* Price Range */}
+        {/* Caloric Content Range Slider */}
         <Box width="full">
           <Text fontSize="lg" fontWeight="semibold" mb={2} color="gray.700">
-            Price Range
+            Caloric Content (kcal)
           </Text>
-          <Stack spacing={3}>
-            <Checkbox colorScheme="green">Under ₹500</Checkbox>
-            <Checkbox colorScheme="green">₹500 - ₹1000</Checkbox>
-            <Checkbox colorScheme="green">Above ₹1000</Checkbox>
-          </Stack>
+          <RangeSlider
+            aria-label={["min", "max"]}
+            defaultValue={calorieRange}
+            min={0}
+            max={3000}
+            step={10}
+            onChange={(val) => setCalorieRange(val)}
+            colorScheme="green"
+          >
+            <RangeSliderTrack>
+              <RangeSliderFilledTrack />
+            </RangeSliderTrack>
+            <RangeSliderThumb index={0} />
+            <RangeSliderThumb index={1} />
+          </RangeSlider>
+          <Text mt={2} color="gray.600">
+            {calorieRange[0]} kcal - {calorieRange[1]} kcal
+          </Text>
+        </Box>
+
+        {/* Price Range Slider */}
+        <Box width="full">
+          <Text fontSize="lg" fontWeight="semibold" mb={2} color="gray.700">
+            Price (Rs)
+          </Text>
+          <RangeSlider
+            aria-label={["min", "max"]}
+            defaultValue={priceRange}
+            min={0}
+            max={50}
+            step={0.5}
+            onChange={(val) => setPriceRange(val)}
+            colorScheme="green"
+          >
+            <RangeSliderTrack>
+              <RangeSliderFilledTrack />
+            </RangeSliderTrack>
+            <RangeSliderThumb index={0} />
+            <RangeSliderThumb index={1} />
+          </RangeSlider>
+          <Text mt={2} color="gray.600">
+            Rs {priceRange[0]} - Rs {priceRange[1]}
+          </Text>
         </Box>
       </VStack>
 
@@ -86,8 +134,6 @@ const FilterSidebar = ({ isOpen, onClose }) => {
         _hover={{ bg: "green.500", transform: "scale(1.02)" }}
         _active={{ bg: "green.600" }}
         onClick={onClose}
-        alignSelf="center"
-        mb={4}
       >
         Apply Filters
       </Button>

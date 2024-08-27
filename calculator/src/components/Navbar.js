@@ -29,11 +29,13 @@ const Navbar = () => {
       <Flex h={16} alignItems="center" justifyContent="space-between">
         {/* Left Side - Logo */}
         <Box display="flex" alignItems="center">
-          <img
-            src={greenSizz}
-            alt="greenSizz"
-            style={{ width: "65px", height: "auto", marginRight: "30px" }}
-          />
+          <a href="/" style={{ textDecoration: "none" }}>
+            <img
+              src={greenSizz}
+              alt="greenSizz"
+              style={{ width: "65px", height: "auto", marginRight: "30px" }}
+            />
+          </a>
         </Box>
 
         {/* Right Side - Menu Items */}
