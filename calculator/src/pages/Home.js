@@ -24,6 +24,11 @@ const calculators = [
     icon: healthicon,
     link: "/explore-all",
   },
+  {
+    name: "Explore PCOS Bowls",
+    icon: healthicon,
+    link: "/explore-pcos",
+  },
 ];
 
 const Home = () => (
