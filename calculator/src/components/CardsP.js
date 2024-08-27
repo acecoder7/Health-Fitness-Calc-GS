@@ -147,18 +147,20 @@ const CardP = ({ data }) => {
 
           <Divider />
 
-          <Box display="flex" alignItems="center">
-            <ArrowForwardIcon
-              boxSize={6}
-              color="green.500"
-              mr={2}
-              transition="transform 0.3s ease-in-out"
-              _hover={{ transform: "translateX(5px)" }}
-            />
-            <Text color="gray.600" fontWeight="medium" textAlign="left">
-              {data.nutrientText}
-            </Text>
-          </Box>
+          {data.nutrientText && (
+            <Box display="flex" alignItems="center">
+              <ArrowForwardIcon
+                boxSize={6}
+                color="green.500"
+                mr={2}
+                transition="transform 0.3s ease-in-out"
+                _hover={{ transform: "translateX(5px)" }}
+              />
+              <Text color="gray.600" fontWeight="medium" textAlign="left">
+                {data.nutrientText}
+              </Text>
+            </Box>
+          )}
 
           <Button
             variant="solid"
