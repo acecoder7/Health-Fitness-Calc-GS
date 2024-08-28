@@ -34,7 +34,7 @@ const ExplorePCOS = () => {;
       mb="4"
       position="relative"
       marginRight={{ base: 0, md: isSidebarOpen ? "300px" : 0 }}
-      transition="margin-right 0.3s ease"
+      transition="margin-right 0.4s ease"
     >
       <Flex alignItems="center" justifyContent="space-between" mb="6">
         <Heading as="h2" size="xl">
