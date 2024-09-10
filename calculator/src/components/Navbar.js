@@ -10,7 +10,7 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import greenSizz from "../images/logo.jpg";
+import greenSizz from "../images/Logo_n.jpg";
 import { useSidebar } from "../context/SidebarContext";
 
 const Navbar = () => {
