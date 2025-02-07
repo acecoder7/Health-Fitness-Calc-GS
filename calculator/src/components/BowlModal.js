@@ -39,6 +39,14 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
     return itemData.find(item => item.id === ingredientId);
   }
 
+  const onBuyClick = () => {
+    if (bowl?.link) {
+      window.open(bowl.link, "_blank"); 
+    } else {
+      console.error("No link available for this bowl");
+    }
+  };
+
   return (
     <Modal isOpen={isOpen} onClose={onClose} size="3xl">
       <ModalOverlay />
@@ -175,7 +183,7 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
           />
 
           <Divider mt={4} mb={4} />
-          <Stack spacing={3}>
+          {/* <Stack spacing={3}>
             <Text fontSize="lg" fontWeight="bold">
               Buy Now 
             </Text>
@@ -222,11 +230,11 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
                 );
               })}
             </SimpleGrid>
-          </Stack>
+          </Stack> */}
         </ModalBody>
         <ModalFooter>
-          <Button colorScheme="orange" onClick={onClose}>
-            Close
+          <Button colorScheme="orange" onClick={onBuyClick}>
+            Buy
           </Button>
         </ModalFooter>
       </ModalContent>

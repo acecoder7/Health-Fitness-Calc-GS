@@ -25,9 +25,17 @@ const CardP = ({ data }) => {
     setSelectedBowl(null);
   };
 
-  const handleBuyNowClick = (bowl) => {
+  const handleMoreDetails = (bowl) => {
     setSelectedBowl(bowl);
     setIsOpen(true);
+  };
+
+  const handleBuyNow = () => {
+    if (data?.link) {
+      window.open(data.link, "_blank");
+    } else {
+      console.error("No link available for this bowl");
+    }
   };
 
   const gridTemplateColumns = useBreakpointValue({
@@ -162,16 +170,26 @@ const CardP = ({ data }) => {
             </Box>
           )}
 
-          <Button
-            variant="solid"
-            size="lg"
-            width="full"
-            colorScheme="green"
-            onClick={() => handleBuyNowClick(data)}
-            mt={3}
-          >
-            Buy Ingredients
-          </Button>
+          <Stack direction="row" spacing={4} mt={3}>
+            <Button
+              variant="solid"
+              size="md"
+              colorScheme="green"
+              flex="1"
+              onClick={handleBuyNow}
+            >
+              Buy Now
+            </Button>
+            <Button
+              variant="outline"
+              size="md"
+              colorScheme="blue"
+              flex="1"
+              onClick={() => handleMoreDetails(data)}
+            >
+              View More Details
+            </Button>
+          </Stack>
         </Stack>
       </Box>
 

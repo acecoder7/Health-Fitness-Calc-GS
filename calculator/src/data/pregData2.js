@@ -13,6 +13,7 @@ const Preg2Data = [
     id: 1,
     imageUrl: img1,
     name: "Strawberry Sunshine Mix",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -66,6 +67,7 @@ const Preg2Data = [
     id: 2,
     imageUrl: img2,
     name: "Berry Kale Crunch",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -119,6 +121,7 @@ const Preg2Data = [
     id: 3,
     imageUrl: img3,
     name: "Broccoli Fiesta Bowl",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -172,6 +175,7 @@ const Preg2Data = [
     id: 4,
     imageUrl: img4,
     name: "Golden Mushroom Delight",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -225,6 +229,7 @@ const Preg2Data = [
     id: 5,
     imageUrl: img5,
     name: "Papaya Pine Fusion",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -278,6 +283,7 @@ const Preg2Data = [
     id: 6,
     imageUrl: img6,
     name: "Pineapple Passion Crunch",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -331,6 +337,7 @@ const Preg2Data = [
     id: 7,
     imageUrl: img7,
     name: "Earthy Kiwi Glow",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -384,6 +391,7 @@ const Preg2Data = [
     id: 8,
     imageUrl: img8,
     name: "Sweet Pom Fiesta",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
