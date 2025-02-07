@@ -18,6 +18,7 @@ const calciumData = [
     id: 1,
     imageUrl: img3,
     name: "Rainbow Beet Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Savor our Rainbow Beet Salad, a colorful blend rich in calcium and magnesium. Perfectly portioned for six, each 500g serving is a nutritious and vibrant choice.",
     items: [
@@ -65,6 +66,7 @@ const calciumData = [
     id: 2,
     imageUrl: img6,
     name: "Crunchy Veggie Delight",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Savor our Crunchy Veggie Delight, a nutritious salad rich in vitamin C and calcium. Perfectly portioned for five, each 600g serving is a fresh and wholesome treat.",
     items: [
@@ -112,6 +114,7 @@ const calciumData = [
     id: 3,
     imageUrl: img7,
     name: "Garden Fresh Mushroom Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Enjoy our Garden Fresh Mushroom Salad, a delicious mix rich in calcium and potassium. Perfectly portioned for five, each 600g serving offers a healthy and refreshing meal.",
     items: [
@@ -159,6 +162,7 @@ const calciumData = [
     id: 4,
     imageUrl: img10,
     name: "Potato Delight Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Savor our Potato Delight Salad, a hearty mix rich in calcium and potassium. Perfectly portioned for eight, each 500g serving delivers a satisfying and nutritious experience.",
     items: [

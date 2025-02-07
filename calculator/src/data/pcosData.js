@@ -14,6 +14,7 @@ const Preg1Data = [
     id: 1,
     imageUrl: img1,
     name: "Mediterranean Mix",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -71,6 +72,7 @@ const Preg1Data = [
     id: 2,
     imageUrl: img2,
     name: "Citrus Beet Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -123,6 +125,7 @@ const Preg1Data = [
     id: 3,
     imageUrl: img3,
     name: "Berry Bliss Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -175,6 +178,7 @@ const Preg1Data = [
     id: 4,
     imageUrl: img4,
     name: "Zucchini Bowl",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -227,6 +231,7 @@ const Preg1Data = [
     id: 5,
     imageUrl: img5,
     name: "Green Powerhouse",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -279,6 +284,7 @@ const Preg1Data = [
     id: 6,
     imageUrl: img6,
     name: "Fresh Guava Delight",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -331,6 +337,7 @@ const Preg1Data = [
     id: 7,
     imageUrl: img7,
     name: "Exotic Citrus Symphony",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -383,6 +390,7 @@ const Preg1Data = [
     id: 8,
     imageUrl: img8,
     name: "Mushroom Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -440,6 +448,7 @@ const Preg1Data = [
     id: 9,
     imageUrl: img9,
     name: "Golden Delight",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -492,6 +501,7 @@ const Preg1Data = [
     id: 10,
     imageUrl: img10,
     name: "Bok Choy Bliss",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [

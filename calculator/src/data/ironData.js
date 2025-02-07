@@ -18,6 +18,7 @@ const ironData = [
     id: 1,
     imageUrl: img13,
     name: "Exotic Mango Bliss",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [

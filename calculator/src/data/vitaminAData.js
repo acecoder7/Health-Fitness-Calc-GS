@@ -18,6 +18,7 @@ const vitaminAData = [
     id: 1,
     imageUrl: img1,
     name: "Garden Fresh Delight Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Enjoy our Garden Fresh Delight Salad, a vibrant mix of veggies rich in vitamins C and A. Perfectly portioned for six, each 500g serving is a nutritious treat.",
     items: [
@@ -65,6 +66,7 @@ const vitaminAData = [
     id: 2,
     imageUrl: img13,
     name: "Exotic Mango Bliss",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
@@ -112,6 +114,7 @@ const vitaminAData = [
     id: 3,
     imageUrl: img5,
     name: "Sweet and Sunny Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Enjoy our Sweet and Sunny Salad, a vibrant mix rich in vitamin A and potassium. Perfectly portioned for six, each 500g serving offers a colorful and nutritious delight.",
     items: [
@@ -159,6 +162,7 @@ const vitaminAData = [
     id: 4,
     imageUrl: img9,
     name: "Harvest Glow Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Enjoy our Harvest Glow Salad, a nutritious blend rich in vitamin A and potassium. Perfectly portioned for six, each 500g serving offers a vibrant and healthy meal.",
     items: [
@@ -206,6 +210,7 @@ const vitaminAData = [
     id: 5,
     imageUrl: img14,
     name: "Mango Papaya Paradise",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Enjoy our Mango Papaya Paradise, a tropical blend rich in vitamin A and potassium. Perfectly portioned for five, each 600g serving is a refreshing and vibrant treat.",
     items: [

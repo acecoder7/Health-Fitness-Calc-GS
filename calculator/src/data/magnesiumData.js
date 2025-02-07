@@ -20,6 +20,7 @@ const magnesiumData = [
     id: 1,
     imageUrl: img3,
     name: "Rainbow Beet Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Savor our Rainbow Beet Salad, a colorful blend rich in calcium and magnesium. Perfectly portioned for six, each 500g serving is a nutritious and vibrant choice.",
     items: [
@@ -67,6 +68,7 @@ const magnesiumData = [
     id: 2,
     imageUrl: img11,
     name: "Berry Banana Bliss",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in our Berry Banana Bliss, a fruity blend rich in vitamin C and magnesium. Perfectly portioned for eight, each 500g serving is a refreshing and nutritious treat.",
     items: [

@@ -22,6 +22,7 @@ const proteinData = [
     id: 1,
     imageUrl: img2,
     name: "Fresh Harvest Crunch",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       " Enjoy our Fresh Harvest Crunch, a vibrant salad rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving offers a nutritious and flavorful bite.",
     items: [
@@ -69,6 +70,7 @@ const proteinData = [
     id: 2,
     imageUrl: img4,
     name: "Golden Corn Fiesta",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       " Enjoy our Golden Corn Fiesta, a delightful salad rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving offers a fresh and nutritious experience.",
     items: [
@@ -116,6 +118,7 @@ const proteinData = [
     id: 3,
     imageUrl: img15,
     name: "Tropical Fruit Harmony",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Savor the zest of Vitamin C and potassium in every bite! This refreshing mix of pomegranate, king kiwi, orange, apple, and blueberries is a vibrant, nutrient-packed indulgence.",
     items: [
@@ -163,6 +166,7 @@ const proteinData = [
     id: 4,
     imageUrl: img5,
     name: "Sweet and Sunny Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Enjoy our Sweet and Sunny Salad, a vibrant mix rich in vitamin A and potassium. Perfectly portioned for six, each 500g serving offers a colorful and nutritious delight.",
     items: [
@@ -210,6 +214,7 @@ const proteinData = [
     id: 5,
     imageUrl: img7,
     name: "Garden Fresh Mushroom Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Enjoy our Garden Fresh Mushroom Salad, a delicious mix rich in calcium and potassium. Perfectly portioned for five, each 600g serving offers a healthy and refreshing meal.",
     items: [
@@ -257,6 +262,7 @@ const proteinData = [
     id: 6,
     imageUrl: img8,
     name: "Green and Gold Salad Bliss",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Enjoy our Green and Gold Salad Bliss, a vibrant mix rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving is a nutritious and colorful delight.",
     items: [
@@ -304,6 +310,7 @@ const proteinData = [
     id: 7,
     imageUrl: img9,
     name: "Harvest Glow Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Enjoy our Harvest Glow Salad, a nutritious blend rich in vitamin A and potassium. Perfectly portioned for six, each 500g serving offers a vibrant and healthy meal.",
     items: [
@@ -351,6 +358,7 @@ const proteinData = [
     id: 8,
     imageUrl: img10,
     name: "Potato Delight Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Savor our Potato Delight Salad, a hearty mix rich in calcium and potassium. Perfectly portioned for eight, each 500g serving delivers a satisfying and nutritious experience.",
     items: [
@@ -398,6 +406,7 @@ const proteinData = [
     id: 9,
     imageUrl: img12,
     name: "Rainbow Crunch Salad",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Enjoy our Rainbow Crunch Salad, a vibrant mix rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving offers a fresh and nutritious crunch.",
     items: [
@@ -445,6 +454,7 @@ const proteinData = [
     id: 10,
     imageUrl: img17,
     name: "Exotic Fruit Fiesta",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Savor our Exotic Fruit Fiesta, a vibrant mix rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving is a refreshing burst of tropical flavor.",
     items: [
@@ -492,6 +502,7 @@ const proteinData = [
     id: 11,
     imageUrl: img16,
     name: "Tropical Berry Fusion",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Refresh with our Tropical Berry Fusion, a delightful mix rich in vitamin C and potassium. Perfectly portioned for six, each 500g serving is a tropical treat bursting with flavor.",
     items: [
@@ -539,6 +550,7 @@ const proteinData = [
     id: 12,
     imageUrl: img14,
     name: "Mango Papaya Paradise",
+    link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Enjoy our Mango Papaya Paradise, a tropical blend rich in vitamin A and potassium. Perfectly portioned for five, each 600g serving is a refreshing and vibrant treat.",
     items: [
