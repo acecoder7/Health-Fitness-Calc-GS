@@ -6,11 +6,13 @@ import img5 from "../images/preg/3/Honeydew Green Crunch.jpeg.jpg";
 import img6 from "../images/preg/3/Tomato & Veggie Fusion.jpeg.jpg";
 import img7 from "../images/preg/3/Broccoli Mushroom Crunch.jpeg.jpg";
 import img8 from "../images/preg/3/Mushroom Pom delight.jpeg.jpg";
+import img11 from "../images/preg/1/kiwi kale mini .jpg";
 
 const Preg3Data = [
   {
     id: 1,
     imageUrl: img1,
+    imageMini: img11,
     name: "Peachy Green Delight",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -65,6 +67,7 @@ const Preg3Data = [
   {
     id: 2,
     imageUrl: img2,
+    imageMini: img11,
     name: "Carrot Avocado Crunch",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -119,6 +122,7 @@ const Preg3Data = [
   {
     id: 3,
     imageUrl: img3,
+    imageMini: img11,
     name: "Zucchini Mushroom Mix",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -173,6 +177,7 @@ const Preg3Data = [
   {
     id: 4,
     imageUrl: img4,
+    imageMini: img11,
     name: "Strawberry Pine Fusion",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -227,6 +232,7 @@ const Preg3Data = [
   {
     id: 5,
     imageUrl: img5,
+    imageMini: img11,
     name: "Honeydew Green Crunch",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -281,6 +287,7 @@ const Preg3Data = [
   {
     id: 6,
     imageUrl: img6,
+    imageMini: img11,
     name: "Tomato & Veggie Fusion",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -335,6 +342,7 @@ const Preg3Data = [
   {
     id: 7,
     imageUrl: img7,
+    imageMini: img11,
     name: "Broccoli Mushroom Crunch",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -389,6 +397,7 @@ const Preg3Data = [
   {
     id: 8,
     imageUrl: img8,
+    imageMini: img11,
     name: "Mushroom Pom Delight",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:

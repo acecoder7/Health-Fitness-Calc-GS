@@ -67,6 +67,7 @@ const CardP = ({ data }) => {
         position="relative"
         borderRadius="md"
         overflow="hidden"
+        role="group"
         _hover={{ boxShadow: "lg", cursor: "pointer" }}
       >
         <Image
@@ -76,9 +77,31 @@ const CardP = ({ data }) => {
           objectFit="cover"
           width="100%"
           height="280px"
-          transition="transform 0.3s"
-          _hover={{ transform: "scale(1.1)" }}
+          transition="all 0.3s ease"
+          _groupHover={{ filter: "blur(3px) brightness(70%)" }}
         />
+
+        {data.imageMini && (
+          <Image
+            src={data.imageMini}
+            alt={`${data.name} Ingredients`}
+            position="absolute"
+            bottom="15px"
+            right="15px"
+            width="140px"
+            height="140px"
+            border="1.5px solid gray.600"
+            boxShadow="lg"
+            transition="all 0.3s ease"
+            _groupHover={{
+              top: "50%",
+              left: "50%",
+              bottom: "auto",
+              right: "auto",
+              transform: "translate(-50%, -50%) scale(1.7)",
+            }}
+          />
+        )}
       </Box>
 
       <Box p={3} flex="1">
