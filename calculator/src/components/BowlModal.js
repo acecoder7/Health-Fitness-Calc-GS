@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Image,
@@ -13,8 +13,6 @@ import {
   Td,
   Button,
   Grid,
-  GridItem,
-  SimpleGrid,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -23,25 +21,40 @@ import {
   ModalBody,
   ModalFooter,
   useBreakpointValue,
+  HStack,
 } from "@chakra-ui/react";
 
 import IngredientSection from "./IngridentSection";
 import itemData from "../data/itemData";
 
 const BowlModal = ({ isOpen, onClose, bowl }) => {
-
   const gridTemplateColumns = useBreakpointValue({
     base: "1fr",
-    md: "repeat(2, 1fr)",
+    md: "1.5fr 1fr",
   });
 
+  // State to track the currently selected main image
+  const [selectedImage, setSelectedImage] = useState(bowl?.imageUrl);
+
+  // Update the selected image when the bowl prop changes
+  useEffect(() => {
+    if (bowl) {
+      setSelectedImage(bowl.imageUrl);
+    }
+  }, [bowl]);
+
+  // Create an array of images (filtering out any undefined values)
+  const images = [bowl?.imageUrl, bowl?.imageUrl1, bowl?.imageUrl2].filter(
+    (img) => img
+  );
+
   const getItemDetails = (ingredientId) => {
-    return itemData.find(item => item.id === ingredientId);
-  }
+    return itemData.find((item) => item.id === ingredientId);
+  };
 
   const onBuyClick = () => {
     if (bowl?.link) {
-      window.open(bowl.link, "_blank"); 
+      window.open(bowl.link, "_blank");
     } else {
       console.error("No link available for this bowl");
     }
@@ -57,23 +70,52 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
         <ModalCloseButton />
         <ModalBody>
           <Grid templateColumns={gridTemplateColumns} gap={4}>
-            <Box
-              position="relative"
-              borderRadius="md"
-              overflow="hidden"
-              _hover={{ boxShadow: "lg", cursor: "pointer" }}
-            >
-              <Image
-                src={bowl?.imageUrl}
-                alt={bowl?.name}
+            {/* Left Column: Main image + Thumbnails */}
+            <Box>
+              <Box
+                position="relative"
                 borderRadius="md"
-                objectFit="cover"
-                width="100%"
-                height="270px"
-                transition="transform 0.3s"
-                _hover={{ transform: "scale(1.5)" }}
-              />
+                overflow="hidden"
+                _hover={{ boxShadow: "lg", cursor: "pointer" }}
+              >
+                <Image
+                  src={selectedImage}
+                  alt={bowl?.name}
+                  borderRadius="md"
+                  objectFit="fit"
+                  width="100%"
+                  height="270px"
+                  transition="transform 0.3s"
+                  _hover={{ transform: "scale(1.05)" }}
+                />
+              </Box>
+              {/* Thumbnails Row */}
+              <HStack spacing={2} mt={2} justify="center">
+                {images.map((img, index) => (
+                  <Box
+                    key={index}
+                    border={
+                      selectedImage === img
+                        ? "2px solid orange"
+                        : "1px solid gray"
+                    }
+                    borderRadius="md"
+                    overflow="hidden"
+                    cursor="pointer"
+                    onClick={() => setSelectedImage(img)}
+                  >
+                    <Image
+                      src={img}
+                      alt={`Thumbnail ${index + 1}`}
+                      boxSize="60px"
+                      objectFit="cover"
+                    />
+                  </Box>
+                ))}
+              </HStack>
             </Box>
+
+            {/* Right Column: Bowl Details */}
             <Box>
               <Stack spacing={2}>
                 <Text fontSize="sm">{bowl?.description}</Text>
@@ -92,6 +134,7 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
               </Stack>
             </Box>
           </Grid>
+
           <Divider mt={4} mb={4} />
           <Text fontWeight="bold" mb={2}>
             Nutrient Values:
@@ -114,7 +157,7 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
                     fontWeight="bold"
                     borderBottom="2px solid"
                     borderColor="orange.300"
-                    width="60%" 
+                    width="60%"
                     padding="8px"
                   >
                     Nutrient
@@ -125,7 +168,7 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
                     fontWeight="bold"
                     borderBottom="2px solid"
                     borderColor="orange.300"
-                    width="40%" 
+                    width="40%"
                     padding="8px"
                     textAlign="right"
                   >
@@ -149,31 +192,32 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
                   { name: "Total Sodium", value: bowl?.totalSodium },
                   { name: "Total Zinc", value: bowl?.totalZinc },
                   { name: "Total Selenium", value: bowl?.totalSelenium },
-                ].filter(item => item.value)
-                .map((item, index) => (
-                  <Tr key={index}>
-                    <Td
-                      borderBottom="1px solid"
-                      borderColor="orange.300"
-                      padding="8px"
-                      fontSize="sm"
-                    >
-                      {item.name}
-                    </Td>
-                    <Td
-                      borderBottom="1px solid"
-                      borderColor="orange.300"
-                      padding="8px"
-                      fontSize="sm"
-                      textAlign="right"
-                    >
-                      {item.value}
-                    </Td>
-                  </Tr>
-                ))}
-            </Tbody>
-          </Table>
-        </Box>
+                ]
+                  .filter((item) => item.value)
+                  .map((item, index) => (
+                    <Tr key={index}>
+                      <Td
+                        borderBottom="1px solid"
+                        borderColor="orange.300"
+                        padding="8px"
+                        fontSize="sm"
+                      >
+                        {item.name}
+                      </Td>
+                      <Td
+                        borderBottom="1px solid"
+                        borderColor="orange.300"
+                        padding="8px"
+                        fontSize="sm"
+                        textAlign="right"
+                      >
+                        {item.value}
+                      </Td>
+                    </Tr>
+                  ))}
+              </Tbody>
+            </Table>
+          </Box>
 
           <Divider mt={4} mb={4} />
 
@@ -183,54 +227,6 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
           />
 
           <Divider mt={4} mb={4} />
-          {/* <Stack spacing={3}>
-            <Text fontSize="lg" fontWeight="bold">
-              Buy Now 
-            </Text>
-            <SimpleGrid columns={1} spacing={4}>
-              {(bowl?.items || []).map((item, index) => {
-                const itemdetails = getItemDetails(item.ingredientId);
-                return (
-                  <Grid
-                    key={index}
-                    templateColumns="repeat(4, 1fr)"
-                    gap={4}
-                    alignItems="center"
-                    p={2}
-                    borderRadius="md"
-                    bg="white"
-                  >
-                    <GridItem>
-                      <Image
-                        src={itemdetails?.imageUrl}
-                        alt={itemdetails?.name}
-                        boxSize="100px"
-                        objectFit="cover"
-                      />
-                    </GridItem>
-                    <GridItem>
-                      <Text color="orange.500" fontWeight="bold">
-                        {itemdetails?.name || item.name}
-                      </Text>
-                    </GridItem>
-                    <GridItem>
-                      <Text>Quantity: {item.quantity}</Text>
-                    </GridItem>
-                    <GridItem justifySelf="end">
-                      <Button
-                        colorScheme="green"
-                        as="a"
-                        href={itemdetails?.link || "#"}
-                        target="_blank"
-                      >
-                        Buy
-                      </Button>
-                    </GridItem>
-                  </Grid>
-                );
-              })}
-            </SimpleGrid>
-          </Stack> */}
         </ModalBody>
         <ModalFooter>
           <Button colorScheme="orange" onClick={onBuyClick}>
