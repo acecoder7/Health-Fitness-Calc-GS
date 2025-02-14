@@ -86,10 +86,11 @@ const Card = ({ data, nutrient }) => {
           src={data.imageUrl}
           alt={data.name}
           borderTopRadius="md"
-          objectFit="cover"
+          objectFit="contain"
           width="100%"
+          height="auto"
           transition="transform 0.3s"
-          _hover={{ transform: "scale(1.2)" }}
+          _hover={{ transform: "scale(1.07)" }}
         />
       </Box>
 
