@@ -30,7 +30,7 @@ import itemData from "../data/itemData";
 const BowlModal = ({ isOpen, onClose, bowl }) => {
   const gridTemplateColumns = useBreakpointValue({
     base: "1fr",
-    md: "1.5fr 1fr",
+    md: "1fr 1fr",
   });
 
   // State to track the currently selected main image
@@ -82,7 +82,7 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
                   src={selectedImage}
                   alt={bowl?.name}
                   borderRadius="md"
-                  objectFit="fit"
+                  objectFit="cover"
                   width="100%"
                   height="270px"
                   transition="transform 0.3s"

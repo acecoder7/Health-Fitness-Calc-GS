@@ -8,15 +8,14 @@ import img7 from "../images/preg/1/Spinach Avocado Medley.jpeg.jpg";
 import img8 from "../images/preg/1/cutrus root glow.jpeg.jpg";
 import img11 from "../images/preg/1/kiwi kale mini .jpg";
 import img1b from "../images/pcos/Mediterrian mix.jpeg.jpg";
-import img1c from "../images/pcos/mediterrian mix cover.jpg";
-import img1i from "../images/pcos/mediterrian mix ing.jpg";
+import img1c from "../images/pcos/mediterrian mix coverf.jpg";
+
 
 const Preg1Data = [
   {
     id: 1,
     imageUrl: img1c,
     imageUrl1: img1,
-    imageUrl2: img1i,
     name: "Kiwi Kale Crunch",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -72,7 +71,6 @@ const Preg1Data = [
     id: 2,
     imageUrl: img1c,
     imageUrl1: img2,
-    imageUrl2: img1i,
     name: "Zesty Green Fusion",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -128,7 +126,6 @@ const Preg1Data = [
     id: 3,
     imageUrl: img1c,
     imageUrl1: img3,
-    imageUrl2: img1i,
     name: "Tropical Jewel Mix",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -184,7 +181,6 @@ const Preg1Data = [
     id: 4,
     imageUrl: img1c,
     imageUrl1: img4,
-    imageUrl2: img1i,
     name: "Snap & Pine Delight",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -240,7 +236,6 @@ const Preg1Data = [
     id: 5,
     imageUrl: img1c,
     imageUrl1: img5,
-    imageUrl2: img1i,
     name: "Parsley Pomegranate Pop",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -296,7 +291,6 @@ const Preg1Data = [
     id: 6,
     imageUrl: img1c,
     imageUrl1: img6,
-    imageUrl2: img1i,
     name: "Avocado Mushroom Medley",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -352,7 +346,6 @@ const Preg1Data = [
     id: 7,
     imageUrl: img1c,
     imageUrl1: img7,
-    imageUrl2: img1i,
     name: "Spinach Avocado Medley",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -408,7 +401,6 @@ const Preg1Data = [
     id: 8,
     imageUrl: img1c,
     imageUrl1: img8,
-    imageUrl2: img1i,
     name: "Citrus Root Glow",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:

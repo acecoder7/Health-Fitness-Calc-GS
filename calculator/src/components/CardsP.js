@@ -11,6 +11,7 @@ import {
   Button,
   Grid,
   useBreakpointValue,
+  AspectRatio
 } from "@chakra-ui/react";
 import BowlModal from "../components/BowlModal";
 
@@ -53,7 +54,7 @@ const CardP = ({ data }) => {
   return (
     <Box
       key={data.id}
-      maxWidth="100%"
+      w={{ base: "100%", md: "400px" }}
       borderWidth="1px"
       borderRadius="md"
       overflow="hidden"
@@ -63,23 +64,21 @@ const CardP = ({ data }) => {
       m={1}
       borderColor="gray.600"
     >
-      <Box
-        position="relative"
-        borderRadius="md"
+      <AspectRatio
+        ratio={1}
+        w="100%"
+        borderTopRadius="md"
         overflow="hidden"
         _hover={{ boxShadow: "lg", cursor: "pointer" }}
       >
         <Image
           src={data.imageUrl}
           alt={data.name}
-          borderTopRadius="md"
           objectFit="contain"
-          width="100%"
-          height="auto"
           transition="transform 0.3s"
           _hover={{ transform: "scale(1.07)" }}
         />
-      </Box>
+      </AspectRatio>
 
       <Box p={3} flex="1">
         <Stack spacing={2}>
