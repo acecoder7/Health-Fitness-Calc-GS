@@ -84,9 +84,9 @@ const BowlModal = ({ isOpen, onClose, bowl }) => {
                   borderRadius="md"
                   objectFit="cover"
                   width="100%"
-                  height="270px"
+                  height="300px"
                   transition="transform 0.3s"
-                  _hover={{ transform: "scale(1.05)" }}
+                  _hover={{ transform: "scale(1.04)" }}
                 />
               </Box>
               {/* Thumbnails Row */}
