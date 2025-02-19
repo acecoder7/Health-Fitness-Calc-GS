@@ -10,14 +10,11 @@ import {
 import { FaFilter } from "react-icons/fa";
 
 import pcosdata from "../data/pcosData";
-
 import CardP from "../components/CardsP";
 import FilterSidebar from "../components/FilterSidebar";
-
 import { useSidebar } from "../context/SidebarContext";
 
-const ExplorePCOS = () => {;
-
+const ExplorePCOS = () => {
   const { isSidebarOpen, setSidebarOpen } = useSidebar();
 
   const handleFilterButtonClick = () => {
@@ -59,10 +56,10 @@ const ExplorePCOS = () => {;
             zIndex={1000}
           />
         </Flex>
-          </Flex>
+      </Flex>
           
       <Box padding={{ base: "0", md: "0 6" }} mt={{ base: "0", md: "0" }}>
-        <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing="6">
+        <SimpleGrid minChildWidth="300px" spacing="7">
           {pcosdata.length > 0 ? (
             pcosdata.map((data) => (
               <CardP key={data.id} data={data} nutrient="Protein" />

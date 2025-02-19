@@ -82,7 +82,7 @@ const ExplorePregnancy = () => {
         </Text>
       )}
       <Box padding={{ base: "0", md: "0 6" }} mt={{ base: "0", md: "0" }}>
-        <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing="6">
+        <SimpleGrid minChildWidth="300px" spacing="7">
           {dataToRender.length > 0 ? (
             dataToRender.map((data) => (
               <CardP key={data.id} data={data} nutrient="Protein" />

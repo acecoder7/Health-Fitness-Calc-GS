@@ -14,7 +14,6 @@ import {
   AspectRatio
 } from "@chakra-ui/react";
 import BowlModal from "../components/BowlModal";
-
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 const CardP = ({ data }) => {
@@ -54,7 +53,7 @@ const CardP = ({ data }) => {
   return (
     <Box
       key={data.id}
-      w={{ base: "100%", md: "400px" }}
+      w="100%" // Updated to fill the grid cell
       borderWidth="1px"
       borderRadius="md"
       overflow="hidden"
@@ -204,3 +203,4 @@ const CardP = ({ data }) => {
 };
 
 export default CardP;
+
