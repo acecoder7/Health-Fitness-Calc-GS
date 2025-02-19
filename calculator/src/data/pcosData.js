@@ -1,16 +1,25 @@
 import img1b from "../images/pcos/Mediterrian mix.jpeg.jpg";
 import img1c from "../images/pcos/mediterrian mix coverf.jpg";
 import img2 from "../images/pcos/citrus beet .jpeg.jpg";
+import img2c from "../images/pcos/citrus beet salad cover.jpeg.jpg";
 import img3 from "../images/pcos/Berry Bliss Salad.jpeg.jpg";
+import img3c from "../images/pcos/Berry Bliss Salad cover.jpg";
 import img4 from "../images/pcos/Zuccihini bowl .jpeg.jpg";
+import img4c from "../images/pcos/Zucchini Bowl cover.jpeg.jpg";
 import img5 from "../images/pcos/green powerhouse .jpeg.jpg";
+import img5c from "../images/pcos/Green Powerhouse cover.jpg";
 import img6 from "../images/pcos/fresh guava delight .jpeg.jpg";
+import img6c from "../images/pcos/Fresh Guava Delight cover.jpg";
 import img7 from "../images/pcos/exotic citrus symphony .jpeg.jpg";
+import img7c from "../images/pcos/Exotic Citrus Symphony cover.jpg";
 import img8 from "../images/pcos/mushroom salad .jpeg.jpg";
+import img8c from "../images/pcos/Mushroom Salad cover.jpg";
 import img9 from "../images/pcos/Golden delight.jpeg.jpg";
+import img9c from "../images/pcos/Golden Delight cover.jpg";
 import img10 from "../images/pcos/Bok choy salad.jpeg.jpg";
+import img10c from "../images/pcos/Bok Choy Bliss cover.jpg";
 
-const Preg1Data = [
+const PcosData = [
   {
     id: 1,
     imageUrl: img1c,
@@ -72,8 +81,8 @@ const Preg1Data = [
   },
   {
     id: 2,
-    imageUrl: img1c,
-    imageUrl1: img1b,
+    imageUrl: img2c,
+    imageUrl1: img2,
     name: "Citrus Beet Salad",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -126,8 +135,8 @@ const Preg1Data = [
   },
   {
     id: 3,
-    imageUrl: img1c,
-    imageUrl1: img1b,
+    imageUrl: img3c,
+    imageUrl1: img3,
     name: "Berry Bliss Salad",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -180,8 +189,8 @@ const Preg1Data = [
   },
   {
     id: 4,
-    imageUrl: img1c,
-    imageUrl1: img1b,
+    imageUrl: img4c,
+    imageUrl1: img4,
     name: "Zucchini Bowl",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -234,8 +243,8 @@ const Preg1Data = [
   },
   {
     id: 5,
-    imageUrl: img1c,
-    imageUrl1: img1b,
+    imageUrl: img5c,
+    imageUrl1: img5,
     name: "Green Powerhouse",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -288,8 +297,8 @@ const Preg1Data = [
   },
   {
     id: 6,
-    imageUrl: img1c,
-    imageUrl1: img1b,
+    imageUrl: img6c,
+    imageUrl1: img6,
     name: "Fresh Guava Delight",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -342,8 +351,8 @@ const Preg1Data = [
   },
   {
     id: 7,
-    imageUrl: img1c,
-    imageUrl1: img1b,
+    imageUrl: img7c,
+    imageUrl1: img7,
     name: "Exotic Citrus Symphony",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -396,8 +405,8 @@ const Preg1Data = [
   },
   {
     id: 8,
-    imageUrl: img1c,
-    imageUrl1: img1b,
+    imageUrl: img8c,
+    imageUrl1: img8,
     name: "Mushroom Salad",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -455,8 +464,8 @@ const Preg1Data = [
   },
   {
     id: 9,
-    imageUrl: img1c,
-    imageUrl1: img1b,
+    imageUrl: img9c,
+    imageUrl1: img9,
     name: "Golden Delight",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -509,8 +518,8 @@ const Preg1Data = [
   },
   {
     id: 10,
-    imageUrl: img1c,
-    imageUrl1: img1b,
+    imageUrl: img10c,
+    imageUrl1: img10,
     name: "Bok Choy Bliss",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
@@ -563,4 +572,4 @@ const Preg1Data = [
   },
 ];
 
-export default Preg1Data;
+export default PcosData;
