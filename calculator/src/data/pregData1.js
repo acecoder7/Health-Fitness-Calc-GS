@@ -1,14 +1,22 @@
 import img1 from "../images/preg/1/kiwi kale.jpeg.jpg";
+import img1c from "../images/preg/1/kiwi kale crunch cover.jpg";
 import img2 from "../images/preg/1/Zesty Green Fusion.jpeg.jpg";
+import img2c from "../images/preg/1/zesty green cover .jpg";
 import img3 from "../images/preg/1/tropical jewel mix.jpeg.jpg";
+import img3c from "../images/preg/1/tropical jwel cover.jpg";
 import img4 from "../images/preg/1/snap and pine delight .jpeg.jpg";
+import img4c from "../images/preg/1/snap and pine cover.jpg";
 import img5 from "../images/preg/1/Parsley Pomegranate Pop.jpeg.jpg";
+import img5c from "../images/preg/1/parsley promogranet cover.jpg";
 import img6 from "../images/preg/1/Avocado Mushroom Medley.jpeg.jpg";
+import img6c from "../images/preg/1/avocado mushroom meley cover.jpg";
 import img7 from "../images/preg/1/Spinach Avocado Medley.jpeg.jpg";
+import img7c from "../images/preg/1/spinach avacado cover.jpg";
 import img8 from "../images/preg/1/cutrus root glow.jpeg.jpg";
+import img8c from "../images/preg/1/citrus root glow cover.jpg";
 import img11 from "../images/preg/1/kiwi kale mini .jpg";
 import img1b from "../images/pcos/Mediterrian mix.jpeg.jpg";
-import img1c from "../images/pcos/mediterrian mix coverf.jpg";
+import img11c from "../images/pcos/mediterrian mix coverf.jpg";
 
 
 const Preg1Data = [
@@ -69,7 +77,7 @@ const Preg1Data = [
   },
   {
     id: 2,
-    imageUrl: img1c,
+    imageUrl: img2c,
     imageUrl1: img2,
     name: "Zesty Green Fusion",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
@@ -124,7 +132,7 @@ const Preg1Data = [
   },
   {
     id: 3,
-    imageUrl: img1c,
+    imageUrl: img3c,
     imageUrl1: img3,
     name: "Tropical Jewel Mix",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
@@ -179,7 +187,7 @@ const Preg1Data = [
   },
   {
     id: 4,
-    imageUrl: img1c,
+    imageUrl: img4c,
     imageUrl1: img4,
     name: "Snap & Pine Delight",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
@@ -234,7 +242,7 @@ const Preg1Data = [
   },
   {
     id: 5,
-    imageUrl: img1c,
+    imageUrl: img5c,
     imageUrl1: img5,
     name: "Parsley Pomegranate Pop",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
@@ -289,7 +297,7 @@ const Preg1Data = [
   },
   {
     id: 6,
-    imageUrl: img1c,
+    imageUrl: img6c,
     imageUrl1: img6,
     name: "Avocado Mushroom Medley",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
@@ -344,7 +352,7 @@ const Preg1Data = [
   },
   {
     id: 7,
-    imageUrl: img1c,
+    imageUrl: img7c,
     imageUrl1: img7,
     name: "Spinach Avocado Medley",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
@@ -399,7 +407,7 @@ const Preg1Data = [
   },
   {
     id: 8,
-    imageUrl: img1c,
+    imageUrl: img8c,
     imageUrl1: img8,
     name: "Citrus Root Glow",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
