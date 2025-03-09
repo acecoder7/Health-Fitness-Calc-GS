@@ -25,7 +25,7 @@ const calculators = [
     link: "/explore-all",
   },
   {
-    name: "Explore PCOS Bowls",
+    name: "Explore Ovaboost Care Bowls",
     icon: healthicon,
     link: "/explore-pcos",
   },

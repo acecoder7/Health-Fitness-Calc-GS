@@ -34,9 +34,14 @@ const ExplorePCOS = () => {
       transition="margin-right 0.4s ease"
     >
       <Flex alignItems="center" justifyContent="space-between" mb="6">
-        <Heading as="h2" size="xl">
-          Explore PCOS Bowls
-        </Heading>
+        <Flex alignItems="center">
+          <Heading as="h2" size="xl">
+            Explore Ovaboost Care Bowls
+          </Heading>
+          <Text fontSize="lg" color="gray.600" ml="4">
+            - Nourishes feminity
+          </Text>
+        </Flex>
         <Flex alignItems="center" mr="6">
           <Text
             fontSize="lg"
@@ -57,7 +62,7 @@ const ExplorePCOS = () => {
           />
         </Flex>
       </Flex>
-          
+
       <Box padding={{ base: "0", md: "0 6" }} mt={{ base: "0", md: "0" }}>
         <SimpleGrid minChildWidth="300px" spacing="7">
           {pcosdata.length > 0 ? (
