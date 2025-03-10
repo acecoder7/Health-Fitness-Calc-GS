@@ -39,7 +39,7 @@ const ExplorePCOS = () => {
           <Heading as="h2" size="xl">
             Explore Ovaboost Care Bowls
           </Heading>
-          <Text fontSize="lg" color="gray.600" ml="4">
+          <Text fontSize="lg" color="gray.800" ml="4" fontWeight="bold">
             - Nourishes feminity
           </Text>
         </Flex>
