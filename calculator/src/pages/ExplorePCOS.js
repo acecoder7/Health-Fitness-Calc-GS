@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// explorePCOS.js
+import React from "react";
 import {
   Box,
   Heading,
@@ -67,7 +68,12 @@ const ExplorePCOS = () => {
         <SimpleGrid minChildWidth="300px" spacing="7">
           {pcosdata.length > 0 ? (
             pcosdata.map((data) => (
-              <CardP key={data.id} data={data} nutrient="Protein" />
+              <CardP
+                key={data.id}
+                data={data}
+                nutrient="Protein"
+                hideIngredients={true} 
+              />
             ))
           ) : (
             <Text>No data available.</Text>
@@ -80,3 +86,4 @@ const ExplorePCOS = () => {
 };
 
 export default ExplorePCOS;
+

@@ -16,7 +16,7 @@ import {
 import BowlModal from "../components/BowlModal";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
-const CardP = ({ data }) => {
+const CardP = ({ data, hideIngredients }) => {
   const [selectedBowl, setSelectedBowl] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -53,7 +53,7 @@ const CardP = ({ data }) => {
   return (
     <Box
       key={data.id}
-      w="100%" // Updated to fill the grid cell
+      w="100%"
       borderWidth="1px"
       borderRadius="md"
       overflow="hidden"
@@ -89,7 +89,8 @@ const CardP = ({ data }) => {
 
           <Divider />
 
-          {data.items && data.items.length > 0 && (
+          {/* Conditionally render ingredients if hideIngredients is not true */}
+          {!hideIngredients && data.items && data.items.length > 0 && (
             <>
               <Text color="gray.600" fontWeight="bold" mb={2}>
                 Ingredients:
@@ -137,7 +138,7 @@ const CardP = ({ data }) => {
             <>
               <Divider />
               <Text color="gray.600" fontWeight="bold" mb={2} mt={2}>
-                Rich in:
+                Essential Micronutrients:
               </Text>
               <Wrap spacing={1} shouldWrap>
                 {data.richIn.map((item, index) => (
@@ -203,4 +204,5 @@ const CardP = ({ data }) => {
 };
 
 export default CardP;
+
 

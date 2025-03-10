@@ -74,7 +74,7 @@ const PcosData = [
     noOfServing: 8,
     servingSize: "500 g",
     richIn: ["Selenium", "Chromium", "Iron"],
-    nutrientText: "TThyriod care made easy",
+    nutrientText: "Thyriod care made easy",
   },
   {
     id: 2,
@@ -129,7 +129,7 @@ const PcosData = [
     totalSelenium: "23 μg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Carotene", "Selenium", "Zinc"],
+    richIn: ["β-carotene", "Selenium", "Zinc"],
     nutrientText: "Regulates insulin resistance",
   },
   {
@@ -588,7 +588,7 @@ const PcosData = [
     totalSelenium: "4 μg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Beta Carotene", "Folate", "Pyridoxine"],
+    richIn: ["β-carotene", "Folate", "Pyridoxine"],
   }
 ];
 
