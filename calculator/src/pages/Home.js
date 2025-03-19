@@ -39,6 +39,11 @@ const calculators = [
     icon: pcos,
     link: "/explore-pcos",
   },
+  {
+    name: "Explore Testosterone Booster Bowls",
+    icon: pcos,
+    link: "/explore-testt",
+  },
 ];
 
 const Home = () => (
