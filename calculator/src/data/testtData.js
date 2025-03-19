@@ -1,30 +1,30 @@
-import img1b from "../images/pcos/Mediterrian mix.jpeg.jpg";
-import img1c from "../images/pcos/mediterrian mix coverf.jpg";
-import img2 from "../images/pcos/citrus beet .jpeg.jpg";
-import img2c from "../images/pcos/citrus beet salad cover.jpeg.jpg";
-import img3 from "../images/pcos/Berry Bliss Salad.jpeg.jpg";
-import img3c from "../images/pcos/Berry Bliss Salad cover.jpg";
-import img4 from "../images/pcos/Zuccihini bowl .jpeg.jpg";
-import img4c from "../images/pcos/Zucchini Bowl cover.jpeg.jpg";
-import img5 from "../images/pcos/green powerhouse .jpeg.jpg";
-import img5c from "../images/pcos/Green Powerhouse cover.jpg";
-import img6 from "../images/pcos/fresh guava delight .jpeg.jpg";
-import img6c from "../images/pcos/Fresh Guava Delight cover.jpg";
-import img7 from "../images/pcos/exotic citrus symphony .jpeg.jpg";
-import img7c from "../images/pcos/Exotic Citrus Symphony cover.jpg";
-import img8 from "../images/pcos/mushroom salad .jpeg.jpg";
-import img8c from "../images/pcos/Mushroom Salad cover.jpg";
-import img9 from "../images/pcos/Golden delight.jpeg.jpg";
-import img9c from "../images/pcos/Golden Delight cover.jpg";
+import img1b from "../images/testt/alpha green.jpg";
+import img1c from "../images/testt/alpha green.jpg";
+import img2 from "../images/testt/prime vitality.jpg";
+import img2c from "../images/testt/prime vitality.jpg";
+import img3 from "../images/testt/t-boost.jpg";
+import img3c from "../images/testt/t-boost.jpg";
+import img4 from "../images/testt/stamina surge.jpg";
+import img4c from "../images/testt/stamina surge.jpg";
+import img5 from "../images/testt/virility.jpg";
+import img5c from "../images/testt/virility.jpg";
+import img6 from "../images/testt/peak power mix.jpg";
+import img6c from "../images/testt/peak power mix.jpg";
+import img7 from "../images/testt/green bloom.jpg";
+import img7c from "../images/testt/green bloom.jpg";
+import img8 from "../images/testt/andro power.jpg";
+import img8c from "../images/testt/andro power.jpg";
+import img9 from "../images/testt/radiant blaze.jpg";
+import img9c from "../images/testt/radiant blaze.jpg";
 import img10 from "../images/pcos/Bok choy salad.jpeg.jpg";
 import img10c from "../images/pcos/Bok Choy Bliss cover.jpg";
 
-const PcosData = [
+const TesttData = [
   {
     id: 1,
-    imageUrl: img5c,
-    imageUrl1: img5,
-    name: "OvaHeal Bowl",
+    imageUrl: img1c,
+    imageUrl1: img1b,
+    name: "Alpha Green Bowl",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
@@ -35,13 +35,13 @@ const PcosData = [
         quantity: "1200g",
       },
       {
-        ingredientId: 6,
-        name: "Broccoli",
+        ingredientId: 28,
+        name: "Orange",
         quantity: "800g",
       },
       {
-        ingredientId: 3,
-        name: "Orange Carrot",
+        ingredientId: 39,
+        name: "Asparagus",
         quantity: "600g",
       },
       {
@@ -50,9 +50,9 @@ const PcosData = [
         quantity: "680g",
       },
       {
-        ingredientId: 49,
-        name: "Honeydew melon",
-        quantity: "720g",
+        ingredientId: 13,
+        name: "Cherry Tomatoes",
+        quantity: "680g",
       },
     ],
     totalProtein: "81 g",
@@ -73,21 +73,21 @@ const PcosData = [
     totalSelenium: "39 μg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Selenium", "Chromium", "Iron"],
+    richIn: ["Calcium", "Zinc", "Potassium"],
     nutrientText: "Thyriod care made easy",
   },
   {
     id: 2,
-    imageUrl: img6c,
-    imageUrl1: img6,
-    name: "AndroBalance Bowl",
+    imageUrl: img2c,
+    imageUrl1: img2,
+    name: "Prime Vitality Bowl",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
-      "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
+      "Fresh spinach mixed with sliced leeks, juicy papaya, creamy avocado, and tart grapefruit to boost testosterone with vitamins and healthy fats.",
     items: [
       {
-        ingredientId: 4,
-        name: "Red Cabbage ",
+        ingredientId: 44,
+        name: "Spinach",
         quantity: "1200",
       },
       {
@@ -96,18 +96,18 @@ const PcosData = [
         quantity: "960g",
       },
       {
-        ingredientId: 3,
-        name: "Orange Carrot",
+        ingredientId: 38,
+        name: "Papaya",
         quantity: "800g",
       },
       {
-        ingredientId: 50,
-        name: "Guava",
+        ingredientId: 17,
+        name: "Avocado",
         quantity: "640g",
       },
       {
-        ingredientId: 23,
-        name: "Blackberries",
+        ingredientId: 47,
+        name: "Grape Fruits",
         quantity: "400g",
       },
     ],
@@ -129,47 +129,42 @@ const PcosData = [
     totalSelenium: "23 μg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["β-carotene", "Selenium", "Zinc"],
+    richIn: ["Zinc", "Selenium", "Iron"],
     nutrientText: "Regulates insulin resistance",
   },
   {
     id: 3,
-    imageUrl: img8c,
-    imageUrl1: img8,
-    name: "HarmoNourish Bowl",
+    imageUrl: img3c,
+    imageUrl1: img3,
+    name: "T-boost Bowl",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
-      "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
+      "Crisp lettuce and crunchy red cabbage, paired with celery, mixed berries, and creamy banana. This combination provides antioxidants.",
     items: [
       {
-        ingredientId: 9,
-        name: "Mushroom, button ",
+        ingredientId: 8,
+        name: "Lettuce",
         quantity: "960g",
       },
       {
-        ingredientId: 39,
-        name: "Asparagus ",
+        ingredientId: 19,
+        name: "Banana",
         quantity: "960g",
       },
       {
-        ingredientId: 1,
-        name: "Beetroot",
+        ingredientId: 4,
+        name: "Red Cabaage",
         quantity: "800g",
       },
       {
-        ingredientId: 40,
-        name: "Yellow Capsicum ",
+        ingredientId: 20,
+        name: "Pomogranate ",
         quantity: "480g",
       },
       {
-        ingredientId: 25,
-        name: "Leeks",
+        ingredientId: 31,
+        name: "Celery",
         quantity: "480g",
-      },
-      {
-        ingredientId: 45,
-        name: "Parsley",
-        quantity: "320g",
       },
     ],
     totalProtein: "90 g",
@@ -190,41 +185,41 @@ const PcosData = [
     totalSelenium: "124 μg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["B6(Pyridoxine)", "Selenium", "Folate"],
+    richIn: ["Boron", "Vitamin C", "Magnesium"],
     nutrientText: "Say goodbye to PMS Blues",
   },
   {
     id: 4,
-    imageUrl: img10c,
-    imageUrl1: img10,
-    name: "PCOS-Shield Bowl",
+    imageUrl: img4c,
+    imageUrl1: img4,
+    name: "Stamina Surge Bowl",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
       {
-        ingredientId: 4,
-        name: "Red Cabbage ",
+        ingredientId: 10,
+        name: "Bok Choy",
         quantity: "1200g",
       },
       {
-        ingredientId: 10,
-        name: "Bok Choy",
+        ingredientId: 25,
+        name: "Leeks",
         quantity: "960g",
       },
       {
-        ingredientId: 24,
-        name: "Green Zucchini",
+        ingredientId: 23,
+        name: "Blackberries",
         quantity: "800g",
       },
       {
-        ingredientId: 13,
-        name: "Cherry Tomato ",
+        ingredientId: 12,
+        name: "Cucumber",
         quantity: "640g",
       },
       {
-        ingredientId: 45,
-        name: "Parsley",
+        ingredientId: 40,
+        name: "Yellow Capsicum",
         quantity: "400g",
       },
     ],
@@ -246,47 +241,42 @@ const PcosData = [
     totalSelenium: "9 μg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Zinc", "Iron", "Magnesium"],
+    richIn: ["Vitamin B6", "Iron", "Magnesium"],
     nutrientText: "Tames you androgene",
   },
   {
     id: 5,
-    imageUrl: img1c,
-    imageUrl1: img1b,
-    name: "FertiliBowl",
+    imageUrl: img5c,
+    imageUrl1: img5,
+    name: "Virility Bowl",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
       {
-        ingredientId: 8,
-        name: "Lettuce",
+        ingredientId: 6,
+        name: "Broccoli",
         quantity: "1200g",
       },
       {
-        ingredientId: 14,
-        name: "Olives, green ",
+        ingredientId: 52,
+        name: "Brussel sprout ",
         quantity: "400g",
       },
       {
-        ingredientId: 17,
-        name: "Avocado",
+        ingredientId: 32,
+        name: "Yellow Zucchini",
         quantity: "600g",
       },
       {
-        ingredientId: 13,
-        name: "Cherry Tomatoes",
+        ingredientId: 42,
+        name: "Red Capsicum",
         quantity: "800g",
       },
       {
-        ingredientId: 40,
-        name: "Yellow Capsicum ",
+        ingredientId: 22,
+        name: "Blueberries ",
         quantity: "600g",
-      },
-      {
-        ingredientId: 45,
-        name: "Parsley",
-        quantity: "400g",
       },
     ],
     totalProtein: "62 g",
@@ -307,41 +297,41 @@ const PcosData = [
     totalSelenium: "15 μg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Zinc", "Folate", "Magnesium"],
+    richIn: ["Iron", "Selenium", "Potassium"],
     nutrientText: "Tames your androgene",
   },
   {
     id: 6,
-    imageUrl: img2c,
-    imageUrl1: img2,
-    name: "RedVitality Bowl",
+    imageUrl: img6c,
+    imageUrl1: img6,
+    name: "Peak Power Mix",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
       {
-        ingredientId: 2,
-        name: "Kale",
+        ingredientId: 39,
+        name: "Asparagus",
         quantity: "960g",
       },
       {
-        ingredientId: 28,
-        name: "Orange",
+        ingredientId: 13,
+        name: "Cherry Tomatoes",
         quantity: "800g",
       },
       {
-        ingredientId: 1,
-        name: "Beetroot",
+        ingredientId: 25,
+        name: "Leeks",
         quantity: "800g",
-      },
-      {
-        ingredientId: 38,
-        name: "Queen Papaya",
-        quantity: "800",
       },
       {
         ingredientId: 3,
-        name: "Orange Carrot",
+        name: "Carrot",
+        quantity: "800",
+      },
+      {
+        ingredientId: 45,
+        name: "Parsley",
         quantity: "640",
       },
     ],
@@ -363,42 +353,41 @@ const PcosData = [
     totalSelenium: "24 μg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Folate", "Iron", "Calcium"],
+    richIn: ["Calcium", "Magnesium", "Chromium"],
     nutrientText: "Ovulation on track",
-    
   },
   {
     id: 7,
-    imageUrl: img3c,
-    imageUrl1: img3,
-    name: "EndoEase Mix",
+    imageUrl: img7c,
+    imageUrl1: img7,
+    name: "Green Bloom Bowl",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
       {
-        ingredientId: 31,
-        name: "Celery",
+        ingredientId: 19,
+        name: "Banana",
         quantity: "960g",
       },
       {
-        ingredientId: 23,
-        name: "Blackberries",
+        ingredientId: 38,
+        name: "Papaya",
         quantity: "560g",
       },
       {
-        ingredientId: 46,
-        name: "Passion Fruit",
+        ingredientId: 12,
+        name: "Cucumber",
         quantity: "800g",
       },
       {
-        ingredientId: 20,
-        name: "Pomegranate ",
+        ingredientId: 21,
+        name: "Strawberries ",
         quantity: "960g",
       },
       {
-        ingredientId: 7,
-        name: "Baby Corn",
+        ingredientId: 24,
+        name: "Zucchini",
         quantity: "720g",
       },
     ],
@@ -420,41 +409,41 @@ const PcosData = [
     totalSelenium: "16 μg",
     noOfServing: 8,
     servingSize: "500 g",
-    richIn: ["Calcium", "Magnesium", "Iron"],
+    richIn: ["Selenium", "Zinc", "Iron"],
     nutrientText: "Cramp free days",
   },
   {
     id: 8,
-    imageUrl: img4c,
-    imageUrl1: img4,
-    name: "CraveCurb Bowl",
+    imageUrl: img8c,
+    imageUrl1: img8,
+    name: "Andro Power Bowl",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
       {
-        ingredientId: 32,
-        name: "Yellow Zucchini",
+        ingredientId: 52,
+        name: "Brussel sprout",
         quantity: "960g",
       },
       {
-        ingredientId: 12,
-        name: "English Cucumber",
+        ingredientId: 21,
+        name: "Strawberries",
         quantity: "800g",
       },
       {
-        ingredientId: 47,
-        name: "Grapefruit",
+        ingredientId: 17,
+        name: "Avocado",
         quantity: "640g",
       },
       {
-        ingredientId: 13,
-        name: "Cherry tomato ",
+        ingredientId: 40,
+        name: "Yellow Capsicum ",
         quantity: "400g",
       },
       {
-        ingredientId: 4,
-        name: "Red Cabbage",
+        ingredientId: 36,
+        name: "Pineapple",
         quantity: "1200g",
       },
     ],
@@ -481,36 +470,36 @@ const PcosData = [
   },
   {
     id: 9,
-    imageUrl: img7c,
-    imageUrl1: img7,
-    name: "SugarSync Bowl",
+    imageUrl: img9c,
+    imageUrl1: img9,
+    name: "Radiant Blaze Bowl",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
       {
-        ingredientId: 47,
-        name: "Grapefruit",
+        ingredientId: 8,
+        name: "Lettuce",
         quantity: "960g",
       },
       {
-        ingredientId: 41,
-        name: "Green Apple ",
+        ingredientId: 53,
+        name: "Green Capsicum ",
         quantity: "960g",
       },
       {
-        ingredientId: 22,
-        name: "Blueberry ",
+        ingredientId: 7,
+        name: "Corn ",
         quantity: "800g",
       },
       {
-        ingredientId: 34,
-        name: "Dragon Fruit ",
+        ingredientId: 11,
+        name: "Potato ",
         quantity: "680g",
       },
       {
-        ingredientId: 27,
-        name: "King Kiwi",
+        ingredientId: 13,
+        name: "Cherry Tomatoes",
         quantity: "600g",
       },
     ],
@@ -537,36 +526,36 @@ const PcosData = [
   },
   {
     id: 10,
-    imageUrl: img9c,
-    imageUrl1: img9,
-    name: "FolateFix Bowl",
+    imageUrl: img10c,
+    imageUrl1: img10,
+    name: "Balance Burst Bowl",
     link: "https://www.greensizz.com/collections/pregnancy-bowls/products/kiwi-kale-crunch-1",
     description:
       "Delight in this vibrant blend packed with iron and Vitamin A. With 5 servings of tropical mango, creamy avocado, crisp baby corn, and more, it's a nutrient-rich treat for your taste buds!",
     items: [
       {
-        ingredientId: 3,
-        name: "Orange Carrot",
+        ingredientId: 6,
+        name: "Broccoli",
         quantity: "1200",
       },
       {
-        ingredientId: 7,
-        name: "Baby Corn ",
+        ingredientId: 25,
+        name: "Leeks ",
         quantity: "960g",
       },
       {
-        ingredientId: 21,
-        name: "Strawberries",
+        ingredientId: 23,
+        name: "Blackberries",
         quantity: "640g",
       },
       {
-        ingredientId: 33,
-        name: "Sugar Snap peas",
+        ingredientId: 42,
+        name: "Red Capsicum",
         quantity: "600g",
       },
       {
-        ingredientId: 51,
-        name: "Acai Berries",
+        ingredientId: 45,
+        name: "Parsley",
         quantity: "600g",
       },
     ],
@@ -589,7 +578,8 @@ const PcosData = [
     noOfServing: 8,
     servingSize: "500 g",
     richIn: ["β-carotene", "Folate", "Pyridoxine"],
-  }
+    nutrientText: "Thyriod care made easy",
+  },
 ];
 
-export default PcosData;
+export default TesttData;
