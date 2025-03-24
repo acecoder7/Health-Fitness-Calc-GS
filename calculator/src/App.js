@@ -15,6 +15,7 @@ import ExplorePregnancy from "./pages/ExplorePregnancy";
 import ExploreAll from "./pages/ExploreAll";
 import ExplorePCOS from "./pages/ExplorePCOS";
 import ExploreTestt from "./pages/ExploreTestt";
+import ExoloreMenoP from "./pages/ExploreMenop";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -41,6 +42,7 @@ function App() {
             <Route path="/explore-all" element={<ExploreAll />} />
             <Route path="/explore-pcos" element={<ExplorePCOS />} />
             <Route path="/explore-testt" element={<ExploreTestt />} />
+            <Route path="/explore-menop" element={<ExoloreMenoP />} />
             <Route path="/exp-pregnancy" element={<ExplorePregnancy />} />
           </Routes>
         </Box>

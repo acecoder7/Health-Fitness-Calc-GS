@@ -9,12 +9,12 @@ import {
 } from "@chakra-ui/react";
 import { FaFilter } from "react-icons/fa";
 
-import testtdata from "../data/testtData";
+import menopdata from "../data/menopData";
 import CardP from "../components/CardsP";
 import FilterSidebar from "../components/FilterSidebar";
 import { useSidebar } from "../context/SidebarContext";
 
-const ExploreTestt = () => {
+const ExploreMenoP = () => {
   const { isSidebarOpen, setSidebarOpen } = useSidebar();
 
   const handleFilterButtonClick = () => {
@@ -36,11 +36,11 @@ const ExploreTestt = () => {
       <Flex alignItems="center" justifyContent="space-between" mb="6">
         <Flex alignItems="center">
           <Heading as="h2" size="xl">
-            Explore Testosterone Booster Bowls
+            Explore Menopause Booster Bowls
           </Heading>
-          <Text fontSize="lg" color="gray.800" ml="4" fontWeight="bold">
+          {/* <Text fontSize="lg" color="gray.800" ml="4" fontWeight="bold">
             - Fuel the fire
-          </Text>
+          </Text> */}
         </Flex>
         <Flex alignItems="center" mr="6">
           <Text
@@ -65,8 +65,8 @@ const ExploreTestt = () => {
 
       <Box padding={{ base: "0", md: "0 6" }} mt={{ base: "0", md: "0" }}>
         <SimpleGrid minChildWidth="300px" spacing="7">
-          {testtdata.length > 0 ? (
-            testtdata.map((data) => (
+          {menopdata.length > 0 ? (
+            menopdata.map((data) => (
               <CardP
                 key={data.id}
                 data={data}
@@ -84,5 +84,5 @@ const ExploreTestt = () => {
   );
 };
 
-export default ExploreTestt;
+export default ExploreMenoP;
 
