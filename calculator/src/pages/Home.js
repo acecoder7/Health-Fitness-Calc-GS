@@ -49,6 +49,11 @@ const calculators = [
     icon: pcos,
     link: "/explore-menop",
   },
+  {
+    name: "Explore Detoxifying Bowls",
+    icon: pcos,
+    link: "/explore-detox",
+  },
 ];
 
 const Home = () => (
